@@ -55,11 +55,12 @@ EXCLUDE = re.compile(
 )
 
 CATEGORIES = [
-    ("Királyi corgik", r"royal|queen|king|király|királynő|elizabeth|erzsébet|charles|károly"),
-    ("Mentés és örökbefogadás", r"rescue|adopt|shelter|örökbe|menhely|mentett|lost|missing|found|eltűnt"),
-    ("Egészség", r"health|vet|surgery|disease|állatorvos|betegség|egészség|műtét"),
-    ("Események", r"festival|race|parade|meetup|beach day|corgi con|verseny|fesztivál|találkozó|show"),
-    ("Hírességek és internet", r"viral|tiktok|instagram|famous|celebrity|video|internet|influencer|híres"),
+    ("Királyi corgik", r"\b(royal|queen|kings?\b|királ|elizabeth|erzsébet|charles\b|károly|palace|palota|buckingham)"),
+    ("Mentés és örökbefogadás", r"\b(rescue|adopt|shelter|örökbe|menhely|mentett|mentés|lost\b|missing|found\b|eltűnt)"),
+    ("Egészség", r"\b(health|vets?\b|veterinar|surgery|disease|állatorvos|betegség|egészség|műtét)"),
+    ("Események", r"\b(festival|races?\b|racing|parade|meetup|beach day|corgi con|verseny|fesztivál|felvonulás|találkozó|dog show)"),
+    ("Sport", r"\b(nfl|football|futball|halftime|félidő|stadium|stadion|match|meccs)"),
+    ("Hírességek és internet", r"\b(viral|vírus|tiktok|instagram|famous|celebrity|video|videó|internet|influencer|híres)"),
 ]
 
 
@@ -182,7 +183,12 @@ def norm_key(title: str) -> str:
     return " ".join(words[:8])
 
 
+MARKETPLACES = ("deine-tierwelt", "kleinanzeigen", "quoka", "ebay", "jofogas", "hasznaltauto", "olx")
+
+
 def is_relevant(item: dict) -> bool:
+    if any(m in (item["source"] + item["link"]).lower() for m in MARKETPLACES):
+        return False
     text = f"{item['title']} {item['summary']}"
     if "corgi" not in text.lower():
         return False
@@ -265,6 +271,28 @@ class Translator:
         return text
 
 
+def _words(t: str) -> set[str]:
+    return {w for w in re.sub(r"[^\w\s]", " ", t.lower()).split() if len(w) > 3 and w != "corgi"}
+
+
+def dedupe_translated(items: list[dict]) -> list[dict]:
+    """Ugyanaz a hír több nyelven: a lefordított címek hasonlósága alapján szűrünk."""
+    kept: list[dict] = []
+    for it in items:
+        w = _words(it["title_hu"])
+        dup = False
+        for k in kept:
+            kw = _words(k["title_hu"])
+            if w and kw and len(w & kw) / len(w | kw) >= 0.4:
+                dup = True
+                if len(it["summary_hu"]) > len(k["summary_hu"]):
+                    kept[kept.index(k)] = it
+                break
+        if not dup:
+            kept.append(it)
+    return kept
+
+
 def categorize(item: dict) -> str:
     text = f"{item['title']} {item['summary']} {item.get('title_hu','')}"
     for name, pattern in CATEGORIES:
@@ -316,6 +344,7 @@ def main() -> int:
         it["summary_hu"] = tr(it["summary"], it["lang"]) if it["summary"] else ""
         it["category"] = categorize(it)
 
+    items = dedupe_translated(items)
     if tr.fails:
         print(f"  ! {tr.fails} szöveg fordítás nélkül maradt", file=sys.stderr)
     write_edition(items, now_local)
