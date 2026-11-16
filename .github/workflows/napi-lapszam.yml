@@ -58,7 +58,7 @@ jobs:
       - name: Hírek gyűjtése és fordítása
         if: steps.check.outputs.fetch == 'true'
         run: |
-          pip install -q requests deep-translator
+          pip install -q requests
           python scripts/fetch_news.py
 
       - name: Lapszám mentése a repóba

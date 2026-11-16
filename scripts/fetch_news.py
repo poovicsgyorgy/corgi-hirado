@@ -48,7 +48,9 @@ GOOGLE_EDITIONS = [
 
 # Szavak, amelyek nem kutyás corgira utalnak (játékmárka, kriptopénz stb.)
 EXCLUDE = re.compile(
-    r"\b(corgi (toys?|diecast|die-cast|model cars?)|corgicoin|corgi ai|\$corgi|corgi token)\b",
+    r"(corgi (toys?|diecast|die-cast|models?|model cars?|caf[eé]|kávézó|labs?|ai|token|coin|etf|insurance)"
+    r"|corgicoin|\$corgi|\betfs?\b|stock|share price|price target|forecast|nasdaq|nyse|tőzsde|részvény"
+    r"|crypto|kripto|startup|funding round|robotaxi|waymo|\bIA\b|battery energy|2x daily)",
     re.I,
 )
 
@@ -190,11 +192,14 @@ def is_relevant(item: dict) -> bool:
 def filter_and_dedupe(items: list[dict], now: datetime) -> list[dict]:
     cutoff = now - timedelta(hours=MAX_AGE_HOURS)
     seen: dict[str, dict] = {}
+    dropped = {"nem releváns": 0, "régi": 0}
     for it in items:
         if not is_relevant(it):
+            dropped["nem releváns"] += 1
             continue
         if it["published"]:
             if datetime.fromisoformat(it["published"]) < cutoff:
+                dropped["régi"] += 1
                 continue
         key = norm_key(it["title"])
         if not key:
@@ -205,35 +210,58 @@ def filter_and_dedupe(items: list[dict], now: datetime) -> list[dict]:
             len(prev["summary"]) + bool(prev["image"]) * 50
         ):
             seen[key] = it
+    print(f"  kiszűrve: {dropped}")
     out = list(seen.values())
     out.sort(key=lambda x: x["published"] or "", reverse=True)
     return out[:MAX_ITEMS]
 
 
 class Translator:
+    """Ingyenes fordítás: Google (gtx) végpont, tartalékként MyMemory."""
+
     def __init__(self) -> None:
         self.cache: dict[str, str] = {}
-        try:
-            from deep_translator import GoogleTranslator
+        self.fails = 0
 
-            self.gt = GoogleTranslator(source="auto", target="hu")
-        except Exception as e:  # pragma: no cover
-            print(f"  ! fordító nem elérhető: {e}", file=sys.stderr)
-            self.gt = None
+    def _google(self, text: str) -> str:
+        r = requests.get(
+            "https://translate.googleapis.com/translate_a/single",
+            params={"client": "gtx", "sl": "auto", "tl": "hu", "dt": "t", "q": text},
+            headers={"User-Agent": UA},
+            timeout=20,
+        )
+        r.raise_for_status()
+        return "".join(part[0] for part in r.json()[0] if part and part[0])
+
+    def _mymemory(self, text: str, lang: str) -> str:
+        r = requests.get(
+            "https://api.mymemory.translated.net/get",
+            params={"q": text[:480], "langpair": f"{lang or 'en'}|hu"},
+            timeout=20,
+        )
+        r.raise_for_status()
+        out = r.json()["responseData"]["translatedText"]
+        if not out or "MYMEMORY WARNING" in out:
+            raise RuntimeError("MyMemory limit")
+        return html.unescape(out)
 
     def __call__(self, text: str, lang: str) -> str:
-        if not text or lang == "hu" or self.gt is None:
+        if not text or lang == "hu":
             return text
         if text in self.cache:
             return self.cache[text]
-        for attempt in range(3):
-            try:
-                res = self.gt.translate(text[:4500]) or text
-                self.cache[text] = res
-                time.sleep(0.3)
-                return res
-            except Exception:
-                time.sleep(2 * (attempt + 1))
+        for fn in (lambda: self._google(text[:4500]), lambda: self._mymemory(text, lang)):
+            for attempt in range(2):
+                try:
+                    res = fn()
+                    if res:
+                        self.cache[text] = res
+                        time.sleep(0.2)
+                        return res
+                except Exception as e:
+                    print(f"  ! fordítási hiba: {type(e).__name__}: {e}"[:200], file=sys.stderr)
+                    time.sleep(1.5 * (attempt + 1))
+        self.fails += 1
         return text
 
 
@@ -288,6 +316,8 @@ def main() -> int:
         it["summary_hu"] = tr(it["summary"], it["lang"]) if it["summary"] else ""
         it["category"] = categorize(it)
 
+    if tr.fails:
+        print(f"  ! {tr.fails} szöveg fordítás nélkül maradt", file=sys.stderr)
     write_edition(items, now_local)
     print("Kész.")
     return 0
