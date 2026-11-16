@@ -1,0 +1,91 @@
+name: Napi lapszám
+
+on:
+  schedule:
+    # A GitHub csak UTC-ben ütemez. 04:00 UTC = 6:00 nyári időben,
+    # 05:00 UTC = 6:00 téli időben. A "check" lépés gondoskodik arról,
+    # hogy naponta csak egyszer, 6:00 után készüljön lapszám.
+    - cron: "0 4 * * *"
+    - cron: "0 5 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Új lapszám készítése most (akkor is, ha már van mai)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: napi-lapszam
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Kell-e új lapszám?
+        id: check
+        run: |
+          HOUR=$(TZ=Europe/Budapest date +%-H)
+          TODAY=$(TZ=Europe/Budapest date +%F)
+          LAST=$(python3 -c "import json;print(json.load(open('data/latest.json'))['date'])" 2>/dev/null || echo none)
+          echo "Budapest: $TODAY $HOUR óra, utolsó lapszám: $LAST"
+          RUN=false
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+            RUN=true
+          elif [ "$LAST" != "$TODAY" ] && { [ "$HOUR" -ge 6 ] || [ "${{ github.event_name }}" != "schedule" ]; }; then
+            RUN=true
+          fi
+          echo "fetch=$RUN" >> "$GITHUB_OUTPUT"
+          echo "Hírgyűjtés: $RUN"
+
+      - uses: actions/setup-python@v5
+        if: steps.check.outputs.fetch == 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Hírek gyűjtése és fordítása
+        if: steps.check.outputs.fetch == 'true'
+        run: |
+          pip install -q requests deep-translator
+          python scripts/fetch_news.py
+
+      - name: Lapszám mentése a repóba
+        if: steps.check.outputs.fetch == 'true'
+        run: |
+          git config user.name "corgi-hirado-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Lapszám: $(TZ=Europe/Budapest date +%F)" || echo "Nincs változás"
+          git push
+
+      - name: Weboldal előkészítése
+        if: steps.check.outputs.fetch == 'true' || github.event_name == 'push'
+        run: |
+          mkdir -p _site
+          cp -r index.html manifest.webmanifest sw.js icons data _site/
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+        if: steps.check.outputs.fetch == 'true' || github.event_name == 'push'
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.check.outputs.fetch == 'true' || github.event_name == 'push'
+        with:
+          path: _site
+
+      - name: Közzététel GitHub Pages-en
+        id: deploy
+        if: steps.check.outputs.fetch == 'true' || github.event_name == 'push'
+        uses: actions/deploy-pages@v4
