@@ -676,19 +676,6 @@
 "region": "Világ"
 },
 {
-"title": "Corgi Is Worth $5 Billion, Nearly Quadruple Its Value Five Months Ago",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxON2NwdkM4ZkxBbEhCRXB6STZaYVQxSENWUXdUNmhsX0ZUbVRqUHhRaHJHYkZwbW15czd4Qk4wMXZ0WkJnVlB3VTIwTzF0LVlOSXhzU3JmVy1oLVMwSnd2NmZScXpBTi1mR2tEcFBTcXZyZzFyVHRNckM1RUJtNzU1SWh3YU00dw?oc=5",
-"source": "Forbes",
-"published": "2026-09-26T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "corgi worth billion nearly quadruple its value five",
-"relevant": true,
-"title_hu": "A Corgi 5 milliárd dollárt ér, közel négyszeresére öt hónappal ezelőtti értékét",
-"region": "Világ"
-},
-{
 "title": "Panthers corgi race goes awry after dog escapes, breaks multiple tackles before being caught",
 "summary": "",
 "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOU19FbHpYR2NLbzUyUDZvM20yMUJnN3Y1eHBLM3d0RmQ4cVFDMzBBRjJEYXlxRkxVaURSdlI0UWxGNkJXZGpfaXo0ajgySmRhWUs2T1NUeW9VSzNIS01QakluUkxWc1NLVm94Z1YzZFJsTkJjOWRyU3AxclZkYXZMTTlwdWF4Z0h5Z0pEMlhNcHU4ajJWSFBWR0hOLVV3QVdmRGdqVWszX1BXQ2ktaElhNHRJVDVvNklDUW1pRHl5SHhmZGVob0xfNDN3aldNcU1vTUlTRVU1c0VGTXc?oc=5",
@@ -1209,19 +1196,6 @@
 "region": "Világ"
 },
 {
-"title": "Corgi announces $106M raise at $2.6B valuation — double what it was worth 3 weeks ago",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRkNhMmZ2WXNJaTByVTB3WjYzLWU3ZXVLNEtUcl9fYXJlbmVrOVVrSVBVYVRWcHdBYUkyNEVJenB6Z3VzaW03QTZCeGtKeUhGZi0zVTc0dHBoTnZVd3R0aVlzTDJpaVVtckZuaG1ibXMyWDFfTkk4UzFyZFhob29xc2pIb3JyaEt4V3E5RE1PcGtNb0pYSUxJWFUwQnp0NkdnWjlxRHBXTkgyT1JjLXZwbQ?oc=5",
-"source": "TechCrunch",
-"published": "2026-05-28T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "corgi announces 106m raise 26b valuation double what",
-"relevant": true,
-"title_hu": "A Corgi 106 millió dolláros emelést jelent be 2,6 milliárd dolláros értékeléssel – ez a duplája annak, mint 3 héttel ezelőtt",
-"region": "Világ"
-},
-{
 "title": "All loaf, no brakes: Runaway corgi steals NFL show, leaves 6 men eating turf",
 "summary": "",
 "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWmV5dzFNV2tIckhsYXBvZXV1X3RLanR6bGtGUzhFaWpKSGhFVWJjdVg5anRXMHBsWVRPenNXSUJPVmpkUnhUenhhczdsd2NGOU1DZ0h0OV9TTk5lbmV3MUNGb2xsaDNZMGVPYzJxdU1FVGZJLTRlMTgzYmRNSVZGNW9fQnJKX08wd1NVeHpDSFk0VFotQzk3UFNYbkdVa1JOOTd1SE11YWstYWgxU3pSWWVDUWJXOTFZdURSQjk4SQ?oc=5",
@@ -1258,19 +1232,6 @@
 "key": "the everyday tech use track corgi",
 "relevant": true,
 "title_hu": "A mindennapi technológia, amelyet a corgi követésére használok",
-"region": "Világ"
-},
-{
-"title": "This AI Insurance Company With An All-Night Cafe And Cheeky Corgi Is Now A Unicorn",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5EWXdDV1ZiYmM0Z3huVzRGbEVIX09KZVdVMTZpWkgzOUtTa000eHZIak96bExsV29hcnREODhydWg4MlJHMFZicW9wQ2F4ZkU4OWwyMjlEMUJYbjVNcXFJWEhjRXB6TWUyNkNiMmdTRmItT1U1OWJTRndR?oc=5",
-"source": "Forbes",
-"published": "2026-05-07T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "this insurance company with allnight cafe and cheeky",
-"relevant": true,
-"title_hu": "Ez a mesterséges intelligencia biztosító társaság egész éjszakás kávézóval és pimasz corgival most egy unikornis",
 "region": "Világ"
 },
 {
@@ -1609,7 +1570,8 @@
 "key": "rare bernesecorgi puppies look like candied yams with",
 "relevant": true,
 "title_hu": "A ritka berni-corgi kölykök úgy néznek ki, mint a „kandikázott mancsos jamgyökér”",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Quinn the Corgi Goes Rogue: Becomes Social Media Star",
@@ -1622,7 +1584,8 @@
 "key": "quinn the corgi goes rogue becomes social media",
 "relevant": true,
 "title_hu": "Quinn, a Corgi zsivány lesz: a közösségi média sztárja lesz",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Panthers’ Corgi Eludes Tackle for 41 Seconds in Dog Halftime Show",
@@ -1635,7 +1598,8 @@
 "key": "panthers corgi eludes tackle for seconds dog halftime",
 "relevant": true,
 "title_hu": "Panthers’ Corgi Eludes Tackle 41 másodpercig a kutyafélidei kiállításon",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Charlotte Corgi Bolts Loose at Panthers Halftime, Dodges Handlers to Midfield",
@@ -1648,7 +1612,8 @@
 "key": "charlotte corgi bolts loose panthers halftime dodges handlers",
 "relevant": true,
 "title_hu": "Charlotte Corgi elszabadult a Panthers félidejében, Handlers a középpályára kerül",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Four Panthers staffers scramble to catch rouge corgi on field as halftime act goes awry",
@@ -1661,7 +1626,8 @@
 "key": "four panthers staffers scramble catch rouge corgi field",
 "relevant": true,
 "title_hu": "A Panthers négy munkatársa küzd, hogy elkapjanak vörös corgit a pályán, miközben a félidő balul sül el",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgi race contestant goes rogue during Panthers-Broncos game",
@@ -1674,7 +1640,8 @@
 "key": "corgi race contestant goes rogue during panthersbroncos game",
 "relevant": true,
 "title_hu": "A Corgi verseny versenyzője szélhámos lesz a Panthers-Broncos játék során",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Speedy runaway corgi steals the show at Panthers vs. Broncos game",
@@ -1687,7 +1654,8 @@
 "key": "speedy runaway corgi steals the show panthers broncos",
 "relevant": true,
 "title_hu": "Gyorsan szökött corgi ellopja a showt a Panthers vs. Broncos játékban",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Carolina Panthers stage a halftime corgi race in Charlotte. Then one dog gets loose and outruns 4 workers for a 100-yard gain",
@@ -1700,7 +1668,8 @@
 "key": "carolina panthers stage halftime corgi race charlotte then",
 "relevant": true,
 "title_hu": "A Carolina Panthers félidei corgi versenyt rendez Charlotte-ban. Ekkor egy kutya elszabadul, és 100 yard nyereségért lehagy 4 munkást",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Was Fergie really going to clone the late Queen’s corgis — for cash?",
@@ -1713,7 +1682,8 @@
 "key": "was fergie really going clone the late queens",
 "relevant": true,
 "title_hu": "Fergie valóban klónozni akarta a néhai királynő corgisát – készpénzért?",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Meet the corgis leading hiking groups",
@@ -1726,7 +1696,8 @@
 "key": "meet the corgis leading hiking groups",
 "relevant": true,
 "title_hu": "Ismerje meg a corgi vezető túracsoportokat",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Royal Corgis to Gather for Their Fourth Walk in Riga – This Year, Chasing a New Record!",
@@ -1739,7 +1710,8 @@
 "key": "royal corgis gather for their fourth walk riga",
 "relevant": true,
 "title_hu": "Királyi corgik gyűlnek össze negyedik rigai sétájukra – idén új rekordot kergetve!",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Today* in Corgis*** Around Town",
@@ -1752,7 +1724,8 @@
 "key": "today corgis around town",
 "relevant": true,
 "title_hu": "Ma* Corgisban*** a város körül",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen Elizabeth II: Welsh breeder's dog fathered royal corgi",
@@ -1765,20 +1738,8 @@
 "key": "queen elizabeth welsh breeders dog fathered royal corgi",
 "relevant": true,
 "title_hu": "II. Erzsébet királynő: A walesi tenyésztő kutyája királyi corgit szült",
-"region": "Világ"
-},
-{
-"title": "Pembroke Welsh Corgi: Everything you need to know about the Queen's favourite dog breed",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTkoyYTl4Rlh2bjhWWXA2cGYxdU5SSy1nN0d6MGR3ZGJMYmhZaW9ycTgzakVMZ2JUT3duYm1vOS1VcjhSWVQ2WFF0Um1OUy1DZUFJeVlyalNuRG5HWFZ0QWFQa2s1WjdyWlQ0R3F6UktXYlV2UWdJcmVpdUw3SFQ5dlJpeTdULXlCT1hzeg?oc=5",
-"source": "Country Living Magazine",
-"published": "2024-07-19T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "pembroke welsh corgi everything you need know about",
-"relevant": true,
-"title_hu": "Pembroke Welsh Corgi: Minden, amit a királynő kedvenc kutyafajtájáról tudni kell",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Prince Andrew to care for Queen's beloved corgis",
@@ -1791,7 +1752,8 @@
 "key": "prince andrew care for queens beloved corgis",
 "relevant": true,
 "title_hu": "András herceg, hogy gondoskodjon a királynő szeretett corgijairól",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "INSANELY cute corgis race like their treats depend on it - Los Angeles Rams 2025 Week 18 halftime show",
@@ -1804,7 +1766,8 @@
 "key": "insanely cute corgis race like their treats depend",
 "relevant": true,
 "title_hu": "Őrülten aranyos corgis verseny, mintha a finomságaik múlnának rajta – Los Angeles Rams 2025, 18. hét félidei show",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Why Did Queen Elizabeth Own So Many Corgis—And Where Are They Now?",
@@ -1817,7 +1780,8 @@
 "key": "why did queen elizabeth own many corgisand where",
 "relevant": true,
 "title_hu": "Miért volt Erzsébet királynőnek annyi corgija – és hol vannak most?",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "If anyone needs to feed the Queen’s corgis it’s me",
@@ -1830,7 +1794,8 @@
 "key": "anyone needs feed the queens corgis its",
 "relevant": true,
 "title_hu": "Ha valakinek meg kell etetnie a királynő corgisait, az én vagyok",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Buckingham Palace: Corgis in Christmas jumpers head on parade",
@@ -1843,7 +1808,8 @@
 "key": "buckingham palace corgis christmas jumpers head parade",
 "relevant": true,
 "title_hu": "Buckingham-palota: Corgik karácsonyi jumperben parádéznak",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Trooping the Corgis: Dog sculptures celebrate Platinum Jubilee",
@@ -1856,7 +1822,8 @@
 "key": "trooping the corgis dog sculptures celebrate platinum jubilee",
 "relevant": true,
 "title_hu": "A Corgis csapata: Kutyaszobrok ünneplik a platina jubileumot",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen's corgis and pony wait at Windsor Castle as coffin approaches",
@@ -1869,7 +1836,8 @@
 "key": "queens corgis and pony wait windsor castle coffin",
 "relevant": true,
 "title_hu": "A királynő corgijai és pónijai a windsori kastélyban várakoznak, ahogy a koporsó közeledik",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Seagull-chasing dog swoops to victory in Corgi Derby",
@@ -1882,7 +1850,8 @@
 "key": "seagullchasing dog swoops victory corgi derby",
 "relevant": true,
 "title_hu": "A sirályt üldöző kutya győzelmet aratott a Corgi Derbyben",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Today* in Corgis*** Around Town – A Corgi!",
@@ -1895,7 +1864,8 @@
 "key": "today corgis around town corgi",
 "relevant": true,
 "title_hu": "Ma* a Corgisban*** A város körül – egy Corgi!",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "New corgi film leads to rise in popularity of Pembroke Welsh breed",
@@ -1908,7 +1878,8 @@
 "key": "new corgi film leads rise popularity pembroke welsh",
 "relevant": true,
 "title_hu": "Az új corgi film a Pembroke Welsh fajta népszerűségének növekedéséhez vezet",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen Elizabeth and Her Corgis: A Love Story",
@@ -1921,7 +1892,8 @@
 "key": "queen elizabeth and her corgis love story",
 "relevant": true,
 "title_hu": "Erzsébet királynő és corgisai: Szerelmi történet",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Occasional Corgis: The Crown's Canine Politics",
@@ -1934,7 +1906,8 @@
 "key": "occasional corgis the crowns canine politics",
 "relevant": true,
 "title_hu": "Alkalmi Corgis: The Crown's Canine Politics",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "This is What Queen Elizabeth Fed Her Corgis (and It’s Not Dog Food)",
@@ -1947,7 +1920,8 @@
 "key": "this what queen elizabeth fed her corgis and",
 "relevant": true,
 "title_hu": "Erzsébet királynő ezzel etette a corgisait (és ez nem kutyaeledel)",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "How Long Do Corgis Live?",
@@ -1958,9 +1932,10 @@
 "image": "",
 "lang": "en",
 "key": "how long corgis live",
-"relevant": true,
+"relevant": false,
 "title_hu": "Meddig élnek a corgik?",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Dog Mom Loves Corgis So Much She Dedicates An Entire Room To Them",
@@ -1973,7 +1948,8 @@
 "key": "dog mom loves corgis much she dedicates entire",
 "relevant": true,
 "title_hu": "Kutya anya annyira szereti a corgikat, hogy egy egész szobát szentel nekik",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen’s corgis to live with the Duke and Duchess of York",
@@ -1986,7 +1962,8 @@
 "key": "queens corgis live with the duke and duchess",
 "relevant": true,
 "title_hu": "A királynő corgijai York hercegével és hercegnőjével éljenek együtt",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "The Queen and corgis: Prince Andrew, the Duke of York, will look after the dogs",
@@ -1999,7 +1976,8 @@
 "key": "the queen and corgis prince andrew the duke",
 "relevant": true,
 "title_hu": "A királynő és a corgis: Andrew herceg, York hercege vigyázni fog a kutyákra",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgis parade outside Buckingham Palace to remember Queen Elizabeth II a year since her death",
@@ -2012,7 +1990,8 @@
 "key": "corgis parade outside buckingham palace remember queen elizabeth",
 "relevant": true,
 "title_hu": "Corgi felvonulás a Buckingham-palota előtt II. Erzsébet királynő emlékére halála óta egy évvel",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "A queen and her corgis: Elizabeth loved breed from childhood",
@@ -2025,7 +2004,8 @@
 "key": "queen and her corgis elizabeth loved breed from",
 "relevant": true,
 "title_hu": "Egy királynő és corgisai: Erzsébet gyermekkora óta szerette a fajtát",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "John Hodgman on the Two Celebrity Corgis That Shattered His World (Published 2019)",
@@ -2038,7 +2018,8 @@
 "key": "john hodgman the two celebrity corgis that shattered",
 "relevant": true,
 "title_hu": "John Hodgman a két híresség corgiról, amely összetörte a világát (megjelenés: 2019)",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "How to Train a Corgi: Corgi Puppy Training Timeline",
@@ -2049,9 +2030,10 @@
 "image": "",
 "lang": "en",
 "key": "how train corgi corgi puppy training timeline",
-"relevant": true,
+"relevant": false,
 "title_hu": "Hogyan neveljünk egy corgit: Corgi kölyökkutya képzési idővonal",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgis in the Rearview",
@@ -2062,9 +2044,10 @@
 "image": "",
 "lang": "en",
 "key": "corgis the rearview",
-"relevant": true,
+"relevant": false,
 "title_hu": "Corgis a hátulnézetben",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Ovechkin hangs with famous corgis Maxine, Hammy before Capitals Canines Night",
@@ -2077,7 +2060,8 @@
 "key": "ovechkin hangs with famous corgis maxine hammy before",
 "relevant": true,
 "title_hu": "Ovecskin a híres corgis Maxine-nel, Hammy-vel lóg a Capitals Canines Night előtt",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen Elizabeth to Stop Breeding Corgis, Only Two Remain",
@@ -2090,7 +2074,8 @@
 "key": "queen elizabeth stop breeding corgis only two remain",
 "relevant": true,
 "title_hu": "Erzsébet királynő leállítja a corgik tenyésztését, csak ketten maradtak",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Stumpy Stampede: Week 5 halftime race featured a selection of corgis including Pat McAfee's Chuck",
@@ -2103,7 +2088,8 @@
 "key": "stumpy stampede week halftime race featured selection corgis",
 "relevant": true,
 "title_hu": "Stumpy Stampede: Az 5. heti félidei versenyen válogatott corgik szerepeltek, köztük Pat McAfee Chuckja",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "In pictures: The Queen's corgis",
@@ -2116,7 +2102,8 @@
 "key": "pictures the queens corgis",
 "relevant": true,
 "title_hu": "Képeken: A királynő corgisai",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "I Had No Idea Corgis Are Born With Long Tails And I Can't Be The Only One",
@@ -2129,7 +2116,8 @@
 "key": "had idea corgis are born with long tails",
 "relevant": true,
 "title_hu": "Fogalmam sem volt, hogy a corgik hosszú farokkal születnek, és nem lehetek az egyetlen",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "These Corgis Just Predicted the Royal Baby's Name",
@@ -2142,7 +2130,8 @@
 "key": "these corgis just predicted the royal babys name",
 "relevant": true,
 "title_hu": "Ezek a corgik megjósolták a királyi baba nevét",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "14 Reasons Why Corgis Are The Smartest Animals In The World",
@@ -2155,7 +2144,8 @@
 "key": "reasons why corgis are the smartest animals the",
 "relevant": true,
 "title_hu": "14 ok, amiért a corgik a világ legokosabb állatai",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "IronPigs to Transform Into Corgis on Tuesday, August 1",
@@ -2166,9 +2156,10 @@
 "image": "",
 "lang": "en",
 "key": "ironpigs transform into corgis tuesday august",
-"relevant": true,
+"relevant": false,
 "title_hu": "Az IronPigs augusztus 1-jén, kedden corgissá változik",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgis Of Instagram Come Together To Say Goodbye To Loki",
@@ -2181,7 +2172,8 @@
 "key": "corgis instagram come together say goodbye loki",
 "relevant": true,
 "title_hu": "Az Instagram corgijai összejönnek, hogy elbúcsúzzanak Lokitól",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Who let the dog out?: Corgi breaks loose in Panthers-Broncos Week 9 matchup",
@@ -2194,7 +2186,8 @@
 "key": "who let the dog out corgi breaks loose",
 "relevant": true,
 "title_hu": "Ki engedte ki a kutyát?: Corgi elszabadult a Panthers-Broncos 9. heti mérkőzésen",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgi race goes viral at halftime",
@@ -2207,7 +2200,8 @@
 "key": "corgi race goes viral halftime",
 "relevant": true,
 "title_hu": "A corgi verseny félidőben vírusos lesz",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "The Welsh Corgi festival in Sofia",
@@ -2220,7 +2214,8 @@
 "key": "the welsh corgi festival sofia",
 "relevant": true,
 "title_hu": "A walesi corgi fesztivál Szófiában",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Today, we celebrate our Welsh Corgi pets all over the world! 🐾💛 Share your favorite thing about corgis in th the comments section.",
@@ -2233,7 +2228,8 @@
 "key": "today celebrate our welsh corgi pets all over",
 "relevant": true,
 "title_hu": "Ma ünnepeljük walesi corgi kedvenceinket szerte a világon! 🐾💛 Oszd meg kedvenc dolgodat a corgikkal kapcsolatban a megjegyzés rovatban.",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Furry Friend Friday: 2-month-old Welsh Corgi Heeler Mix, Blake",
@@ -2246,7 +2242,8 @@
 "key": "furry friend friday 2monthold welsh corgi heeler mix",
 "relevant": true,
 "title_hu": "Szőrös barát péntek: 2 hónapos Welsh Corgi Heeler Mix, Blake",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Dachshund and Corgi Have Puppy, Owner Shares Adorable Result",
@@ -2259,7 +2256,8 @@
 "key": "dachshund and corgi have puppy owner shares adorable",
 "relevant": true,
 "title_hu": "A tacskónak és a corginak van kiskutyája, a tulajdonos megosztja az imádnivaló eredményt",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "LaGrange woman competes at 150th Westminster Dog Show with Pembroke Welsh Corgi",
@@ -2272,20 +2270,8 @@
 "key": "lagrange woman competes 150th westminster dog show with",
 "relevant": true,
 "title_hu": "LaGrange nő a 150. Westminster Kutyakiállításon Pembroke Welsh Corgival versenyez",
-"region": "Világ"
-},
-{
-"title": "2025 NDS: Pembroke Welsh Corgi",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbFBNT3VZaVlQNmpYLWVmWGlwN1o2NC1TNHJjYkJaOVRUVUt3N01FNWdkWThuNjFYcUM0bWF4dG1CWVEta0RsUHg1TDFBZjlaSkVMVXQtdEQ4OHpIb0VRRGNQTlp6X1Z4ekE5U0NrRnVuZFBnZjNCRkVmLTZXSWpJVUFUZkZyLWYtY3otUUxPd0tmdUEzNWkwVjAwc1hJME1YTXA0cHBfUVc0Vzg?oc=5",
-"source": "NBC Sports",
-"published": "2025-11-19T08:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "2025 nds pembroke welsh corgi",
-"relevant": true,
-"title_hu": "2025 NDS: Pembroke Welsh Corgi",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Pet Page – Life with my Cardigan Welsh Corgi is one long conversation",
@@ -2298,20 +2284,8 @@
 "key": "pet page life with cardigan welsh corgi one",
 "relevant": true,
 "title_hu": "Pet Page – Az élet a kardigán walesi corgimmal egy hosszú beszélgetés",
-"region": "Világ"
-},
-{
-"title": "Pembroke Welsh Corgi Dog Breed Information & Characteristics",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5SOUpsT0dRYzRwUXBkUm45YWhoR3BGMlFjMWZJRmFUeEs3VU02Y3k1NVliWXpMbXpnX05RSGdHenNzVEIyMnZpY0RXeG53WDdkV3YtbTUzM3d4LXRsUm85NTN2c0lzWXAwNWRHb1NfS2txVVJIYlBicEpn?oc=5",
-"source": "Daily Paws",
-"published": "2021-07-21T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "pembroke welsh corgi dog breed information characteristics",
-"relevant": true,
-"title_hu": "A pembroke walesi corgi kutyafajta információi és jellemzői",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Morning Report pets: Meet Ein, a Pembroke Welsh Corgi from St. Paul",
@@ -2324,20 +2298,8 @@
 "key": "morning report pets meet ein pembroke welsh corgi",
 "relevant": true,
 "title_hu": "Reggeli jelentés háziállatok: Ismerje meg Eint, egy pembroke walesi corgit St. Paulból",
-"region": "Világ"
-},
-{
-"title": "2024 NDS: Pembroke Welsh Corgi",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNWdTMUtQV0huSjItaVZRNnd1N1hRbmZ4SFZvYmp5Uzh6eWFLN0FEU3pVRy1jNG84UWpKTXAwZ2dvZFlkMDJPbUN6TktRTjdranZNV1NSMy03U1NLb2xoMmNjTXJ4eWN3MDRWZERfZjctNmJHbW9jblZDaWZxWV9SOS11ZkZOc05OMzhJLWUxRVJrQlVVME5mMHQ0NWhXXzdySXZuaFNBSGxucUk?oc=5",
-"source": "NBC Sports",
-"published": "2024-11-21T08:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "2024 nds pembroke welsh corgi",
-"relevant": true,
-"title_hu": "2024 NDS: Pembroke Welsh Corgi",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Pembroke Welsh Corgi Image Gallery",
@@ -2348,9 +2310,10 @@
 "image": "",
 "lang": "en",
 "key": "pembroke welsh corgi image gallery",
-"relevant": true,
+"relevant": false,
 "title_hu": "Pembroke Welsh Corgi Képgaléria",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Using Fast CAT as an Outlet for Pembroke Welsh Corgi ‘Lily’s’ Endless Stream of Energy",
@@ -2361,9 +2324,10 @@
 "image": "",
 "lang": "en",
 "key": "using fast cat outlet for pembroke welsh corgi",
-"relevant": true,
+"relevant": false,
 "title_hu": "A Fast CAT használata a Pembroke Welsh Corgi „Lily’s végtelen energiafolyamának” kivezetéseként",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "How Queen Elizabeth II Popularized the Pembroke Welsh Corgi",
@@ -2376,7 +2340,8 @@
 "key": "how queen elizabeth popularized the pembroke welsh corgi",
 "relevant": true,
 "title_hu": "II. Erzsébet királynő hogyan népszerűsítette a pembroke walesi corgit",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "National Welsh Corgi Day — March 1, 2027",
@@ -2387,9 +2352,10 @@
 "image": "",
 "lang": "en",
 "key": "national welsh corgi day march 2027",
-"relevant": true,
+"relevant": false,
 "title_hu": "Nemzeti walesi corgi nap – 2027. március 1",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Cardigan Welsh Corgi Image Gallery",
@@ -2400,9 +2366,10 @@
 "image": "",
 "lang": "en",
 "key": "cardigan welsh corgi image gallery",
-"relevant": true,
+"relevant": false,
 "title_hu": "Cardigan Welsh Corgi Képgaléria",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Paramedic's pet Welsh Corgi is Flagler County Fire Rescue's first therapy dog",
@@ -2415,7 +2382,8 @@
 "key": "paramedics pet welsh corgi flagler county fire rescues",
 "relevant": true,
 "title_hu": "A mentős kedvence, a Welsh Corgi a Flagler megyei tűzoltóság első terápiás kutyája",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "RUFFined Spotlight: Wasabi the Pembroke Welsh Corgi",
@@ -2428,7 +2396,8 @@
 "key": "ruffined spotlight wasabi the pembroke welsh corgi",
 "relevant": true,
 "title_hu": "RUFFined Spotlight: Wasabi, a Pembroke Welsh Corgi",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Cardigan Welsh Corgi Whose Home Flooded as a Pup Competes At Westminster",
@@ -2441,7 +2410,8 @@
 "key": "cardigan welsh corgi whose home flooded pup competes",
 "relevant": true,
 "title_hu": "Cardigan Welsh Corgi, akinek otthona kiskutyaként elárasztott, versenyez Westminsterben",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgi Faire in Davis debuts distinctive Pembroke Welsh Corgi breed",
@@ -2454,7 +2424,8 @@
 "key": "corgi faire davis debuts distinctive pembroke welsh corgi",
 "relevant": true,
 "title_hu": "A Davisben található Corgi Faire bemutatja a jellegzetes Pembroke Welsh Corgi fajtát",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Get to Know the Cardigan Welsh Corgi",
@@ -2467,7 +2438,8 @@
 "key": "get know the cardigan welsh corgi",
 "relevant": true,
 "title_hu": "Ismerje meg a Cardigan Welsh Corgit",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "RUFFined Spotlight: Dory the Pembroke Welsh Corgi",
@@ -2480,7 +2452,8 @@
 "key": "ruffined spotlight dory the pembroke welsh corgi",
 "relevant": true,
 "title_hu": "RUFFined Spotlight: Dory, a Pembroke Welsh Corgi",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "RUFFined Spotlight: Turkleton the Pembroke Welsh Corgi",
@@ -2493,7 +2466,8 @@
 "key": "ruffined spotlight turkleton the pembroke welsh corgi",
 "relevant": true,
 "title_hu": "RUFFined Spotlight: Turkleton, a Pembroke Welsh Corgi",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "A Pembroke Welsh Corgi Who Does It All",
@@ -2506,7 +2480,8 @@
 "key": "pembroke welsh corgi who does all",
 "relevant": true,
 "title_hu": "Egy pembroke walesi corgi, aki mindent megcsinál",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "12 Pembroke Welsh Corgi Names For Your Energetic and Sweet Puppy",
@@ -2519,20 +2494,8 @@
 "key": "pembroke welsh corgi names for your energetic and",
 "relevant": true,
 "title_hu": "12 pembroke walesi corgi név energikus és édes kutyusának",
-"region": "Világ"
-},
-{
-"title": "KRT5 missense variant in a Cardigan Welsh Corgi with epidermolysis bullosa simplex - Kiener - 2022 - Animal Genetics",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aWWVuVV9oMmQyWEUxcnVNYzZaWG5zZEZXSlpiQlM4cC1iVW95UC1zcGNid0tFMmw0ZmlxRXE0OEVkekQzbmhIRUREYmNvSk9McVBVcHU2Q0dGMUd5T3Bpa3M3SDlUUDg1VFNFZA?oc=5",
-"source": "Wiley Online Library",
-"published": "2022-08-25T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "krt5 missense variant cardigan welsh corgi with epidermolysis",
-"relevant": true,
-"title_hu": "KRT5 missense variáns Cardigan Welsh Corgiban epidermolysis bullosa simplex-szel - Kiener - 2022 - Animal Genetics",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgi Said ‘No’ the Moment Owner Wanted To Take His Toy To Play With Him",
@@ -2545,7 +2508,8 @@
 "key": "corgi said the moment owner wanted take his",
 "relevant": true,
 "title_hu": "Corgi nemet mondott abban a pillanatban, amikor a tulajdonos el akarta vinni a játékát, hogy játsszon vele",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Amazon named its new chatbot Rufus after a Welsh corgi that a couple often took to the office",
@@ -2558,20 +2522,8 @@
 "key": "amazon named its new chatbot rufus after welsh",
 "relevant": true,
 "title_hu": "Az Amazon egy walesi corgiról nevezte el új chatbotját Rufusnak, amelyet egy pár gyakran vitt magával az irodába",
-"region": "Világ"
-},
-{
-"title": "Golden Corgi Dog Breed Information and Characteristics",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMWNGOV9lc1FOeFRaV0xnaWJOeGFxRHB1bWoxUGhtbW5UcWI5d3RoamV1UE1zTXd4bUZ0R2pBN0VmQkR1c3NZMTNfZHh0aURZUjJUaXAyTEFlTEtETUVRM3RadnNrajR3dW1XeDFLekZwbW8yU3NMenRfdGN5cUpONWFB?oc=5",
-"source": "Daily Paws",
-"published": "2022-03-24T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "golden corgi dog breed information and characteristics",
-"relevant": true,
-"title_hu": "A Golden Corgi kutyafajta információi és jellemzői",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Cost of a Cardigan Welsh Corgi Puppy by US Region [2026]",
@@ -2584,20 +2536,8 @@
 "key": "cost cardigan welsh corgi puppy region 2026",
 "relevant": true,
 "title_hu": "Egy kardigán walesi corgi kölyökkutya költsége az Egyesült Államok régiójában [2026]",
-"region": "Világ"
-},
-{
-"title": "How Smart Are Corgis? Everything We Know About Their Intelligence",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORzJvR0h4SGJwTVVnR2hyYm1rT0FqM3hKdFJaY3JTQ0UtQWxybEtkSHNMZzhRUTd0bjVTMDM3bXhfQ1hiR3VyTjB4RmNGM29XU09KQVc3TUxiOGhtZzhJRjdfRkxXX2lvRkZNRXl3RnZCS2ZYUzFuamJjLVAzNjZZMTd6Yw?oc=5",
-"source": "A-Z Animals",
-"published": "2024-07-28T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "how smart are corgis everything know about their",
-"relevant": true,
-"title_hu": "Mennyire okosak a corgik? Minden, amit az intelligenciájukról tudunk",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "CGC & Me: Drover the Pembroke Welsh Corgi Overcomes & Overachieves",
@@ -2610,33 +2550,8 @@
 "key": "cgc drover the pembroke welsh corgi overcomes overachieves",
 "relevant": true,
 "title_hu": "CGC és én: Drover the Pembroke Welsh Corgi legyőzi és túlteljesíti",
-"region": "Világ"
-},
-{
-"title": "2017 NDS: Cardigan Welsh Corgi, Herding Group",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU1N4TnNKS1NtVmQ5c2dBdGlreUllcHJ2OFZIeVl5X0dpSkNqLUdyYTBDVXN5MThDdFRGekhnVWNxZm84T3p2a2hkZ193YXZod0Uyb1Y4ZnBzaVdXNEh1QjhUWFVUQm9OWFZjZHI3d1RDdS01OWl2clQtS1hZUjhtSjZxVnZmZmc1TnBXNg?oc=5",
-"source": "NBC Sports",
-"published": "2017-11-20T08:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "2017 nds cardigan welsh corgi herding group",
-"relevant": true,
-"title_hu": "2017 NDS: Cardigan Welsh Corgi, Herding Group",
-"region": "Világ"
-},
-{
-"title": "Pembroke Welsh Corgi Pictures",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBwRVFKRTNkaWxWQUhUWFpBc2lDcU11YnhPblNISHU4cGVVNmxaVzBKb0hqb2F2azBiNXhLdVpMaHB5cGRGckIyOUtwbnZhRE81Z0lIU05IMFFPZnBBbHNLWlZ6cWxkaUJVX0VNejBacw?oc=5",
-"source": "A-Z Animals",
-"published": "2021-08-16T04:30:50+00:00",
-"image": "",
-"lang": "en",
-"key": "pembroke welsh corgi pictures",
-"relevant": true,
-"title_hu": "Pembroke walesi corgi képek",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Red Bluff Welsh Corgi wins again",
@@ -2649,7 +2564,8 @@
 "key": "red bluff welsh corgi wins again",
 "relevant": true,
 "title_hu": "A Red Bluff Welsh Corgi ismét nyer",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Breeds 101: The Pembroke Welsh Corgi",
@@ -2662,7 +2578,8 @@
 "key": "breeds 101 the pembroke welsh corgi",
 "relevant": true,
 "title_hu": "Fajták 101: A Pembroke Welsh Corgi",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "How the Pembroke Welsh Corgi became the Queen's best friend | ITV News",
@@ -2675,20 +2592,8 @@
 "key": "how the pembroke welsh corgi became the queens",
 "relevant": true,
 "title_hu": "Hogyan lett a Pembroke Welsh Corgi a királynő legjobb barátja | ITV News",
-"region": "Világ"
-},
-{
-"title": "Welsh Corgi Pictures",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE03QVA1VUlRZFYwNTFOVFptYm94U1lveWI0Sjd6eG9QUWd3bU9tSHFaQWRBcXBYMEpjWjFNTzk4NkZlM2tvMDN5cWR2RFNRYllRdVFrbFlLYTdyNGFYUDVtV0dMWQ?oc=5",
-"source": "A-Z Animals",
-"published": "2012-03-31T04:14:39+00:00",
-"image": "",
-"lang": "en",
-"key": "welsh corgi pictures",
-"relevant": true,
-"title_hu": "Walesi Corgi képek",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Rescue Dog of the Week: Stanley the Welsh Corgi Mix",
@@ -2701,7 +2606,8 @@
 "key": "rescue dog the week stanley the welsh corgi",
 "relevant": true,
 "title_hu": "A hét mentőkutyája: Stanley, a walesi corgi keverék",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgi Abandons Dog Show ‘For the Fans’ and We’re Loving It",
@@ -2714,7 +2620,8 @@
 "key": "corgi abandons dog show for the fans and",
 "relevant": true,
 "title_hu": "A Corgi elhagyja a „Rajongóknak” kutyakiállítást, és imádjuk",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Cardigan Welsh Corgi Puppy Looks Like a Plushie That Came to Life",
@@ -2727,7 +2634,8 @@
 "key": "cardigan welsh corgi puppy looks like plushie that",
 "relevant": true,
 "title_hu": "Cardigan Welsh Corgi kiskutya úgy néz ki, mint egy plüss, amely életre kelt",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Precious ‘Bernese Corgi Dog’ Looks Like the Cutest Pocket Pup",
@@ -2740,7 +2648,8 @@
 "key": "precious bernese corgi dog looks like the cutest",
 "relevant": true,
 "title_hu": "Az értékes „berni corgi kutya” úgy néz ki, mint a legaranyosabb zsebkölyök",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "How the Queen helped save the Pembroke Welsh Corgi is from extinction",
@@ -2753,7 +2662,8 @@
 "key": "how the queen helped save the pembroke welsh",
 "relevant": true,
 "title_hu": "Hogy a királynő hogyan segített megmenteni a Pembroke Welsh Corgit, az a kihalástól",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Inside the Pampered Life of Queen Elizabeth’s Beloved “Royal Corgis”",
@@ -2766,7 +2676,8 @@
 "key": "inside the pampered life queen elizabeths beloved royal",
 "relevant": true,
 "title_hu": "Erzsébet királynő szeretett „királyi corgijainak” elkényeztetett életében",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "A Royal Corgi Christmas (2022)",
@@ -2779,7 +2690,8 @@
 "key": "royal corgi christmas 2022",
 "relevant": true,
 "title_hu": "Egy királyi corgi karácsony (2022)",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Where are Queen Elizabeth's corgis? We went looking",
@@ -2792,7 +2704,8 @@
 "key": "where are queen elizabeths corgis went looking",
 "relevant": true,
 "title_hu": "Hol vannak Erzsébet királynő corgijai? Elmentünk keresni",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Royal corgis and the late Queen: 8 beloved images of Queen Elizabeth II and her cherished corgis – including hilarious footage of them with James Bond...",
@@ -2805,7 +2718,8 @@
 "key": "royal corgis and the late queen beloved images",
 "relevant": true,
 "title_hu": "Királyi corgik és a néhai királynő: 8 szeretett kép II. Erzsébet királynőről és dédelgetett corgijairól – köztük vidám felvételek James Bonddal...",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "What happened to the Late Queen's corgis after Andrew Mountbatten-Windsor's Royal Lodge eviction?",
@@ -2818,7 +2732,8 @@
 "key": "what happened the late queens corgis after andrew",
 "relevant": true,
 "title_hu": "Mi történt a néhai királynő corgijaival Andrew Mountbatten-Windsor királyi páholyának kilakoltatása után?",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Royal corgi revealed as platinum jubilee emoji",
@@ -2831,7 +2746,8 @@
 "key": "royal corgi revealed platinum jubilee emoji",
 "relevant": true,
 "title_hu": "A Royal corgi platina jubileumi hangulatjelként jelenik meg",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Sarah Ferguson says Queen Elizabeth talks to her through her corgis | ITV News",
@@ -2844,7 +2760,8 @@
 "key": "sarah ferguson says queen elizabeth talks her through",
 "relevant": true,
 "title_hu": "Sarah Ferguson azt mondja, Erzsébet királynő corgis |-jén keresztül beszél vele ITV News",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "A Definitive History of Queen Elizabeth's Royal Corgis",
@@ -2857,20 +2774,8 @@
 "key": "definitive history queen elizabeths royal corgis",
 "relevant": true,
 "title_hu": "Erzsébet királynő királyi corgisainak végleges története",
-"region": "Világ"
-},
-{
-"title": "The Queen’s Corgis: A History in Pictures",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5XU1hQdzlpMmVFSWZyckJlWlhJcVA4UjRCbUpvTDJQMExZakRnM3hnYWw2R1VUT2hQOTdoXzRqWWpHbm5hbjNyRXJHTTdzb1FESkZZSVNrOUYteWRnTWV5b1ZtUmZmZHBITWk2czByTkM3aUZ0YVE?oc=5",
-"source": "History Hit",
-"published": "2022-04-19T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "the queens corgis history pictures",
-"relevant": true,
-"title_hu": "A királynő corgisai: Történelem képekben",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "New emoji of royal corgi unveiled ahead of Queen’s Platinum Jubilee",
@@ -2883,7 +2788,8 @@
 "key": "new emoji royal corgi unveiled ahead queens platinum",
 "relevant": true,
 "title_hu": "A Queen’s Platinum Jubilee előtt bemutatták a királyi corgi új hangulatjelét",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "The Queen’s corgis have a history of biting people, including the Queen herself",
@@ -2896,7 +2802,8 @@
 "key": "the queens corgis have history biting people including",
 "relevant": true,
 "title_hu": "A királynő corgijainak története megharapott embereket, beleértve magát a királynőt is",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen Elizabeth and her beloved corgis: 7 facts about her favourite animals",
@@ -2909,7 +2816,8 @@
 "key": "queen elizabeth and her beloved corgis facts about",
 "relevant": true,
 "title_hu": "Erzsébet királynő és szeretett corgisai: 7 tény kedvenc állatairól",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "What will happens to Queen’s corgis now that she is dead?",
@@ -2922,7 +2830,8 @@
 "key": "what will happens queens corgis now that she",
 "relevant": true,
 "title_hu": "Mi lesz a királynő corgisaival most, hogy meghalt?",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen 'hit extremely hard' by death of her beloved last Royal corgi",
@@ -2935,7 +2844,8 @@
 "key": "queen hit extremely hard death her beloved last",
 "relevant": true,
 "title_hu": "A királynőt „rendkívül súlyosan érintette” szeretett utolsó királyi corgija halála",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen Mourns Loss Of Last Royal Corgi Days Before Kate Middleton Due To Give Birth",
@@ -2948,7 +2858,8 @@
 "key": "queen mourns loss last royal corgi days before",
 "relevant": true,
 "title_hu": "A királynő gyászolja Kate Middleton születése előtti utolsó királyi corgi napok elvesztését",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Diana called them the Queen’s ‘moving carpet.’ What will happen to the royal corgis now?",
@@ -2961,7 +2872,8 @@
 "key": "diana called them the queens moving carpet what",
 "relevant": true,
 "title_hu": "Diana a királynő „mozgó szőnyegének” nevezte őket. Mi lesz most a királyi corgikkal?",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen Elizabeth loved corgis. Here are 26 adorable photos of the monarch with her dogs over the years.",
@@ -2974,7 +2886,8 @@
 "key": "queen elizabeth loved corgis here are adorable photos",
 "relevant": true,
 "title_hu": "Erzsébet királynő szerette a corgikat. Íme 26 imádnivaló fotó az uralkodóról a kutyáival az évek során.",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "The corgi trainer from Hallmark's A Royal Corgi Christmas tells all",
@@ -2987,20 +2900,8 @@
 "key": "the corgi trainer from hallmarks royal corgi christmas",
 "relevant": true,
 "title_hu": "A Hallmark's A Royal Corgi Christmas corgi edzője mindent elmond",
-"region": "Világ"
-},
-{
-"title": "A Royal Corgi Christmas (TV Movie 2022) - Photos",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5yT0JPZkd1NHc3MFYtTmdvTFdkSHZaZFFLZzBOZ1BORWZQeHlhQjk0UlpmYWZIZEtkWGI4UUMtNERCNTZ3bmgtNXp0Q2xkcXMxWEVLRVhlVjQwbXpqeHc?oc=5",
-"source": "IMDb",
-"published": "2022-11-26T05:46:33+00:00",
-"image": "",
-"lang": "en",
-"key": "royal corgi christmas movie 2022 photos",
-"relevant": true,
-"title_hu": "A Royal Corgi Christmas (TV-film 2022) – Fotók",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "25 Days of Bingemas, Day 13: ‘A Royal Corgi Christmas’",
@@ -3013,7 +2914,8 @@
 "key": "days bingemas day royal corgi christmas",
 "relevant": true,
 "title_hu": "Bingemák 25 napja, 13. nap: „Királyi corgi karácsony”",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen Elizabeth's Royal Corgi Dynasty in Photos",
@@ -3026,7 +2928,8 @@
 "key": "queen elizabeths royal corgi dynasty photos",
 "relevant": true,
 "title_hu": "Erzsébet királynő királyi Corgi-dinasztiája fotókon",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Photos from A Royal Corgi Christmas",
@@ -3039,7 +2942,8 @@
 "key": "photos from royal corgi christmas",
 "relevant": true,
 "title_hu": "Fényképek az A Royal Corgi karácsonyáról",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Who Is the Maybe-Corgi in Queen Elizabeth's Backseat: An Investigation",
@@ -3052,20 +2956,8 @@
 "key": "who the maybecorgi queen elizabeths backseat investigation",
 "relevant": true,
 "title_hu": "Ki a talán-Corgi Erzsébet királynő hátsó ülésén: nyomozás",
-"region": "Világ"
-},
-{
-"title": "Preview - A Royal Corgi Christmas",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV1ByRXEzUVl2WFc3a2Y1V3AyeG94SURqTC0wLXpSWGlVdFZUbnBaMGFzNEVYT3N6eE9YbVdRaEZuWHZ6Mld5ME5wdmhvSlRTRDVDMnpnbTQyQkJqTkVjRGg0OFljM3IwcUpYN3VwbmRwSWluNzRqcWxETjZvYVhFUjNhd1AzM1dzZVhMQXd0TDB1dVo0UTdFNVh3?oc=5",
-"source": "Hallmark Channel",
-"published": "2022-11-16T17:40:12+00:00",
-"image": "",
-"lang": "en",
-"key": "preview royal corgi christmas",
-"relevant": true,
-"title_hu": "Előnézet – Royal Corgi karácsony",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Jordan Renzo as Prince Edmond in A Royal Corgi Christmas",
@@ -3078,7 +2970,8 @@
 "key": "jordan renzo prince edmond royal corgi christmas",
 "relevant": true,
 "title_hu": "Jordan Renzo Edmond herceg szerepében az A Royal Corgi Christmas című filmben",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Wales | First 'royal' corgi bones found",
@@ -3091,7 +2984,8 @@
 "key": "wales first royal corgi bones found",
 "relevant": true,
 "title_hu": "Wales | Megtalálták az első „királyi” corgi csontokat",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Hunter King as Cecily in A Royal Corgi Christmas",
@@ -3104,7 +2998,8 @@
 "key": "hunter king cecily royal corgi christmas",
 "relevant": true,
 "title_hu": "Hunter King Cecily szerepében az A Royal Corgi Christmas című filmben",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "7 Things You Didn't Know About The Royal Corgis From \"The Loyal Royals: The Queen's Corgis\" Video By 'Vanity Fair'",
@@ -3117,7 +3012,8 @@
 "key": "things you didnt know about the royal corgis",
 "relevant": true,
 "title_hu": "7 dolog, amit nem tudtál a Royal Corgisról a \"The Loyal Royals: The Queen's Corgis\" videóból, a \"Vanity Fair\"",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen 'paid £2,650 for new royal corgi dog called Charles on popular pet website'",
@@ -3130,7 +3026,8 @@
 "key": "queen paid 2650 for new royal corgi dog",
 "relevant": true,
 "title_hu": "A királynő \"2650 fontot fizetett az új, Charles nevű királyi corgi kutyáért a népszerű kisállat-webhelyen\"",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Queen’s staff got corgi SO DRUNK the dog DIED of alcohol poisoning",
@@ -3143,7 +3040,8 @@
 "key": "queens staff got corgi drunk the dog died",
 "relevant": true,
 "title_hu": "A Queen személyzete olyan corgit kapott, ANNYIRA RÉGESZ, a kutya alkoholmérgezésbe halt bele",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Menu for royal Corgis at Buckingham Palace - ‘like being in a normal family’",
@@ -3156,20 +3054,8 @@
 "key": "menu for royal corgis buckingham palace like being",
 "relevant": true,
 "title_hu": "Menü királyi corgiknak a Buckingham-palotában – „mintha egy normális családban lennénk”",
-"region": "Világ"
-},
-{
-"title": "Queen Elizabeth II shock: Royal corgis' lifestyle revealed including lavish secret recipe",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeVFEYVZwQjllVUpSODR2MWN4VXRkV250ZDRRNkh0TWJBUFVsUWgwWk94TTc1UWF6QmtCWmVJR2Y5c1RwRk1kY0U3eHNjblNLOUtic0p5NXliWkhBNjNlU1NSRjJ3RTdSZm1vVUN4c01TQXFORWRSdGVmdkt4eHFsWjFKTWYtdEtlQXU3eFN4U1N5eVl3YjNpV0NLSDVrcFpBczJXdzc5SVhyUm_SAbABQVVfeXFMTUl4clJMRmZDY3pGS1pSMURiWHprMXBkMDR6RWJmQUd3Y1c2SFh3VFE5bENqdHpXN2YyTXh0ZW02WFJjUUV5V1dTM1pIOV84cVc0QVNHbTBZTWxwcGl6V3M5aUYxc09IRW1sUmd6SmxiUzlvSWlfc1RsR0ppb2lOY0FQY0ZIck5aS2Q4dklkTVp4VkZVM3RacER0cXVaSERneFNHdDVuZmNJaE9RZEROSjQ?oc=5",
-"source": "Daily Express",
-"published": "2019-07-26T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "queen elizabeth shock royal corgis lifestyle revealed including",
-"relevant": true,
-"title_hu": "Erzsébet királynő döbbenet: A királyi corgis életstílusa kiderült, beleértve a pazar titkos receptet is",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Shelter Me: Meet Remy from South Jersey Corgi Rescue",
@@ -3182,7 +3068,8 @@
 "key": "shelter meet remy from south jersey corgi rescue",
 "relevant": true,
 "title_hu": "Shelter Me: Ismerje meg Remyt a South Jersey Corgi Rescue-tól",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "How Chow-Corgi Cross Tells Mom He Wants To Go for a Walk Melts Hearts",
@@ -3195,7 +3082,8 @@
 "key": "how chowcorgi cross tells mom wants for walk",
 "relevant": true,
 "title_hu": "Hogyan mondja Chow-Corgi Cross anyának, hogy sétálni akar, megolvasztja a szíveket",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "‘I Can Save Them!’: Meet the ‘Corgi Whisperer’ Who Saved the Lives of 67 Dogs",
@@ -3208,7 +3096,8 @@
 "key": "can save them meet the corgi whisperer who",
 "relevant": true,
 "title_hu": "„Megmenthetem őket!”: Ismerje meg a „Corgi Whisperer”-t, aki 67 kutya életét mentette meg",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgi Leads a Pack of 7 Dogs on a 10-Mile Journey To Make It Back Home",
@@ -3221,7 +3110,8 @@
 "key": "corgi leads pack dogs 10mile journey make back",
 "relevant": true,
 "title_hu": "Corgi 7 kutyából álló falkát vezet egy 10 mérföldes utazásra, hogy hazajusson",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Rescue Golden Retriever-Corgi Receives All the Love on the Internet",
@@ -3234,7 +3124,8 @@
 "key": "rescue golden retrievercorgi receives all the love the",
 "relevant": true,
 "title_hu": "A Rescue Golden Retriever-Corgi minden szeretetet megkap az interneten",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Tale of Corgi Leading Pack of Seven Dogs on 10-Mile Journey Home Goes Viral",
@@ -3247,7 +3138,8 @@
 "key": "tale corgi leading pack seven dogs 10mile journey",
 "relevant": true,
 "title_hu": "Elterjedt a mese a hét kutyából álló vezető csapat Corgiról a 10 mérföldes hazautazáson",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "People are returning so many Corgi puppies, rescuers can't take in more",
@@ -3260,7 +3152,8 @@
 "key": "people are returning many corgi puppies rescuers cant",
 "relevant": true,
 "title_hu": "Annyi corgi kölyköt adnak vissza az emberek, hogy a mentők nem tudnak többet befogadni",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Corgi named Waldo hailed as a hero for rescuing his owner after a nasty fall",
@@ -3273,7 +3166,8 @@
 "key": "corgi named waldo hailed hero for rescuing his",
 "relevant": true,
 "title_hu": "Corgi nevű Waldo hősként üdvözölték, amiért megmentette gazdáját egy csúnya esés után",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Five Minutes with Jill Ramirez, Co-Founder of the Texas Corgi Roundup",
@@ -3286,7 +3180,8 @@
 "key": "five minutes with jill ramirez cofounder the texas",
 "relevant": true,
 "title_hu": "Öt perc Jill Ramirezzel, a Texas Corgi Roundup társalapítójával",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Tour de Corgi: What to know ahead of Fort Collins' beloved corgi parade",
@@ -3299,7 +3194,8 @@
 "key": "tour corgi what know ahead fort collins beloved",
 "relevant": true,
 "title_hu": "Tour de Corgi: Mit kell tudni Fort Collins szeretett corgi felvonulása előtt",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Gallery: Annual Tour de Corgi celebrates 10 years",
@@ -3312,7 +3208,8 @@
 "key": "gallery annual tour corgi celebrates years",
 "relevant": true,
 "title_hu": "Galéria: Az éves Tour de Corgi 10 éves",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Meet the Eastern Iowa Man Taking Care of 60+ Rescued Corgis",
@@ -3325,7 +3222,8 @@
 "key": "meet the eastern iowa man taking care rescued",
 "relevant": true,
 "title_hu": "Ismerje meg a kelet-iowai embert, aki több mint 60 megmentett corgit gondoz",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "Texas Corgi Roundup Scheduled to Takeover Temple",
@@ -3338,7 +3236,8 @@
 "key": "texas corgi roundup scheduled takeover temple",
 "relevant": true,
 "title_hu": "A Texas Corgi Roundup az átvételi templomba kerül",
-"region": "Világ"
+"region": "Világ",
+"cls": "ai"
 },
 {
 "title": "‘Lucky to be alive’: Arthur the corgi rescued after being shot in the head",
@@ -3611,19 +3510,6 @@
 "key": "seattles gustave the girl dog wins corgi race",
 "relevant": true,
 "title_hu": "A seattle-i Gustave the Girl Dog nyerte a corgi versenyt Litvániában",
-"region": "Világ"
-},
-{
-"title": "Corgi high fashion and at the races: in pictures",
-"summary": "",
-"link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNS2tFbko3blNYdkc4bWo3am4wbU4xSkhXZTk0cFlhNkwwb2xLX0h2REp2WTVfYlotOGFaUWZ5YWRyMU1qVUNKZmVVaUxOUVVZeDE2U1ZybXJpZGdyUHpsZ3Jpbzc2WTNFTWRtVjAzSGZzN2dpX2NUV1A1dEU0WXBBRG1RS2I0dDdTQ2pHalR6M3ZKWXJ6NGRrM0c1Z2g2c2hkeU1ETzdocWxFN3RU?oc=5",
-"source": "The Guardian",
-"published": "2026-08-15T07:00:00+00:00",
-"image": "",
-"lang": "en",
-"key": "corgi high fashion and the races pictures",
-"relevant": true,
-"title_hu": "Corgi nagy divat és a versenyeken: képekben",
 "region": "Világ"
 },
 {
