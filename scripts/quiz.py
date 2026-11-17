@@ -113,6 +113,36 @@ def classify(items: list[dict], limit: int = 240) -> None:
             b["title_hu"] = tr(b["title"], b["lang"])
 
 
+SECTION_PREFIX = re.compile(r"^[A-ZÁÉÍÓÖŐÚÜŰ][\wáéíóöőúüű ]{1,18} - (?=\S)")
+
+
+def polish_titles(chosen: list[dict]) -> None:
+    """A gépi fordítás helyett természetes magyar cím az MI-vel; a magyar címekről a rovatnév le."""
+    for c in chosen:
+        if c.get("lang") == "hu" and not c["key"].startswith("seed:"):
+            c["title_hu"] = SECTION_PREFIX.sub("", c["title_hu"]).strip()
+    todo = [c for c in chosen if c.get("lang") not in (None, "hu") and not c["key"].startswith("seed:")]
+    if not todo:
+        return
+    listing = "\n".join(f"{i}. {c['title']}" for i, c in enumerate(todo))
+    res = ask_json(
+        "Tapasztalt magyar újságíró vagy. Csak érvényes JSON-t válaszolsz.",
+        "Fordítsd le ezeket a hírcímeket természetes, gördülékeny magyar újságcímekké. "
+        "A tulajdonneveket és helyneveket (pl. Temple, Texas) NE fordítsd le, hanem hagyd meg, és ha kell, "
+        "egészítsd ki egy szóval (pl. „a texasi Temple-ben”). Ne adj hozzá új tényt.\n"
+        'Válasz: [{"i":0,"hu":"..."}]\n\n' + listing,
+        temperature=0.3,
+    )
+    if isinstance(res, list):
+        for r in res:
+            try:
+                hu = str(r["hu"]).strip()
+                if 10 <= len(hu) <= 220:
+                    todo[int(r["i"])]["title_hu"] = hu
+            except Exception:
+                pass
+
+
 def _ym(it: dict) -> str:
     return it["date"] if "date" in it else it["published"][:7]
 
@@ -148,6 +178,7 @@ def pick_real(pool: list[dict], now: datetime) -> list[dict]:
             chosen.append(c)
     for c in chosen:
         used.add(c["key"])
+    polish_titles(chosen)
     USED.write_text(json.dumps(sorted(used), ensure_ascii=False), encoding="utf-8")
     return [
         {
