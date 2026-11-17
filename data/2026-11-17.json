@@ -1,15 +1,15 @@
 {
  "date": "2026-11-17",
- "generated_at": "2026-11-17T17:33+01:00",
+ "generated_at": "2026-11-17T17:42+01:00",
  "count": 1,
  "articles": [
   {
    "title": "Corgi dressed as teddy bear gets treats",
    "summary": "Sometimes a costume may not be what it looks like from a straightforward angle. Ásrún shared this clip of a corgi dressed in a teddy bear costume. The playful setup involves cutting a hole in a ...",
-   "link": "https://www.msn.com/en-us/news/other/corgi-dressed-as-teddy-bear-gets-treats/vi-AA2hBW95",
-   "source": "Amazon S3 on MSN",
-   "published": "2026-11-17T02:31:27+00:00",
-   "image": "http://www.bing.com/th?id=ONUT.BEJUYJ9c1kC2zk78Rl5ZKQ&pid=News",
+   "link": "https://www.msn.com/en-us/news/other/corgi-dressed-as-teddy-bear-gets-treats/vi-AA2hC431",
+   "source": "Dailymotion on MSN",
+   "published": "2026-11-17T03:01:26+00:00",
+   "image": "http://www.bing.com/th?id=ONUT.rBkF0rZWacz-Tm5WLrA84w&pid=News",
    "lang": "en",
    "title_hu": "A mackónak öltözött corgi finomságokat kap",
    "summary_hu": "Előfordulhat, hogy egy jelmez nem az, aminek egyenes szögből néz ki. Ásrún megosztotta ezt a klipet egy mackójelmezbe öltözött corgiról. A játékos összeállítás során lyukat vágunk egy...",
@@ -18,37 +18,37 @@
  ],
  "quiz": [
   {
-   "date": "1994-10",
+   "date": "2025-10",
    "region": "Világ",
-   "title_hu": "Egy Toast nevű corgi segít a genti kórház gyermekosztályán a kis betegek felvidításában",
-   "summary_hu": "A terápiás kutya hetente kétszer látogat el az osztályra. Az ápolók szerint a gyerekek már napokkal előre várják.",
-   "explanation": "Ilyen terápiás corgiról nem szóltak a hírek – kitaláció.",
-   "source": "",
-   "link": "",
-   "title_orig": "",
-   "fake": true,
+   "title_hu": "Stumpy Stampede: Az 5. heti félidei versenyen válogatott corgik szerepeltek, köztük Pat McAfee Chuckja",
+   "title_orig": "Stumpy Stampede: Week 5 halftime race featured a selection of corgis including Pat McAfee's Chuck",
+   "summary_hu": "",
+   "source": "Colts.com",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOY1dLazJqUXJnWDJiQmY1aWRySnk3ekFiV05pbnhFY2R5RjduVzlabTB6QVNUZEdFOXZyLXIzMW9pTHNJN1cyMjRyN3A1T1hjczVVNFhoc3ZXd3NfZFlsbzRDZXctSy0xMXdWZ0JnRlA1ckxidHZHbkFVXzdFSFROd1lTdFVudG4wVzI4d1p0WWIzQUpKT1VnRzZfZnFiTUhvUnlTQ2R3bGlIbHl1NjVfOU5uZ18wR2pKckVabGlERWpYLU0?oc=5",
+   "fake": false,
    "id": 0
   },
   {
-   "date": "2003-12",
-   "region": "Világ",
-   "title_hu": "Anna hercegnő bullterriere halálosan megsebesítette a királynő Pharos nevű corgiját Sandringhamben",
+   "date": "2022-06",
+   "region": "Magyarország",
+   "title_hu": "Corgit ábrázoló miniszobor került Budapest XI. kerületébe",
    "title_orig": "",
-   "summary_hu": "A brit bulvársajtó szerint a sérült corgit a királyi állatorvosok kezelték, de végül el kellett altatni.",
-   "source": "The Globe and Mail",
-   "link": "https://www.theglobeandmail.com/world/article-queen-elizabeth-corgis/",
+   "summary_hu": "Plank Antal szobrászművész Ella nevű corgija az Allee bevásárlóközpontnál bújt meg, a szemfülesek felfedezhetik.",
+   "source": "We Love Budapest",
+   "link": "https://welovebudapest.com/cikk/2022/6/21/latnivalok-es-kultura-egy-corgit-abrazolo-miniszobor-kerult-a-xi-kerulet-egyik-kozponti-helyere",
    "fake": false,
    "id": 1
   },
   {
-   "date": "2022-11",
-   "region": "Világ",
-   "title_hu": "Fényképek az A Royal Corgi karácsonyáról",
-   "title_orig": "Photos from A Royal Corgi Christmas",
-   "summary_hu": "",
-   "source": "Hallmark Channel",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObTdCX0wtb2lneXh3Yzhyc1V6a19FZGlrV3R4U0plV2hIM3RjRlNKSHJ4SUN4TVk3dmY4YnQ2ZVRxMmNnUi1zZ3BzUktrZml2SmhFaXEwYXI1Z3ExTktpZ090X29yN08zcTIzQmd1MFo2TkhsMHY4eUFCZEVSb0hnRk9DV0loU2Z2dU9yTHdVRG8zNV9FZU1QVEgzaWo4cEVXdExz?oc=5",
-   "fake": false,
+   "date": "2023-03",
+   "region": "Magyarország",
+   "title_hu": "Corgis falinaptárral gyűjtöttek pénzt egy egri állatmenhelynek – 1200 példány fogyott el",
+   "summary_hu": "A fotókat önkéntes gazdik corgijairól készítették. A bevételből a menhely új kennelajtókat vásárolt.",
+   "explanation": "A naptár sosem létezett – ez volt a kamu.",
+   "source": "",
+   "link": "",
+   "title_orig": "",
+   "fake": true,
    "id": 2
   }
  ],
@@ -56,23 +56,23 @@
   {
    "file": "data/img/2026-11-17-1.jpg",
    "grid": 4,
-   "author": "Littootze 622 Miammoel",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:HK_SKD_%E8%A5%BF%E8%B2%A2%E5%8C%97_Sai_Kung_North_%E6%B5%B7%E6%98%A0%E8%B7%AF_Hoi_Ying_Road_%E8%A5%BF%E6%B2%99_Go_Park_Sai_Sha_%E6%9F%AF%E5%9F%BA%E7%8A%AC_pet_Welsh_Corgi_dog_walking_with_carts_June_2025_R12S_02.jpg"
+   "author": "Lili7777",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Corgi_Puppy.jpg"
   },
   {
    "file": "data/img/2026-11-17-2.jpg",
    "grid": 6,
-   "author": "FatFairfax",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Cardigan_Welsh_Corgi_Face,_Dog.jpg"
+   "author": "Rasik²",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:3_month_old_Corgi_puppy.jpg"
   },
   {
    "file": "data/img/2026-11-17-3.jpg",
    "grid": 12,
-   "author": "Daniel Stockman",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Pembroke_Welsh_Corgi_Puppy.jpg"
+   "author": "Public class",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Welsh_Corgi_Pembroke_puppy.jpg"
   }
  ]
 }
