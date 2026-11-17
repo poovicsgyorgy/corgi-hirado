@@ -1,41 +1,54 @@
 {
  "date": "2026-11-17",
- "generated_at": "2026-11-17T19:55+01:00",
- "count": 0,
- "articles": [],
+ "generated_at": "2026-11-17T19:59+01:00",
+ "count": 1,
+ "articles": [
+  {
+   "title": "Funny corgi tries desperately to jump over gate to reach toys",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMHJTdVV1T3E0REYtdVhjZlVTSTRYWHFNS3B3eGpJRHhlQzJMcGNUdFVlNy03NE1DT0RRbzRjOENkcXZoY1BUS1FtYUlkVWROQ1hBZHRpc3BEZXBFRHB6NXQxYlFtSzZ0U0xDOExrWmNuVDdaMl9tSk85blZ3YXF3ZnlWc1o3VDF5QjI2ZVV2QWtqUVNCVTZzdFd2VXNPSmhFN29mUXB1ZW1qeTVmUF9lakphMkppUTV1VkE?oc=5",
+   "source": "Daily Mail",
+   "published": "2026-11-15T21:07:16+00:00",
+   "image": "",
+   "lang": "en",
+   "title_hu": "Vicces corgi kétségbeesetten próbál átugrani a kapun, hogy elérje a játékokat",
+   "summary_hu": "",
+   "category": "Corgi hírek"
+  }
+ ],
  "quiz": [
   {
-   "date": "2023-04",
+   "date": "2016-06",
    "region": "Világ",
-   "title_hu": "Corgi-szobrot avattak Melbourne-ben egy helyi kutyabarát egyesület kezdeményezésére",
-   "summary_hu": "A bronzszobor egy padon ülő corgit ábrázol. Az alkotás az orra simogatásától fényesedik.",
-   "explanation": "Ez a szobor nem létezik – kamu.",
-   "source": "",
-   "link": "",
+   "title_hu": "A corgi keverékeknél aligha vannak cukibb lények",
    "title_orig": "",
-   "fake": true,
+   "summary_hu": "",
+   "source": "Velvet.hu",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc09JUXNtR1R4bnRkaDNaYngxTV9tM1FlWm15M3hwRksyOUJ1bElMcW1qR0tQOWx4YjdkWUhHZnJrYkhSTnhpOE9sUFNZdkZPc0ItcWMzZ0Rtck1RUG1fTWZWb1p5YnM1cXhxS2tzaVVkNWttaWpCRHozVHBqdUhaVFN3ZE85MER5VnVGUDJLN0w2S3FqTkE?oc=5",
+   "fake": false,
    "id": 0
   },
   {
-   "date": "2021-06",
+   "date": "2015-07",
    "region": "Világ",
-   "title_hu": "Új corgikölyköt kapott a királynő: Sandy András hercegtől és lányaitól érkezett",
-   "title_orig": "",
-   "summary_hu": "Az ajándék Fergus nevű corgija elvesztése után vigasztalta az uralkodót.",
-   "source": "Metro",
-   "link": "https://metro.co.uk/2021/06/13/queen-given-corgi-puppy-by-andrew-on-prince-philips-100th-birthday-14764093/",
+   "title_hu": "Királynő Elizabeth és a korgisai: A szerelem meséje",
+   "title_orig": "Queen Elizabeth and Her Corgis: A Love Story",
+   "summary_hu": "",
+   "source": "Vanity Fair",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9XZzV1WkhsMS1Bc2pEN2xkS1hQZGprQmFDZUNWY0RPbUZEd2RuMDlwQU1hemJEU016YlNlUDkzdHdEbnowWHF6UHV1eFhfa1FNNGVHRlJEUWlzMTNvX3pONS1pVUJXaXdkcGVhNUk5d1NfaDNVam9OdURCaVJJQQ?oc=5",
    "fake": false,
    "id": 1
   },
   {
-   "date": "2025-05",
+   "date": "2001-09",
    "region": "Világ",
-   "title_hu": "Corgifesztivált rendeznek Tallinnban, a fajta első kiállítási szereplésének 100. évfordulóján",
+   "title_hu": "Iskolai csoportképen tűnt fel egy corgi Lyonban – a diákok ragaszkodtak hozzá",
+   "summary_hu": "A kutya az egyik tanár kedvence, aki gyakran beviszi az órákra. A fotó végül az iskola évkönyvének borítójára került.",
+   "explanation": "Ez a kép csak a mi fantáziánkban létezik.",
+   "source": "",
+   "link": "",
    "title_orig": "",
-   "summary_hu": "A szervezők a program csúcspontjaként a legcukibb corgi-popsi megválasztását ígérték.",
-   "source": "The Baltic Guide",
-   "link": "https://balticguide.ee/en/corgi-fest-is-for-people-who-likecorgis",
-   "fake": false,
+   "fake": true,
    "id": 2
   }
  ],
@@ -45,21 +58,21 @@
    "grid": 4,
    "author": "Huoadg5888 Minor edits made by Subsidiary account",
    "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Fawn_and_white_Welsh_Corgi_puppy_standing_on_rear_legs_and_sticking_out_the_tongue_(cropped).jpg"
+   "page": "https://commons.wikimedia.org/wiki/File:Fawn_and_white_Welsh_Corgi_puppy_standing_on_rear_legs_and_sticking_out_the_tongue.jpg"
   },
   {
    "file": "data/img/2026-11-17-2.jpg",
    "grid": 6,
-   "author": "Slyronit",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Beagle_and_smiling_Corgi.jpg"
+   "author": "Magen Peters",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Running_Corgi_puppy.jpg"
   },
   {
    "file": "data/img/2026-11-17-3.jpg",
    "grid": 12,
-   "author": "Pleple2000",
+   "author": "BrokenSphere",
    "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Welsh_corgi_pembroke_00pl.jpg"
+   "page": "https://commons.wikimedia.org/wiki/File:11_week_old_male_Pembroke_Welsh_Corgi_sleeping.JPG"
   }
  ],
  "horoscope": [
@@ -246,58 +259,58 @@
  ],
  "bread": [
   {
-   "file": "data/img/2026-11-17-corgi1.jpg",
-   "corgi": true,
-   "author": "New Zealand Government, Office of the Governor-General",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Platinum_Jubilee-_A_Corgi_display.jpg",
-   "zx": 51,
-   "zy": 63
-  },
-  {
-   "file": "data/img/2026-11-17-corgi3.jpg",
-   "corgi": true,
-   "author": "Lucas Löffler",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Corgi02.jpg",
-   "zx": 56,
-   "zy": 69
-  },
-  {
    "file": "data/img/2026-11-17-corgi2.jpg",
    "corgi": true,
-   "author": "Genesis Buckley",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:12_June_2014_-_Corgis_(14380384516).jpg",
-   "zx": 49,
-   "zy": 55
+   "author": "Cathy smithson",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Hondo_a_proud_Texas_Corgi.JPG",
+   "zx": 45,
+   "zy": 59
   },
   {
-   "file": "data/img/2026-11-17-kenyer2.jpg",
-   "corgi": false,
-   "author": "ismeretlen",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Bread_loaf_-_Museo_Egizio_(Turin)_S_8298_p01.jpg",
-   "zx": 42,
-   "zy": 42
-  },
-  {
-   "file": "data/img/2026-11-17-kenyer1.jpg",
-   "corgi": false,
-   "author": "ismeretlen",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Bread_loaf_-_Museo_Egizio_(Turin)_S_8297_p01.jpg",
-   "zx": 35,
-   "zy": 50
+   "file": "data/img/2026-11-17-corgi1.jpg",
+   "corgi": true,
+   "author": "BrokenSphere",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Male_Corgi-Dachshund_mix_drinking_water.JPG",
+   "zx": 50,
+   "zy": 40
   },
   {
    "file": "data/img/2026-11-17-kenyer3.jpg",
    "corgi": false,
-   "author": "ismeretlen",
+   "author": "Hortensja Bukietowa",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Brioche_with_sugar_Aux_Merveilleux_de_Fred.jpg",
+   "zx": 55,
+   "zy": 65
+  },
+  {
+   "file": "data/img/2026-11-17-corgi3.jpg",
+   "corgi": true,
+   "author": "GrzegorzWicher",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Welsh_Corgi_Cardigan_named_Flow_2020_4.jpg",
+   "zx": 61,
+   "zy": 65
+  },
+  {
+   "file": "data/img/2026-11-17-kenyer1.jpg",
+   "corgi": false,
+   "author": "DinaBenedettoFerrandina",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ciambella_Brioche_alle_Mele_e_Uvetta.jpg",
+   "zx": 38,
+   "zy": 41
+  },
+  {
+   "file": "data/img/2026-11-17-kenyer2.jpg",
+   "corgi": false,
+   "author": "Benoît Prieur",
    "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Bread_loaf_-_Museo_Egizio_(Turin)_S_8289_p01.jpg",
-   "zx": 41,
-   "zy": 61
+   "page": "https://commons.wikimedia.org/wiki/File:Brioche_Nanterre_(mars_2021).jpg",
+   "zx": 59,
+   "zy": 68
   }
  ]
 }
