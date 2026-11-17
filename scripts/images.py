@@ -19,12 +19,12 @@ USED = DATA / "img_used.json"
 UA = {"User-Agent": "CorgiHirado/1.0 (https://github.com/poovicsgyorgy/corgi-hirado; daily corgi puzzle)"}
 GRIDS = [4, 6, 12]
 SEARCHES = [
-    '"Pembroke Welsh Corgi" filetype:bitmap',
-    '"Cardigan Welsh Corgi" filetype:bitmap',
-    'corgi puppy filetype:bitmap',
-    'corgi dog filetype:bitmap',
-    'Welsh corgi filetype:bitmap',
+    'deepcat:"Welsh Corgi" filetype:bitmap',
+    'deepcat:"Pembroke Welsh Corgi" filetype:bitmap',
+    'deepcat:"Cardigan Welsh Corgi" filetype:bitmap',
+    'deepcat:"Welsh Corgi" puppy filetype:bitmap',
 ]
+CUTE = re.compile(r"pupp|kölyök|cute|smil|happy|tongue|playing|snow|sleep|face|portrait|head|sitting|beach|grass|park", re.I)
 BAD = re.compile(r"statue|szobor|logo|map|drawing|illustration|stamp|coin|toy|diecast|car\b|skeleton|skull|svg", re.I)
 
 
@@ -37,7 +37,7 @@ def _commons_candidates() -> list[dict]:
                 params={
                     "action": "query", "format": "json", "generator": "search",
                     "gsrsearch": q, "gsrnamespace": 6, "gsrlimit": 50,
-                    "gsroffset": random.choice([0, 0, 50, 100, 150]),
+                    "gsroffset": random.choice([0, 50, 100, 150, 200, 250]),
                     "prop": "imageinfo", "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1400,
                 },
                 headers=UA, timeout=30,
@@ -49,7 +49,7 @@ def _commons_candidates() -> list[dict]:
         for p in pages.values():
             ii = (p.get("imageinfo") or [{}])[0]
             title = p.get("title", "")
-            if ii.get("mime") not in ("image/jpeg", "image/png") or BAD.search(title):
+            if ii.get("mime") not in ("image/jpeg", "image/png") or BAD.search(title) or "corgi" not in title.lower():
                 continue
             if min(ii.get("width", 0), ii.get("height", 0)) < 700:
                 continue
@@ -61,7 +61,7 @@ def _commons_candidates() -> list[dict]:
                 "author": clean(meta.get("Artist", {}).get("value", ""))[:80] or "ismeretlen",
                 "license": clean(meta.get("LicenseShortName", {}).get("value", "")) or "lásd a forrást",
             })
-        if len(out) > 30:
+        if len(out) > 40:
             break
     return out
 
@@ -100,6 +100,7 @@ def build_images(day: str) -> list[dict]:
         used = set()
     cands = [c for c in _commons_candidates() if c["id"] not in used]
     random.shuffle(cands)
+    cands.sort(key=lambda c: 0 if CUTE.search(c["id"]) else 1)  # cuki címek előre
     cands += _dogceo_candidates()
     result = []
     for c in cands:
