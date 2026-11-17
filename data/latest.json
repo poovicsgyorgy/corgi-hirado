@@ -1,28 +1,15 @@
 {
  "date": "2026-11-17",
- "generated_at": "2026-11-17T19:52+01:00",
- "count": 1,
- "articles": [
-  {
-   "title": "Funny corgi tries desperately to jump over gate to reach toys",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMHJTdVV1T3E0REYtdVhjZlVTSTRYWHFNS3B3eGpJRHhlQzJMcGNUdFVlNy03NE1DT0RRbzRjOENkcXZoY1BUS1FtYUlkVWROQ1hBZHRpc3BEZXBFRHB6NXQxYlFtSzZ0U0xDOExrWmNuVDdaMl9tSk85blZ3YXF3ZnlWc1o3VDF5QjI2ZVV2QWtqUVNCVTZzdFd2VXNPSmhFN29mUXB1ZW1qeTVmUF9lakphMkppUTV1VkE?oc=5",
-   "source": "Daily Mail",
-   "published": "2026-11-15T21:07:16+00:00",
-   "image": "",
-   "lang": "en",
-   "title_hu": "Vicces corgi kétségbeesetten próbál átugrani a kapun, hogy elérje a játékokat",
-   "summary_hu": "",
-   "category": "Corgi hírek"
-  }
- ],
+ "generated_at": "2026-11-17T19:55+01:00",
+ "count": 0,
+ "articles": [],
  "quiz": [
   {
-   "date": "2012-01",
+   "date": "2023-04",
    "region": "Világ",
-   "title_hu": "Egy Toast nevű corgi minden reggel elkíséri a postást a körútján Portlandben",
-   "summary_hu": "A kutya a gazdája szerint pontosan tudja, melyik házba érkezik levél. A postás bevallotta: ha a corgi nem jön, hiányzik neki.",
-   "explanation": "Kedves, de kitalált történet.",
+   "title_hu": "Corgi-szobrot avattak Melbourne-ben egy helyi kutyabarát egyesület kezdeményezésére",
+   "summary_hu": "A bronzszobor egy padon ülő corgit ábrázol. Az alkotás az orra simogatásától fényesedik.",
+   "explanation": "Ez a szobor nem létezik – kamu.",
    "source": "",
    "link": "",
    "title_orig": "",
@@ -30,24 +17,24 @@
    "id": 0
   },
   {
-   "date": "2026-04",
+   "date": "2021-06",
    "region": "Világ",
-   "title_hu": "Új corgi nyerte az II. Erzsébet királynő tiszteletére rendezett derbit",
+   "title_hu": "Új corgikölyköt kapott a királynő: Sandy András hercegtől és lányaitól érkezett",
    "title_orig": "",
-   "summary_hu": "",
-   "source": "ORIGO",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeTQwc3pNY29hS1dDZ0dqVDlnd09vU1BONFg0bzYtcGo2bF9PbEQ3dUUyZXFxdXFqd2p1R3o2dktzOEg1c0k5Q1VZRTNfWjR6WXNmYXVROG5wVnB2a0Vmcm5ic3ZIaEJmc0o0Ukw2ZWZxSUdJZFhjNU1zdmpFVDVHbWxpc1pJeDlleFdBTEptMXIwZw?oc=5",
+   "summary_hu": "Az ajándék Fergus nevű corgija elvesztése után vigasztalta az uralkodót.",
+   "source": "Metro",
+   "link": "https://metro.co.uk/2021/06/13/queen-given-corgi-puppy-by-andrew-on-prince-philips-100th-birthday-14764093/",
    "fake": false,
    "id": 1
   },
   {
-   "date": "2025-10",
-   "region": "Magyarország",
-   "title_hu": "Ahol a tündérek kutyái találkoznak: megrendezik Budapest első Corgi Találkozóját!",
+   "date": "2025-05",
+   "region": "Világ",
+   "title_hu": "Corgifesztivált rendeznek Tallinnban, a fajta első kiállítási szereplésének 100. évfordulóján",
    "title_orig": "",
-   "summary_hu": "",
-   "source": "We love Dogz",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE42YV9oQ2c0SjdHSHFseEM1eWxHbUVFYzFrSTZxSWMzOFFuQ3BUQklYYkQtUF92dXhpYktZY1hwZGJ0d3FKRlZ6ZU9OQi1QRmJSM1JUNGhrS2daS21jcFZzT3Fn?oc=5",
+   "summary_hu": "A szervezők a program csúcspontjaként a legcukibb corgi-popsi megválasztását ígérték.",
+   "source": "The Baltic Guide",
+   "link": "https://balticguide.ee/en/corgi-fest-is-for-people-who-likecorgis",
    "fake": false,
    "id": 2
   }
@@ -56,23 +43,23 @@
   {
    "file": "data/img/2026-11-17-1.jpg",
    "grid": 4,
-   "author": "Wikimaster97commons",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Cardigan_Welsh_Corgi_Face.JPG"
+   "author": "Huoadg5888 Minor edits made by Subsidiary account",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fawn_and_white_Welsh_Corgi_puppy_standing_on_rear_legs_and_sticking_out_the_tongue_(cropped).jpg"
   },
   {
    "file": "data/img/2026-11-17-2.jpg",
    "grid": 6,
-   "author": "Suttogo",
+   "author": "Slyronit",
    "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Pembroke_Welsh_Corgi01.jpg"
+   "page": "https://commons.wikimedia.org/wiki/File:Beagle_and_smiling_Corgi.jpg"
   },
   {
    "file": "data/img/2026-11-17-3.jpg",
    "grid": 12,
-   "author": "FatFairfax",
+   "author": "Pleple2000",
    "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Welsh_Corgi_Cardigan_Climbing.jpg"
+   "page": "https://commons.wikimedia.org/wiki/File:Welsh_corgi_pembroke_00pl.jpg"
   }
  ],
  "horoscope": [
@@ -261,56 +248,56 @@
   {
    "file": "data/img/2026-11-17-corgi1.jpg",
    "corgi": true,
-   "author": "Thomon",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Chien_corgi_pembroke.jpg",
-   "zx": 57,
-   "zy": 52
+   "author": "New Zealand Government, Office of the Governor-General",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Platinum_Jubilee-_A_Corgi_display.jpg",
+   "zx": 51,
+   "zy": 63
   },
   {
    "file": "data/img/2026-11-17-corgi3.jpg",
    "corgi": true,
-   "author": "Pmuths1956",
+   "author": "Lucas Löffler",
    "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Welchcorgipembroke.JPG",
-   "zx": 41,
-   "zy": 63
+   "page": "https://commons.wikimedia.org/wiki/File:Corgi02.jpg",
+   "zx": 56,
+   "zy": 69
   },
   {
    "file": "data/img/2026-11-17-corgi2.jpg",
    "corgi": true,
-   "author": "Guilhem Vellut from Annecy, France",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Corgi_gallois_@_Montagne_d%27%C3%82ge_(51333720778).jpg",
-   "zx": 55,
-   "zy": 59
-  },
-  {
-   "file": "data/img/2026-11-17-kenyer3.jpg",
-   "corgi": false,
-   "author": "Missvain",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Sourdough_bread_-_January_2026_-_Sarah_Stierch_02.jpg",
-   "zx": 46,
-   "zy": 66
+   "author": "Genesis Buckley",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:12_June_2014_-_Corgis_(14380384516).jpg",
+   "zx": 49,
+   "zy": 55
   },
   {
    "file": "data/img/2026-11-17-kenyer2.jpg",
    "corgi": false,
-   "author": "Przemysław Wierzbowski",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Round_challah.jpg",
-   "zx": 49,
-   "zy": 70
+   "author": "ismeretlen",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bread_loaf_-_Museo_Egizio_(Turin)_S_8298_p01.jpg",
+   "zx": 42,
+   "zy": 42
   },
   {
    "file": "data/img/2026-11-17-kenyer1.jpg",
    "corgi": false,
-   "author": "Carly & Art",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Challah_cover_chain_stitch_and_french_knots_autumn_panel.jpg",
-   "zx": 38,
-   "zy": 69
+   "author": "ismeretlen",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bread_loaf_-_Museo_Egizio_(Turin)_S_8297_p01.jpg",
+   "zx": 35,
+   "zy": 50
+  },
+  {
+   "file": "data/img/2026-11-17-kenyer3.jpg",
+   "corgi": false,
+   "author": "ismeretlen",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bread_loaf_-_Museo_Egizio_(Turin)_S_8289_p01.jpg",
+   "zx": 41,
+   "zy": 61
   }
  ]
 }
