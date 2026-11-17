@@ -301,7 +301,7 @@ def categorize(item: dict) -> str:
     return "Corgi hírek"
 
 
-def write_edition(items: list[dict], now_local: datetime, quiz: list, images: list) -> None:
+def write_edition(items: list[dict], now_local: datetime, quiz: list, images: list, horoscope: list) -> None:
     DATA.mkdir(exist_ok=True)
     day = now_local.strftime("%Y-%m-%d")
     edition = {
@@ -311,6 +311,7 @@ def write_edition(items: list[dict], now_local: datetime, quiz: list, images: li
         "articles": items,
         "quiz": quiz,
         "images": images,
+        "horoscope": horoscope,
     }
     payload = json.dumps(edition, ensure_ascii=False, indent=1)
     (DATA / f"{day}.json").write_text(payload, encoding="utf-8")
@@ -360,7 +361,8 @@ def main() -> int:
     except Exception as e:
         print(f"  ! kép hiba: {e}", file=sys.stderr)
         images = []
-    write_edition(items, now_local, quiz, images)
+    from horoscope import build_horoscope
+    write_edition(items, now_local, quiz, images, build_horoscope(now_local.strftime("%Y-%m-%d")))
     print("Kész.")
     return 0
 

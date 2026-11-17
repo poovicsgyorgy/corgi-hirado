@@ -112,6 +112,39 @@
   footer .credits { margin-top: 6px; }
   .install { display: none; }
 
+  /* Corgi-időjárás */
+  .wx { display: grid; grid-template-columns: 150px 1fr; gap: 14px; align-items: start; background: var(--card);
+        border: 1px solid color-mix(in srgb, var(--rule) 30%, transparent); padding: 14px; }
+  @media (max-width: 420px) { .wx { grid-template-columns: 112px 1fr; gap: 10px; } }
+  .wx svg { width: 100%; height: auto; display: block; }
+  .wx .now { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .wx .big { font-family: var(--display); font-size: 34px; line-height: 1; }
+  .wx .cond { font-family: var(--sans); font-size: 14px; }
+  .wx .walks { font-family: var(--sans); font-size: 12px; color: var(--muted); margin: 4px 0 8px; }
+  .wx ul { margin: 6px 0 0; padding-left: 18px; }
+  .wx li { margin: 0 0 6px; }
+  .wx .headline { font-weight: 700; font-size: 18px; line-height: 1.3; margin: 2px 0 6px; }
+  .wxloc { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-top: 8px; font-family: var(--sans); font-size: 12px; color: var(--muted); }
+  .wxloc input { font: 14px var(--sans); padding: 5px 8px; border: 1px solid var(--muted); border-radius: 6px; background: transparent; color: var(--ink); width: 130px; }
+  .wxloc button { font: 13px var(--sans); border: 1px solid var(--muted); background: transparent; border-radius: 999px; padding: 4px 10px; }
+  .wear { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 4px; }
+  .wear span { font: 600 12px var(--sans); background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--ink);
+               border-radius: 999px; padding: 3px 10px; }
+
+  /* Horoszkóp */
+  .signs { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin-bottom: 12px; }
+  @media (max-width: 520px) { .signs { grid-template-columns: repeat(4, 1fr); } }
+  .signs button { border: 1px solid color-mix(in srgb, var(--rule) 30%, transparent); background: var(--card); padding: 6px 2px;
+                  font: 12px var(--sans); line-height: 1.2; }
+  .signs button b { display: block; font-size: 20px; font-weight: 400; }
+  .signs button.on { background: var(--ink); color: var(--paper); }
+  .horo { background: var(--card); border: 1px solid color-mix(in srgb, var(--rule) 30%, transparent); padding: 16px; }
+  .horo h3 { font-family: var(--display); font-size: 28px; margin: 0; line-height: 1.1; }
+  .horo .txt { font-size: 18px; margin: 10px 0; }
+  .horo .rt { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; font-family: var(--sans); font-size: 13px; margin: 8px 0; }
+  .horo .lucky { font-family: var(--sans); font-size: 13px; margin: 6px 0 0; }
+  .horo .tip { margin-top: 10px; font-style: italic; border-top: 1px dashed color-mix(in srgb, var(--rule) 35%, transparent); padding-top: 8px; }
+
   /* Kirakós nézet */
   #pz { position: fixed; inset: 0; z-index: 50; background: var(--paper); display: none; flex-direction: column; align-items: center;
         padding: calc(env(safe-area-inset-top) + 8px) 8px calc(env(safe-area-inset-bottom) + 8px); }
@@ -155,6 +188,24 @@
     <div class="motto">„Rövid lábak, nagy hírek” — corgis hírek, játék és kirakós minden reggel</div>
   </header>
   <div class="dateline"><span id="dayname"></span><span id="issue"></span><span id="count"></span></div>
+
+  <section>
+    <div class="section-head"><h2>Mit vegyen fel ma a corgi?</h2></div>
+    <div id="wx" class="wx"><div class="empty" style="grid-column:1/-1">Az időjárás betöltése…</div></div>
+    <div class="wxloc">
+      <span id="wxplace">Helyszín: Budapest</span>
+      <input id="wxcity" placeholder="Másik város…" aria-label="Város">
+      <button id="wxsearch">Mehet</button>
+      <button id="wxgeo">📍 Saját helyem</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Corgi-horoszkóp</h2></div>
+    <p class="section-intro">Mit üzennek ma a csillagok a négylábú, rövid lábú kedvenceknek? Válaszd ki a corgid jegyét!</p>
+    <div id="signs" class="signs"></div>
+    <div id="horo" class="horo"></div>
+  </section>
 
   <section>
     <div class="section-head"><h2>Igaz vagy kamu?</h2></div>
@@ -450,6 +501,175 @@ function renderNews(ed) {
   $("#paper").innerHTML = h + "</section>";
 }
 
+/* ---------- Corgi-horoszkóp ---------- */
+function currentSign() {
+  const d = new Date(), md = (d.getMonth() + 1) * 100 + d.getDate();
+  const ends = [[120, "Bak"], [219, "Vízöntő"], [320, "Halak"], [420, "Kos"], [521, "Bika"], [621, "Ikrek"], [723, "Rák"],
+                [823, "Oroszlán"], [923, "Szűz"], [1023, "Mérleg"], [1122, "Skorpió"], [1222, "Nyilas"], [1232, "Bak"]];
+  return ends.find(([e]) => md < e)[1];
+}
+function renderHoroscope(ed) {
+  const h = ed.horoscope || [];
+  if (!h.length) { $("#signs").innerHTML = ""; $("#horo").innerHTML = `<div class="empty">Ehhez a számhoz még nem készült horoszkóp.</div>`; return; }
+  let sel = store.get("sign", null) || currentSign();
+  if (!h.find(x => x.sign === sel)) sel = h[0].sign;
+  $("#signs").innerHTML = h.map(x => `<button data-s="${esc(x.sign)}" class="${x.sign === sel ? "on" : ""}"><b>${x.symbol}</b>${esc(x.sign)}</button>`).join("");
+  document.querySelectorAll("#signs button").forEach(b => b.addEventListener("click", () => { store.set("sign", b.dataset.s); renderHoroscope(ed); }));
+  const x = h.find(y => y.sign === sel);
+  const paws = (n) => "🐾".repeat(n) + `<span style="opacity:.25">${"🐾".repeat(5 - n)}</span>`;
+  $("#horo").innerHTML = `
+    <div class="kicker">${esc(x.dates)}</div>
+    <h3>${x.symbol} ${esc(x.sign)}</h3>
+    <p class="txt">${esc(x.text)}</p>
+    <div class="rt">${Object.entries(x.ratings).map(([k, v]) => `<span>${esc(k)}</span><span>${paws(v)}</span>`).join("")}</div>
+    <div class="lucky">🍽️ Szerencsefalat: <b>${esc(x.treat)}</b></div>
+    <div class="lucky">🎾 A nap programja: <b>${esc(x.activity)}</b></div>
+    <div class="tip">Tipp a gazdinak: ${esc(x.tip)}</div>`;
+}
+
+/* ---------- Corgi-időjárás ---------- */
+const WMO = {0:["☀️","derült"],1:["🌤️","többnyire derült"],2:["⛅","részben felhős"],3:["☁️","borult"],45:["🌫️","köd"],48:["🌫️","zúzmarás köd"],
+  51:["🌦️","gyenge szitálás"],53:["🌦️","szitálás"],55:["🌧️","erős szitálás"],56:["🌧️","ónos szitálás"],57:["🌧️","ónos szitálás"],
+  61:["🌧️","gyenge eső"],63:["🌧️","eső"],65:["🌧️","erős eső"],66:["🌧️","ónos eső"],67:["🌧️","ónos eső"],
+  71:["🌨️","gyenge havazás"],73:["🌨️","havazás"],75:["❄️","erős havazás"],77:["🌨️","hószemcse"],
+  80:["🌦️","zápor"],81:["🌧️","zápor"],82:["⛈️","heves zápor"],85:["🌨️","hózápor"],86:["❄️","erős hózápor"],
+  95:["⛈️","zivatar"],96:["⛈️","zivatar jégesővel"],99:["⛈️","zivatar jégesővel"]};
+const pickBy = (arr, seed) => arr[Math.abs(seed) % arr.length];
+const daySeed = () => { const d = new Date(); return d.getFullYear() * 400 + d.getMonth() * 31 + d.getDate(); };
+
+function outfitFor(w) {
+  const s = daySeed();
+  const t = Math.round(Math.min(w.t8, w.t18)), tmax = Math.round(w.tmax);
+  const code = w.code;
+  const snow = w.snow > 0 || [71, 73, 75, 77, 85, 86].includes(code);
+  const rain = !snow && (w.pprob >= 50 || (code >= 51 && code <= 67) || (code >= 80 && code <= 82) || code >= 95);
+  const storm = code >= 95;
+  const items = new Set(), wear = [], tips = [];
+  let head;
+  if (t <= -5) {
+    items.add("coat").add("hat").add("scarf").add("boots"); wear.push("bélelt kabátka", "sapka", "sál", "mancsvédő csizma");
+    head = pickBy(["Jegesmedve-riasztás! Ma a teljes téli szett jár a corginak.",
+                   "Mínuszok! A dupla bunda sokat kibír, de ma a kabátka nem luxus, hanem divat."], s);
+  } else if (t <= 3) {
+    items.add("coat").add("scarf"); wear.push("meleg kabátka", "sál");
+    head = pickBy(["Csípős idő! Kabátka és sál – a corgid úgy fog kinézni, mint egy kis síparadicsomi vendég.",
+                   "Hideg van: kabátkát fel, és a séta végén jöhet a takaróvár."], s);
+  } else if (t <= 9) {
+    items.add("sweater"); wear.push("kötött pulóver");
+    head = pickBy(["Pulóveridő! Egy kötött pulcsiban a corgi olyan, mintha egy skandináv katalógusból lépett volna elő.",
+                   "Hűvöskés idő: egy pulóver épp elég, hogy a corgi divatos és meleg is legyen."], s);
+  } else if (t <= 15) {
+    items.add("bandana"); wear.push("csinos kendő (csak a stílus kedvéért)");
+    head = pickBy(["Bundaidő! A corgi saját dupla bundája bőven elég, legfeljebb egy kendő kell a fotókhoz.",
+                   "Kellemes idő: ruha nem kell, a bunda tökéletesen szuperál."], s);
+  } else if (tmax < 25) {
+    items.add("bowtie"); wear.push("csokornyakkendő");
+    head = pickBy(["Tökéletes corgiidő! Csak egy csokornyakkendő kell, hogy elegáns legyen a mókusüldözés.",
+                   "Ma a legjobb ruha a saját bundája – meg egy csokornyakkendő az eleganciáért."], s);
+  } else if (tmax < 30) {
+    items.add("cool"); wear.push("hűsítő kendő");
+    head = pickBy(["Meleg van! Hűsítő kendő a nyakba, a sétákat reggelre és estére tervezd.",
+                   "Nyárias idő: a corgi ma vizes kendőben és árnyékban érzi magát a legjobban."], s);
+    tips.push("Napközben árnyék és teli vizestál – a dupla bunda melegen tart, nem csak télen.");
+  } else {
+    items.add("vest").add("sunglasses"); wear.push("hűsítő mellény", "napszemüveg (a fotó kedvéért)");
+    head = pickBy(["Kánikula! A corgi ma hűsítő mellényt kap, a legfontosabb programja pedig a hideg csempén fekvés.",
+                   "Forróság! A corgi ma csak reggel és este sétál, közben a ventilátor előtt tart szépségszalont."], s);
+    tips.push("Teszteld az aszfaltot a tenyereddel: ha 5 másodpercig nem bírod, a mancs sem.");
+  }
+  if (rain) {
+    items.delete("sweater"); items.delete("vest"); items.add("raincoat").add("rainhat");
+    if (!wear.includes("meleg kabátka") && !wear.includes("bélelt kabátka")) wear.unshift("sárga esőkabát", "esőkalap");
+    else wear.push("esőálló kabátka-huzat");
+    tips.push(`Eső várható (${w.pprob}%). A corgi pocakja csak pár centire van a földtől, úgyhogy az ajtóban várjon egy törölköző!`);
+  }
+  if (snow) {
+    items.add("boots"); if (!wear.includes("mancsvédő csizma")) wear.push("mancsvédő csizma");
+    tips.push("Havazás! A corgi pocakja ma hógolyógyűjtő üzemmódban működik. Séta után langyos vizes mancsmosás.");
+  } else if (t <= 0) {
+    items.add("boots"); if (!wear.includes("mancsvédő csizma")) wear.push("mancsvédő csizma");
+    tips.push("Fagyos, sózott járdák: csizma vagy mancsbalzsam, és séta után mancsmosás.");
+  }
+  if (storm) tips.push("Zivatar is lehet: a mennydörgés idejére építs neki takaróvárat, és legyen kéznél egy rágóka.");
+  if (w.wind >= 35) tips.push(`Erős szél (${Math.round(w.wind)} km/h): fogd erősen a pórázt, nehogy a nagy fülei vitorlaként működjenek!`);
+  if (!rain && !snow && [0, 1].includes(code) && w.uv >= 5 && tmax >= 18) {
+    items.add("sunglasses"); if (!wear.some(x => x.startsWith("napszemüveg"))) wear.push("napszemüveg (csak a menőség miatt)");
+  }
+  if (!tips.length) tips.push(pickBy(["Ideális sétaidő: ma bátran mehet egy extra kör a parkban.",
+    "Semmi extrém – a corgi ma a szimatolásra koncentrálhat.", "Jó idő a labdázásra: a rövid lábak ma szárnyalnak!"], s + 1));
+  return { items, wear, head, tips };
+}
+
+function corgiSVG(it) {
+  const O = "#d9772b", W = "#fffaf0", D = "#2a1d14", P = "#eba39b";
+  const body = (fill, extra = "") => `<ellipse cx="100" cy="172" rx="60" ry="50" fill="${fill}"/>${extra}`;
+  let g = `<polygon points="52,74 38,10 94,50" fill="${O}"/><polygon points="148,74 162,10 106,50" fill="${O}"/>
+    <polygon points="58,66 48,26 84,52" fill="${P}"/><polygon points="142,66 152,26 116,52" fill="${P}"/>
+    <ellipse cx="100" cy="172" rx="58" ry="50" fill="${O}"/><ellipse cx="100" cy="166" rx="30" ry="40" fill="${W}"/>`;
+  if (it.has("coat")) g += body("#b8322a", `<rect x="42" y="205" width="116" height="10" rx="5" fill="${W}"/><circle cx="100" cy="160" r="4" fill="#f3d27a"/><circle cx="100" cy="178" r="4" fill="#f3d27a"/><circle cx="100" cy="196" r="4" fill="#f3d27a"/>`);
+  else if (it.has("raincoat")) g += body("#f2c12e", `<path d="M100 125 V218" stroke="#c99a12" stroke-width="3"/><circle cx="90" cy="160" r="3.5" fill="#c99a12"/><circle cx="90" cy="185" r="3.5" fill="#c99a12"/>`);
+  else if (it.has("sweater")) g += body("#3f6fb0", `<path d="M44 160 H156 M42 178 H158 M46 196 H154" stroke="#fff" stroke-width="5" stroke-dasharray="8 6"/>`);
+  else if (it.has("vest")) g += body("#8fd3e8", `<path d="M48 165 q13 -8 26 0 t26 0 t26 0 t26 0 M48 188 q13 -8 26 0 t26 0 t26 0 t26 0" stroke="#fff" stroke-width="4" fill="none"/>`);
+  g += `<ellipse cx="80" cy="218" rx="15" ry="9" fill="${W}"/><ellipse cx="120" cy="218" rx="15" ry="9" fill="${W}"/>`;
+  if (it.has("boots")) g += `<rect x="64" y="208" width="32" height="18" rx="8" fill="#3d6b4f"/><rect x="104" y="208" width="32" height="18" rx="8" fill="#3d6b4f"/>`;
+  // fej
+  g += `<ellipse cx="100" cy="88" rx="62" ry="54" fill="${O}"/><path d="M100 42 L86 96 L114 96 Z" fill="${W}"/>
+    <ellipse cx="100" cy="114" rx="38" ry="29" fill="${W}"/>
+    <ellipse cx="72" cy="104" rx="10" ry="6" fill="#f08a6a" opacity=".45"/><ellipse cx="128" cy="104" rx="10" ry="6" fill="#f08a6a" opacity=".45"/>
+    <ellipse cx="100" cy="104" rx="9" ry="7" fill="${D}"/>
+    <path d="M100 111 q-5 10 -14 6 M100 111 q5 10 14 6" stroke="${D}" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+  g += it.has("sunglasses")
+    ? `<rect x="64" y="78" width="28" height="18" rx="8" fill="${D}"/><rect x="108" y="78" width="28" height="18" rx="8" fill="${D}"/><path d="M92 85 H108" stroke="${D}" stroke-width="4"/><path d="M70 82 l8 0" stroke="#fff" stroke-width="2" opacity=".7"/>`
+    : `<circle cx="78" cy="88" r="7" fill="${D}"/><circle cx="122" cy="88" r="7" fill="${D}"/><circle cx="80" cy="85" r="2.4" fill="#fff"/><circle cx="124" cy="85" r="2.4" fill="#fff"/>`;
+  if (it.has("scarf")) g += `<path d="M48 134 Q100 152 152 134 L150 146 Q100 166 50 146 Z" fill="#c0392b"/><path d="M58 142 Q100 158 142 142" stroke="#f3d27a" stroke-width="3" fill="none" stroke-dasharray="7 6"/><path d="M128 146 L140 182 L124 180 Z" fill="#c0392b"/>`;
+  if (it.has("bandana")) g += `<path d="M58 136 Q100 150 142 136 L100 172 Z" fill="#c0392b"/><circle cx="92" cy="150" r="2.5" fill="#fff"/><circle cx="106" cy="149" r="2.5" fill="#fff"/><circle cx="100" cy="160" r="2.5" fill="#fff"/>`;
+  if (it.has("cool")) g += `<path d="M58 136 Q100 150 142 136 L100 172 Z" fill="#5bb7d6"/><path d="M78 147 q6 -4 12 0 t12 0 t12 0" stroke="#fff" stroke-width="2.5" fill="none"/>`;
+  if (it.has("bowtie")) g += `<path d="M100 146 L80 136 L80 158 Z M100 146 L120 136 L120 158 Z" fill="#7b3fa0"/><circle cx="100" cy="146" r="5" fill="#5d2c7a"/>`;
+  if (it.has("hat")) g += `<path d="M56 56 Q100 -6 144 56 Z" fill="#8e2a1a"/><rect x="52" y="50" width="96" height="14" rx="7" fill="#f3d27a"/><circle cx="100" cy="16" r="11" fill="#fff"/>`;
+  if (it.has("rainhat")) g += `<ellipse cx="100" cy="48" rx="66" ry="12" fill="#f2c12e"/><path d="M62 48 Q100 6 138 48 Z" fill="#f2c12e"/><path d="M62 48 Q100 40 138 48" stroke="#c99a12" stroke-width="2" fill="none"/>`;
+  return `<svg viewBox="0 0 200 232" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Felöltöztetett corgi">${g}</svg>`;
+}
+
+async function loadWeather() {
+  const loc = store.get("wxloc", { name: "Budapest", lat: 47.4979, lon: 19.0402 });
+  $("#wxplace").textContent = "Helyszín: " + loc.name;
+  try {
+    const u = `https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lon}` +
+      `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,snowfall_sum,wind_speed_10m_max,uv_index_max` +
+      `&hourly=apparent_temperature&timezone=auto&forecast_days=1`;
+    const r = await fetch(u); if (!r.ok) throw new Error(r.status);
+    const j = await r.json(), d = j.daily, hr = j.hourly.apparent_temperature;
+    const w = { code: d.weather_code[0], tmax: d.temperature_2m_max[0], tmin: d.temperature_2m_min[0],
+                pprob: d.precipitation_probability_max[0] ?? 0, snow: d.snowfall_sum[0] ?? 0,
+                wind: d.wind_speed_10m_max[0] ?? 0, uv: d.uv_index_max[0] ?? 0, t8: hr[8], t18: hr[18] };
+    const o = outfitFor(w), [ico, txt] = WMO[w.code] || ["🌡️", ""];
+    $("#wx").innerHTML = `<div>${corgiSVG(o.items)}</div><div>
+      <div class="now"><span class="big">${ico} ${Math.round(w.tmin)}…${Math.round(w.tmax)} °C</span><span class="cond">${esc(txt)} · csapadék ${w.pprob}%</span></div>
+      <div class="walks">Hőérzet a reggeli sétán (8:00): ${Math.round(w.t8)} °C · az esti sétán (18:00): ${Math.round(w.t18)} °C</div>
+      <div class="headline">${esc(o.head)}</div>
+      <div class="wear">${o.wear.map(x => `<span>${esc(x)}</span>`).join("")}</div>
+      <ul>${o.tips.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`;
+  } catch (e) {
+    $("#wx").innerHTML = `<div class="empty" style="grid-column:1/-1">Az időjárás most nem érhető el – a corgi addig a saját bundáját viseli. 🐕</div>`;
+  }
+}
+$("#wxsearch").addEventListener("click", async () => {
+  const q = $("#wxcity").value.trim(); if (!q) return;
+  try {
+    const r = await fetch(`https://geocoding-api.open-meteo.com/v1/search?count=1&language=hu&name=${encodeURIComponent(q)}`);
+    const j = await r.json(), p = j.results && j.results[0];
+    if (!p) { $("#wxplace").textContent = "Nem találtam ilyen várost."; return; }
+    store.set("wxloc", { name: p.name, lat: p.latitude, lon: p.longitude }); $("#wxcity").value = ""; loadWeather();
+  } catch (e) { $("#wxplace").textContent = "A keresés most nem sikerült."; }
+});
+$("#wxcity").addEventListener("keydown", e => { if (e.key === "Enter") $("#wxsearch").click(); });
+$("#wxgeo").addEventListener("click", () => {
+  if (!navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(
+    p => { store.set("wxloc", { name: "a saját helyed", lat: +p.coords.latitude.toFixed(3), lon: +p.coords.longitude.toFixed(3) }); loadWeather(); },
+    () => { $("#wxplace").textContent = "A helymeghatározás nem engedélyezett – maradunk Budapesten."; });
+});
+
 /* ---------- Betöltés ---------- */
 function render(ed) {
   ED = ed;
@@ -458,7 +678,7 @@ function render(ed) {
   $("#issue").textContent = `I. évfolyam, ${n}. szám`;
   $("#count").textContent = `${(ed.quiz || []).length} rejtvényhír · ${(ed.images || []).length} kép · ${(ed.articles || []).length} friss hír`;
   $("#updated").textContent = "Frissítve: " + fmtTime(ed.generated_at);
-  renderQuiz(ed); renderPuzzles(ed); renderNews(ed);
+  renderHoroscope(ed); renderQuiz(ed); renderPuzzles(ed); renderNews(ed);
 }
 
 async function load(date, fresh) {
@@ -474,13 +694,13 @@ async function loadIndex(fresh) {
 $("#edition").addEventListener("change", e => load(e.target.value, false));
 $("#refresh").addEventListener("click", () => { loadIndex(true); load($("#edition").value, true); });
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible" && !$("#edition").value && !P) { loadIndex(true); load("", true); }
+  if (document.visibilityState === "visible" && !$("#edition").value && !P) { loadIndex(true); load("", true); loadWeather(); }
 });
 let deferred;
 window.addEventListener("beforeinstallprompt", e => { e.preventDefault(); deferred = e; $("#install").style.display = "inline-block"; });
 $("#install").addEventListener("click", async () => { if (deferred) { deferred.prompt(); deferred = null; $("#install").style.display = "none"; } });
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
-loadIndex(true); load("", true);
+loadIndex(true); load("", true); loadWeather();
 </script>
 </body>
 </html>
