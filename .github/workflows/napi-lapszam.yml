@@ -80,7 +80,7 @@ jobs:
         if: steps.check.outputs.fetch == 'true' || github.event_name == 'push'
         run: |
           mkdir -p _site
-          cp -r index.html manifest.webmanifest sw.js icons data _site/
+          cp -r index.html fun.js fun.css manifest.webmanifest sw.js icons data _site/
           touch _site/.nojekyll
 
       - uses: actions/configure-pages@v5

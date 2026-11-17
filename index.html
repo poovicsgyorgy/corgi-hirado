@@ -9,6 +9,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="fun.css">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Corgi Híradó">
@@ -188,9 +189,12 @@
     <div class="motto">„Rövid lábak, nagy hírek” — corgis hírek, játék és kirakós minden reggel</div>
   </header>
   <div class="dateline"><span id="dayname"></span><span id="issue"></span><span id="count"></span></div>
+  <div id="greet" class="greet"></div>
 
+  <!-- ===== MA ===== -->
+  <div class="tab" data-tab="ma">
   <section>
-    <div class="section-head"><h2>Mit vegyen fel ma a corgi?</h2></div>
+    <div class="section-head"><h2 id="wxtitle">Mit vegyen fel ma a corgi?</h2></div>
     <div id="wx" class="wx"><div class="empty" style="grid-column:1/-1">Az időjárás betöltése…</div></div>
     <div class="wxloc">
       <span id="wxplace">Helyszín: Budapest</span>
@@ -208,11 +212,30 @@
   </section>
 
   <section>
+    <div class="section-head"><h2>Napi rovatok</h2></div>
+    <div id="daily" class="daily"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Friss hírek</h2></div>
+    <div id="paper"></div>
+  </section>
+  </div>
+
+  <!-- ===== JÁTÉK ===== -->
+  <div class="tab" data-tab="jatek" hidden>
+  <section>
     <div class="section-head"><h2>Igaz vagy kamu?</h2></div>
     <p class="section-intro">Három corgis hír 1990-től napjainkig – kettő megtörtént, egy kitaláció. Melyik a kamu?</p>
     <div id="quiz" class="quiz"><div class="empty">Betöltés…</div></div>
     <div id="verdict" class="verdict"></div>
     <div id="stats" class="stats"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Corgi vagy kenyér?</h2></div>
+    <p class="section-intro">Közelről nézve nem is olyan egyszerű! Bolyhos corgipopsi vagy ropogós cipó?</p>
+    <div id="bread"></div>
   </section>
 
   <section>
@@ -222,15 +245,64 @@
   </section>
 
   <section>
-    <div class="section-head"><h2>Friss hírek</h2></div>
-    <div id="paper"></div>
+    <div class="section-head"><h2>Hol a corgi?</h2></div>
+    <p class="section-intro">Valahol az őszi parkban elbújt egy corgi. Koppints rá, ha megtaláltad!</p>
+    <div id="hide"></div>
   </section>
+
+  <section>
+    <div class="section-head"><h2>Corgis szókereső</h2></div>
+    <p class="section-intro">Koppints egy szó első, majd utolsó betűjére. Vízszintesen, függőlegesen és átlósan is lehetnek.</p>
+    <div id="ws"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Corgi-memória</h2></div>
+    <p class="section-intro">Keresd meg a párokat a nap corgijai között!</p>
+    <div id="memo"></div>
+  </section>
+  </div>
+
+  <!-- ===== CORGIM ===== -->
+  <div class="tab" data-tab="corgim" hidden>
+  <section>
+    <div class="section-head"><h2>Az én corgim</h2></div>
+    <div id="profile"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2 id="tamatitle">Corgi-tamagocsi</h2></div>
+    <div id="tama"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Koppints a popsira!</h2></div>
+    <div id="popsi"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Corgi-névgenerátor</h2></div>
+    <div id="namegen"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2 id="diarytitle">Corgi-napló</h2></div>
+    <div id="diary"></div>
+  </section>
+  </div>
 
   <footer>
     Minden reggel 6:00-ra új szám készül. A fordítás gépi; a teljes cikkek az eredeti forrásoknál olvashatók.
     <div class="credits" id="credits"></div>
   </footer>
 </div>
+
+<nav class="tabbar" id="tabbar">
+  <button data-go="ma" class="on"><b>📰</b>Ma</button>
+  <button data-go="jatek"><b>🎲</b>Játék</button>
+  <button data-go="corgim"><b>🐕</b>Corgim</button>
+</nav>
+<div id="confetti" class="confetti"></div>
 
 <div id="pz" role="dialog" aria-modal="true">
   <div class="pzbar">
@@ -511,7 +583,7 @@ function currentSign() {
 function renderHoroscope(ed) {
   const h = ed.horoscope || [];
   if (!h.length) { $("#signs").innerHTML = ""; $("#horo").innerHTML = `<div class="empty">Ehhez a számhoz még nem készült horoszkóp.</div>`; return; }
-  let sel = store.get("sign", null) || currentSign();
+  let sel = store.get("sign", null) || (window.FUN && FUN.profileSign()) || currentSign();
   if (!h.find(x => x.sign === sel)) sel = h[0].sign;
   $("#signs").innerHTML = h.map(x => `<button data-s="${esc(x.sign)}" class="${x.sign === sel ? "on" : ""}"><b>${x.symbol}</b>${esc(x.sign)}</button>`).join("");
   document.querySelectorAll("#signs button").forEach(b => b.addEventListener("click", () => { store.set("sign", b.dataset.s); renderHoroscope(ed); }));
@@ -679,6 +751,7 @@ function render(ed) {
   $("#count").textContent = `${(ed.quiz || []).length} rejtvényhír · ${(ed.images || []).length} kép · ${(ed.articles || []).length} friss hír`;
   $("#updated").textContent = "Frissítve: " + fmtTime(ed.generated_at);
   renderHoroscope(ed); renderQuiz(ed); renderPuzzles(ed); renderNews(ed);
+  if (window.FUN) FUN.onEdition(ed);
 }
 
 async function load(date, fresh) {
@@ -702,5 +775,6 @@ $("#install").addEventListener("click", async () => { if (deferred) { deferred.p
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
 loadIndex(true); load("", true); loadWeather();
 </script>
+<script src="fun.js"></script>
 </body>
 </html>

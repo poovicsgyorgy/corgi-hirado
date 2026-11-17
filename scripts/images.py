@@ -25,12 +25,22 @@ SEARCHES = [
     'deepcat:"Welsh Corgi" puppy filetype:bitmap',
 ]
 CUTE = re.compile(r"pupp|kölyök|cute|smil|happy|tongue|playing|snow|sleep|face|portrait|head|sitting|beach|grass", re.I)
-BAD = re.compile(r"^File:HK |walking with carts|stroller|R12S|statue|szobor|logo|map|drawing|illustration|stamp|coin|toy|diecast|car\b|skeleton|skull|svg", re.I)
+BAD = re.compile(r"tribune|times|newspaper|article|clipping|gazette|herald|journal|magazine|scan|^File:HK |walking with carts|stroller|R12S|statue|szobor|logo|map|drawing|illustration|stamp|coin|toy|diecast|car\b|skeleton|skull|svg", re.I)
 
 
-def _commons_candidates() -> list[dict]:
+BREAD_SEARCHES = [
+    "bread loaf filetype:bitmap", "brioche filetype:bitmap", "sourdough bread filetype:bitmap",
+    "bread roll filetype:bitmap", "challah filetype:bitmap", "rye bread loaf filetype:bitmap",
+]
+BREAD_OK = re.compile(r"bread|loaf|loaves|brioche|bun\b|buns|roll|sourdough|challah|cipó|kenyér|pain|brot|pão|pan de", re.I)
+BREAD_BAD = re.compile(r"sandwich|toast|slice|sliced|tree|fruit|map|logo|svg|drawing|advert|poster|shop|store|bakery interior|people|\bman\b|\bwoman\b", re.I)
+
+
+def _commons_candidates(searches=None, must="corgi", bad=None, ok=None) -> list[dict]:
+    searches = searches or SEARCHES
+    bad = bad or BAD
     out = []
-    for q in random.sample(SEARCHES, len(SEARCHES)):
+    for q in random.sample(searches, len(searches)):
         try:
             r = requests.get(
                 "https://commons.wikimedia.org/w/api.php",
@@ -49,7 +59,9 @@ def _commons_candidates() -> list[dict]:
         for p in pages.values():
             ii = (p.get("imageinfo") or [{}])[0]
             title = p.get("title", "")
-            if ii.get("mime") not in ("image/jpeg", "image/png") or BAD.search(title) or "corgi" not in title.lower():
+            if ii.get("mime") not in ("image/jpeg", "image/png") or bad.search(title):
+                continue
+            if (must and must not in title.lower()) or (ok and not ok.search(title)):
                 continue
             if min(ii.get("width", 0), ii.get("height", 0)) < 700:
                 continue
@@ -77,14 +89,18 @@ def _dogceo_candidates() -> list[dict]:
     return out
 
 
-def _save(cand: dict, path: Path) -> bool:
+def _save(cand: dict, path: Path, size: int = 1080) -> bool:
     try:
         r = requests.get(cand["url"], headers=UA, timeout=40)
         r.raise_for_status()
         im = ImageOps.exif_transpose(Image.open(io.BytesIO(r.content))).convert("RGB")
         if min(im.size) < 350:
             return False
-        im = ImageOps.fit(im, (1080, 1080), Image.LANCZOS, centering=(0.5, 0.42))
+        # színtelen (fekete-fehér, szépia) képek kiszűrése
+        sat = im.resize((64, 64)).convert("HSV").split()[1]
+        if sum(sat.getdata()) / 4096 < 28:
+            return False
+        im = ImageOps.fit(im, (size, size), Image.LANCZOS, centering=(0.5, 0.45))
         im.save(path, "JPEG", quality=84, optimize=True, progressive=True)
         return True
     except Exception as e:
@@ -117,6 +133,36 @@ def build_images(day: str) -> list[dict]:
     USED.write_text(json.dumps(sorted(used)), encoding="utf-8")
     print(f"  képek: {len(result)} db")
     return result
+
+
+def build_bread(day: str) -> list[dict]:
+    """Corgi vagy kenyér? – 3 corgi + 3 kenyér fotó."""
+    IMG_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        used = set(json.loads(USED.read_text()))
+    except Exception:
+        used = set()
+    corgis = [c for c in _commons_candidates() if c["id"] not in used]
+    random.shuffle(corgis)
+    breads = [c for c in _commons_candidates(BREAD_SEARCHES, must=None, bad=BREAD_BAD, ok=BREAD_OK) if c["id"] not in used]
+    random.shuffle(breads)
+    out = []
+    for kind, pool in (("corgi", corgis), ("kenyer", breads)):
+        n = 0
+        for c in pool:
+            if n == 3:
+                break
+            path = IMG_DIR / f"{day}-{kind}{n + 1}.jpg"
+            if _save(c, path, 720):
+                used.add(c["id"])
+                n += 1
+                out.append({"file": f"data/img/{path.name}", "corgi": kind == "corgi",
+                            "author": c["author"], "license": c["license"], "page": c["page"],
+                            "zx": random.randint(35, 65), "zy": random.randint(40, 70)})
+    USED.write_text(json.dumps(sorted(used)), encoding="utf-8")
+    random.shuffle(out)
+    print(f"  corgi vagy kenyér: {sum(o['corgi'] for o in out)} corgi + {sum(not o['corgi'] for o in out)} kenyér")
+    return out
 
 
 def prune_images(keep_after: str) -> None:
