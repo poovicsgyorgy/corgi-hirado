@@ -113,7 +113,7 @@ def classify(items: list[dict], limit: int = 240) -> None:
             b["title_hu"] = tr(b["title"], b["lang"])
 
 
-SECTION_PREFIX = re.compile(r"^[A-ZÁÉÍÓÖŐÚÜŰ][\wáéíóöőúüű ]{1,18} - (?=\S)")
+SECTION_PREFIX = re.compile(r"^[A-ZÁÉÍÓÖŐÚÜŰ][\wáéíóöőúüű ]{1,18} - (?=[A-ZÁÉÍÓÖŐÚÜŰ0-9„])")
 
 
 def polish_titles(chosen: list[dict]) -> None:
