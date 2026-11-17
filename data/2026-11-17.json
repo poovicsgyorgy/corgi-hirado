@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "generated_at": "2026-11-17T19:47+01:00",
+ "generated_at": "2026-11-17T19:52+01:00",
  "count": 1,
  "articles": [
   {
@@ -11,18 +11,18 @@
    "published": "2026-11-15T21:07:16+00:00",
    "image": "",
    "lang": "en",
-   "title_hu": "A vicces corgi kétségbeesetten próbál átugrani a kapun, hogy elérje a játékokat",
+   "title_hu": "Vicces corgi kétségbeesetten próbál átugrani a kapun, hogy elérje a játékokat",
    "summary_hu": "",
    "category": "Corgi hírek"
   }
  ],
  "quiz": [
   {
-   "date": "2026-03",
+   "date": "2012-01",
    "region": "Világ",
-   "title_hu": "A kiotói kisvasút egy napra corgis jegyet vezetett be",
-   "summary_hu": "A különleges napon a kutyák ingyen utazhattak, a gazdik kedvezményt kaptak. A szerelvényeket corgis zászlók díszítették.",
-   "explanation": "Ilyen corgis jegy sosem volt – kamu.",
+   "title_hu": "Egy Toast nevű corgi minden reggel elkíséri a postást a körútján Portlandben",
+   "summary_hu": "A kutya a gazdája szerint pontosan tudja, melyik házba érkezik levél. A postás bevallotta: ha a corgi nem jön, hiányzik neki.",
+   "explanation": "Kedves, de kitalált történet.",
    "source": "",
    "link": "",
    "title_orig": "",
@@ -30,24 +30,24 @@
    "id": 0
   },
   {
-   "date": "2023-09",
-   "region": "Magyarország",
-   "title_hu": "A corgis miniszobor után újabb apró szobrok jelentek meg Újbudán",
+   "date": "2026-04",
+   "region": "Világ",
+   "title_hu": "Új corgi nyerte az II. Erzsébet királynő tiszteletére rendezett derbit",
    "title_orig": "",
-   "summary_hu": "Plank Antal, az Ella nevű corgiszobor alkotója négy újabb miniszoborral lepte meg a Kőrösy sétány környékén élőket.",
-   "source": "We Love Budapest",
-   "link": "https://welovebudapest.com/cikk/2023/09/04/budapest-miniszobrok-graffitifal-ujbuda-korosy-setany-plank-antal/",
+   "summary_hu": "",
+   "source": "ORIGO",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeTQwc3pNY29hS1dDZ0dqVDlnd09vU1BONFg0bzYtcGo2bF9PbEQ3dUUyZXFxdXFqd2p1R3o2dktzOEg1c0k5Q1VZRTNfWjR6WXNmYXVROG5wVnB2a0Vmcm5ic3ZIaEJmc0o0Ukw2ZWZxSUdJZFhjNU1zdmpFVDVHbWxpc1pJeDlleFdBTEptMXIwZw?oc=5",
    "fake": false,
    "id": 1
   },
   {
-   "date": "2024-10",
-   "region": "Világ",
-   "title_hu": "3 dolog, amit tudnia kell a Tour de Corgi előtt Fort Collinsban",
-   "title_orig": "3 things to know ahead of Tour de Corgi in Fort Collins",
+   "date": "2025-10",
+   "region": "Magyarország",
+   "title_hu": "Ahol a tündérek kutyái találkoznak: megrendezik Budapest első Corgi Találkozóját!",
+   "title_orig": "",
    "summary_hu": "",
-   "source": "The Coloradoan",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWENGVERTZGxJNnhkUTB4RE9PRDR4OTRadXZPdHdZWGdrSjVoOS1pOUlDekFsNGtBTExuNjRXSF9VSzBDeXZxaklXNDhHejU3UDlrWXQ2aE5yaFhrWUJ5SEphQm44eG5oTjc0SjB5UUZJYkpvZmRHMGJZdjF3eGdaWWxDLWdVc2gwTkl6c2NaLU9jY0pTdl9NNGtQa09oX204Uk5fNVZ0T1RyYWZDM0lkQlEwYjl6UQ?oc=5",
+   "source": "We love Dogz",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE42YV9oQ2c0SjdHSHFseEM1eWxHbUVFYzFrSTZxSWMzOFFuQ3BUQklYYkQtUF92dXhpYktZY1hwZGJ0d3FKRlZ6ZU9OQi1QRmJSM1JUNGhrS2daS21jcFZzT3Fn?oc=5",
    "fake": false,
    "id": 2
   }
@@ -56,23 +56,23 @@
   {
    "file": "data/img/2026-11-17-1.jpg",
    "grid": 4,
-   "author": "Magen Peters",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Corgi_puppy_and_adult.jpg"
+   "author": "Wikimaster97commons",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cardigan_Welsh_Corgi_Face.JPG"
   },
   {
    "file": "data/img/2026-11-17-2.jpg",
    "grid": 6,
-   "author": "Wwonderbread",
+   "author": "Suttogo",
    "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Corgi_puppy_standing_funny.jpg"
+   "page": "https://commons.wikimedia.org/wiki/File:Pembroke_Welsh_Corgi01.jpg"
   },
   {
    "file": "data/img/2026-11-17-3.jpg",
    "grid": 12,
-   "author": "Public class",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Sleeping_Corgi_puppy.jpg"
+   "author": "FatFairfax",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Welsh_Corgi_Cardigan_Climbing.jpg"
   }
  ],
  "horoscope": [
@@ -259,58 +259,58 @@
  ],
  "bread": [
   {
-   "file": "data/img/2026-11-17-kenyer2.jpg",
-   "corgi": false,
-   "author": "Jacob van Es",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Jacob_van_Es_-_Still_life_with_a_wine_glass,_peeled_lemon,_bread_roll,_olives_and_shrimps,_058l19034-9xgqp.jpg",
-   "zx": 48,
-   "zy": 48
-  },
-  {
-   "file": "data/img/2026-11-17-kenyer3.jpg",
-   "corgi": false,
-   "author": "Andy Li",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:Halloumi_with_Tomato_Chutney_All_Day_Ciabatta_Roll_-_M%26S_Caf%C3%A9,_Worthing_2026-06-05.jpg",
-   "zx": 46,
-   "zy": 69
-  },
-  {
-   "file": "data/img/2026-11-17-corgi2.jpg",
-   "corgi": true,
-   "author": "Slyronit",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Beagle_and_Corgi.jpg",
-   "zx": 36,
-   "zy": 67
-  },
-  {
-   "file": "data/img/2026-11-17-kenyer1.jpg",
-   "corgi": false,
-   "author": "Nicola van Houbraken",
-   "license": "Public domain",
-   "page": "https://commons.wikimedia.org/wiki/File:Nicola_van_Houbraken_-_Still_life_with_potted_plants_and_roses,_a_dog,_a_basket_of_apples,_fennel,_and_a_semi-plucked_rooster,_a_bread_roll_on_a_plate_and_a_wine-glass.jpg",
-   "zx": 43,
-   "zy": 62
-  },
-  {
    "file": "data/img/2026-11-17-corgi1.jpg",
    "corgi": true,
-   "author": "Electrokardiogram",
+   "author": "Thomon",
    "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Tricolor_Corgi.jpg",
-   "zx": 51,
-   "zy": 60
+   "page": "https://commons.wikimedia.org/wiki/File:Chien_corgi_pembroke.jpg",
+   "zx": 57,
+   "zy": 52
   },
   {
    "file": "data/img/2026-11-17-corgi3.jpg",
    "corgi": true,
-   "author": "Harrisj82",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:2yearoldwelshcorgi.jpg",
-   "zx": 43,
+   "author": "Pmuths1956",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Welchcorgipembroke.JPG",
+   "zx": 41,
    "zy": 63
+  },
+  {
+   "file": "data/img/2026-11-17-corgi2.jpg",
+   "corgi": true,
+   "author": "Guilhem Vellut from Annecy, France",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Corgi_gallois_@_Montagne_d%27%C3%82ge_(51333720778).jpg",
+   "zx": 55,
+   "zy": 59
+  },
+  {
+   "file": "data/img/2026-11-17-kenyer3.jpg",
+   "corgi": false,
+   "author": "Missvain",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sourdough_bread_-_January_2026_-_Sarah_Stierch_02.jpg",
+   "zx": 46,
+   "zy": 66
+  },
+  {
+   "file": "data/img/2026-11-17-kenyer2.jpg",
+   "corgi": false,
+   "author": "Przemysław Wierzbowski",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Round_challah.jpg",
+   "zx": 49,
+   "zy": 70
+  },
+  {
+   "file": "data/img/2026-11-17-kenyer1.jpg",
+   "corgi": false,
+   "author": "Carly & Art",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Challah_cover_chain_stitch_and_french_knots_autumn_panel.jpg",
+   "zx": 38,
+   "zy": 69
   }
  ]
 }
