@@ -29,11 +29,14 @@ BAD = re.compile(r"tribune|times|newspaper|article|clipping|gazette|herald|journ
 
 
 BREAD_SEARCHES = [
+    'deepcat:"Loaves of bread" filetype:bitmap', 'deepcat:"Brioche" filetype:bitmap', 'deepcat:"Bread rolls" filetype:bitmap',
     "bread loaf filetype:bitmap", "brioche filetype:bitmap", "sourdough bread filetype:bitmap",
     "bread roll filetype:bitmap", "challah filetype:bitmap", "rye bread loaf filetype:bitmap",
 ]
 BREAD_OK = re.compile(r"bread|loaf|loaves|brioche|bun\b|buns|roll|sourdough|challah|cipó|kenyér|pain|brot|pão|pan de", re.I)
-BREAD_BAD = re.compile(r"sandwich|toast|slice|sliced|tree|fruit|map|logo|svg|drawing|advert|poster|shop|store|bakery interior|people|\bman\b|\bwoman\b", re.I)
+BREAD_BAD = re.compile(r"still|life|painting|stilleven|nature morte|museum|rijks|oil|canvas|plate|wine|glass|olive|shrimp|rooster|"
+                       r"lemon|cheese|café|cafe|restaurant|menu|breakfast|dinner|lunch|meal|soup|butter|jam|egg|bacon|burger|hot dog|"
+                       r"sandwich|toast|slice|sliced|tree|fruit|map|logo|svg|drawing|advert|poster|shop|store|bakery interior|people|\bman\b|\bwoman\b", re.I)
 
 
 def _commons_candidates(searches=None, must="corgi", bad=None, ok=None) -> list[dict]:
@@ -61,7 +64,7 @@ def _commons_candidates(searches=None, must="corgi", bad=None, ok=None) -> list[
             title = p.get("title", "")
             if ii.get("mime") not in ("image/jpeg", "image/png") or bad.search(title):
                 continue
-            if (must and must not in title.lower()) or (ok and not ok.search(title)):
+            if (must and must not in title.lower()) or (ok and not ok.search(title)) or (ok and len(title) > 70):
                 continue
             if min(ii.get("width", 0), ii.get("height", 0)) < 700:
                 continue
