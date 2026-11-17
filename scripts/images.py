@@ -36,7 +36,7 @@ BREAD_SEARCHES = [
 BREAD_OK = re.compile(r"bread|loaf|loaves|brioche|bun\b|buns|roll|sourdough|challah|cipó|kenyér|pain|brot|pão|pan de", re.I)
 BREAD_BAD = re.compile(r"still|life|painting|stilleven|nature morte|museum|rijks|oil|canvas|plate|wine|glass|olive|shrimp|rooster|"
                        r"lemon|cheese|café|cafe|restaurant|menu|breakfast|dinner|lunch|meal|soup|butter|jam|egg|bacon|burger|hot dog|"
-                       r"sandwich|toast|slice|sliced|tree|fruit|map|logo|svg|drawing|advert|poster|shop|store|bakery interior|people|\bman\b|\bwoman\b", re.I)
+                       r"cover|stitch|embroider|knot|panel|cloth|textile|towel|basket only|sandwich|toast|slice|sliced|tree|fruit|map|logo|svg|drawing|advert|poster|shop|store|bakery interior|people|\bman\b|\bwoman\b", re.I)
 
 
 def _commons_candidates(searches=None, must="corgi", bad=None, ok=None) -> list[dict]:
