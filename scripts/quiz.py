@@ -124,7 +124,7 @@ def pick_real(pool: list[dict], now: datetime) -> list[dict]:
     recent = (now - timedelta(days=10)).isoformat()
     dyn = [p for p in pool if p.get("relevant") and p.get("title_hu") and p["published"] < recent]
     if sum(1 for p in dyn if p.get("cls") == "ai") >= 20:
-        dyn = [p for p in dyn if p.get("cls") == "ai"]
+        dyn = [p for p in dyn if p.get("cls") == "ai" or p.get("lang") == "hu"]
     cands = seed + dyn
     used = set(_load(USED, []))
     avail = [c for c in cands if c["key"] not in used]
@@ -135,7 +135,9 @@ def pick_real(pool: list[dict], now: datetime) -> list[dict]:
     world = [c for c in avail if c.get("region") != "Magyarország"]
     random.shuffle(hu)
     # Régebbi hírek kicsit nagyobb eséllyel, hogy több évtized jöjjön elő
-    world.sort(key=lambda c: random.random() * (1 + (int(_ym(c)[:4]) - 1990) / 20))
+    # és az eredetileg magyarul írt hírek (ezeknek természetes a nyelvezete, mint a kamunak)
+    natural = lambda c: c["key"].startswith("seed:") or c.get("lang") == "hu"
+    world.sort(key=lambda c: random.random() * (1 + (int(_ym(c)[:4]) - 1990) / 20) * (0.45 if natural(c) else 1))
     chosen = []
     if hu and random.random() < 0.6:
         chosen.append(hu[0])
