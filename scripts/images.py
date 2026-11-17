@@ -24,8 +24,8 @@ SEARCHES = [
     'deepcat:"Cardigan Welsh Corgi" filetype:bitmap',
     'deepcat:"Welsh Corgi" puppy filetype:bitmap',
 ]
-CUTE = re.compile(r"pupp|kölyök|cute|smil|happy|tongue|playing|snow|sleep|face|portrait|head|sitting|beach|grass|park", re.I)
-BAD = re.compile(r"statue|szobor|logo|map|drawing|illustration|stamp|coin|toy|diecast|car\b|skeleton|skull|svg", re.I)
+CUTE = re.compile(r"pupp|kölyök|cute|smil|happy|tongue|playing|snow|sleep|face|portrait|head|sitting|beach|grass", re.I)
+BAD = re.compile(r"^File:HK |walking with carts|stroller|R12S|statue|szobor|logo|map|drawing|illustration|stamp|coin|toy|diecast|car\b|skeleton|skull|svg", re.I)
 
 
 def _commons_candidates() -> list[dict]:

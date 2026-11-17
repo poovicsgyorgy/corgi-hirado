@@ -35,7 +35,8 @@ JUNK = re.compile(
     r"worth \$|billion|million|milliárd|valuation|unicorn|insurance|biztosít|startup|"
     r"\(tv movie|tv-film| - photos|^preview|pictures$|képgaléria|everything you need to know|"
     r"how smart|breed (guide|profile|information)|fajtaleírás|missense|variant|\bNDS\b|"
-    r"coupon|kupon|for sale|eladó|horoszkóp|horoscope|recipe|recept|review:|teszt:",
+    r"coupon|kupon|for sale|eladó|horoszkóp|horoscope|recipe|recept|review:|teszt:|"
+    r"^photos? (from|of)|^in pictures|gallery|fotógaléria|royal corgi christmas|\(\d{4}\) - |imdb|trailer",
     re.I,
 )
 HU_MONTHS = ["január", "február", "március", "április", "május", "június", "július",
