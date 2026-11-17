@@ -25,16 +25,16 @@ SEARCHES = [
     'deepcat:"Welsh Corgi" puppy filetype:bitmap',
 ]
 CUTE = re.compile(r"pupp|kölyök|cute|smil|happy|tongue|playing|snow|sleep|face|portrait|head|sitting|beach|grass", re.I)
-BAD = re.compile(r"tribune|times|newspaper|article|clipping|gazette|herald|journal|magazine|scan|^File:HK |walking with carts|stroller|R12S|statue|szobor|logo|map|drawing|illustration|stamp|coin|toy|diecast|car\b|skeleton|skull|svg", re.I)
+BAD = re.compile(r"drone|sculpture|bronze|light show|lantern|festival of|parade float|costume|mascot|plush|cake|cookie|tribune|times|newspaper|article|clipping|gazette|herald|journal|magazine|scan|^File:HK |walking with carts|stroller|R12S|statue|szobor|logo|map|drawing|illustration|stamp|coin|toy|diecast|car\b|skeleton|skull|svg", re.I)
 
 
 BREAD_SEARCHES = [
     'deepcat:"Loaves of bread" filetype:bitmap', 'deepcat:"Brioche" filetype:bitmap', 'deepcat:"Bread rolls" filetype:bitmap',
-    "bread loaf filetype:bitmap", "brioche filetype:bitmap", "sourdough bread filetype:bitmap",
-    "bread roll filetype:bitmap", "challah filetype:bitmap", "rye bread loaf filetype:bitmap",
+    "sourdough loaf filetype:bitmap", "challah filetype:bitmap", "brioche filetype:bitmap",
 ]
 BREAD_OK = re.compile(r"bread|loaf|loaves|brioche|bun\b|buns|roll|sourdough|challah|cipó|kenyér|pain|brot|pão|pan de", re.I)
-BREAD_BAD = re.compile(r"still|life|painting|stilleven|nature morte|museum|rijks|oil|canvas|plate|wine|glass|olive|shrimp|rooster|"
+BREAD_BAD = re.compile(r"ancient|egypt|museum|archae|fossil|carboni|pompeii|antique|tomb|\bBC\b|bce|excavat|exhibit|"
+                       r"still|life|painting|stilleven|nature morte|museum|rijks|oil|canvas|plate|wine|glass|olive|shrimp|rooster|"
                        r"lemon|cheese|café|cafe|restaurant|menu|breakfast|dinner|lunch|meal|soup|butter|jam|egg|bacon|burger|hot dog|"
                        r"cover|stitch|embroider|knot|panel|cloth|textile|towel|basket only|sandwich|toast|slice|sliced|tree|fruit|map|logo|svg|drawing|advert|poster|shop|store|bakery interior|people|\bman\b|\bwoman\b", re.I)
 
