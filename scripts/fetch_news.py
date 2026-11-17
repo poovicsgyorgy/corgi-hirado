@@ -31,7 +31,7 @@ TZ = ZoneInfo("Europe/Budapest")
 UA = "Mozilla/5.0 (CorgiHirado; +https://github.com)"
 MAX_AGE_HOURS = int(os.environ.get("MAX_AGE_HOURS", "48"))
 MAX_ITEMS = int(os.environ.get("MAX_ITEMS", "40"))
-ARCHIVE_DAYS = 60
+ARCHIVE_DAYS = 45
 
 QUERIES = ["corgi", '"Welsh Corgi"', "Pembroke corgi", "Cardigan corgi"]
 
@@ -301,7 +301,7 @@ def categorize(item: dict) -> str:
     return "Corgi hírek"
 
 
-def write_edition(items: list[dict], now_local: datetime) -> None:
+def write_edition(items: list[dict], now_local: datetime, quiz: list, images: list) -> None:
     DATA.mkdir(exist_ok=True)
     day = now_local.strftime("%Y-%m-%d")
     edition = {
@@ -309,6 +309,8 @@ def write_edition(items: list[dict], now_local: datetime) -> None:
         "generated_at": now_local.isoformat(timespec="minutes"),
         "count": len(items),
         "articles": items,
+        "quiz": quiz,
+        "images": images,
     }
     payload = json.dumps(edition, ensure_ascii=False, indent=1)
     (DATA / f"{day}.json").write_text(payload, encoding="utf-8")
@@ -320,6 +322,8 @@ def write_edition(items: list[dict], now_local: datetime) -> None:
     for stem in files:
         if stem < limit:
             (DATA / f"{stem}.json").unlink()
+    from images import prune_images
+    prune_images(limit)
     files = sorted((p.stem for p in DATA.glob("????-??-??.json")), reverse=True)
     (DATA / "index.json").write_text(json.dumps({"editions": files}), encoding="utf-8")
 
@@ -331,11 +335,6 @@ def main() -> int:
     raw = collect()
     print(f"Összesen {len(raw)} nyers találat")
     items = filter_and_dedupe(raw, now)
-    if len(items) < 5:
-        # Csendes napokon szélesebb időablak
-        global MAX_AGE_HOURS
-        MAX_AGE_HOURS = 24 * 7
-        items = filter_and_dedupe(raw, now)
     print(f"{len(items)} egyedi, releváns cikk")
 
     tr = Translator()
@@ -347,7 +346,21 @@ def main() -> int:
     items = dedupe_translated(items)
     if tr.fails:
         print(f"  ! {tr.fails} szöveg fordítás nélkül maradt", file=sys.stderr)
-    write_edition(items, now_local)
+    from quiz import build_quiz
+    from images import build_images
+    print("Igaz vagy kamu?")
+    try:
+        quiz = build_quiz(now)
+    except Exception as e:
+        print(f"  ! kvíz hiba: {e}", file=sys.stderr)
+        quiz = []
+    print("Napi képek")
+    try:
+        images = build_images(now_local.strftime("%Y-%m-%d"))
+    except Exception as e:
+        print(f"  ! kép hiba: {e}", file=sys.stderr)
+        images = []
+    write_edition(items, now_local, quiz, images)
     print("Kész.")
     return 0
 

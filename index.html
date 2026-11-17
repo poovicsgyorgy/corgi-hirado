@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Corgi Híradó</title>
-<meta name="description" content="Napi corgis hírek magyarul, újság formában.">
+<meta name="description" content="Napi corgis hírek magyarul: Igaz vagy kamu? játék, corgi-kirakós és friss hírek.">
 <meta name="theme-color" content="#f4efe4">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
@@ -15,56 +15,37 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <style>
   :root {
-    --paper: #f4efe4;
-    --ink: #1d1a16;
-    --muted: #6b6257;
-    --rule: #1d1a16;
-    --accent: #b5521b;
+    --paper: #f4efe4; --card: #fbf8f1; --ink: #1d1a16; --muted: #6b6257; --rule: #1d1a16;
+    --accent: #b5521b; --ok: #2f6b3a; --bad: #a3271c;
     --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
     --display: "Didot", "Bodoni 72", "Bodoni MT", "Playfair Display", Georgia, serif;
     --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --paper: #1b1915; --ink: #ece5d8; --muted: #a39a8c; --rule: #ece5d8; --accent: #e08a4f; }
+    :root { --paper: #1b1915; --card: #24211c; --ink: #ece5d8; --muted: #a39a8c; --rule: #ece5d8;
+            --accent: #e08a4f; --ok: #79c08a; --bad: #ef7d70; }
   }
   * { box-sizing: border-box; }
   html { background: var(--paper); }
-  body {
-    margin: 0; color: var(--ink); background: var(--paper);
-    font-family: var(--serif); line-height: 1.5;
-    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
-    -webkit-text-size-adjust: 100%;
-  }
+  body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--serif); line-height: 1.5;
+         padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); -webkit-text-size-adjust: 100%; }
   .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; }
+  button { font: inherit; color: inherit; cursor: pointer; }
 
-  /* Fejléc */
-  .topbar {
-    display: flex; justify-content: space-between; align-items: center; gap: 8px;
-    font-family: var(--sans); font-size: 12px; color: var(--muted);
-    padding: 12px 0 8px; text-transform: uppercase; letter-spacing: .06em;
-  }
-  .topbar select, .topbar button {
-    font: inherit; color: var(--ink); background: transparent;
-    border: 1px solid var(--muted); border-radius: 4px; padding: 4px 8px; text-transform: none;
-  }
+  .topbar { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-family: var(--sans);
+            font-size: 12px; color: var(--muted); padding: 12px 0 8px; text-transform: uppercase; letter-spacing: .06em; }
+  .topbar select, .topbar button { font: inherit; color: var(--ink); background: transparent; border: 1px solid var(--muted);
+            border-radius: 4px; padding: 4px 8px; text-transform: none; }
   .masthead { text-align: center; border-bottom: 4px double var(--rule); padding-bottom: 6px; }
-  .masthead h1 {
-    font-family: var(--display); font-weight: 700; margin: 4px 0 0;
-    font-size: clamp(42px, 12vw, 96px); line-height: 1; letter-spacing: -.01em;
-  }
+  .masthead h1 { font-family: var(--display); font-weight: 700; margin: 4px 0 0; font-size: clamp(42px, 12vw, 96px); line-height: 1; }
   .masthead .motto { font-style: italic; color: var(--muted); font-size: 14px; margin-top: 4px; }
-  .dateline {
-    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px;
-    border-bottom: 1px solid var(--rule); padding: 6px 0; margin-bottom: 18px;
-    font-family: var(--sans); font-size: 12px; text-transform: uppercase; letter-spacing: .08em;
-  }
+  .dateline { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; border-bottom: 1px solid var(--rule);
+              padding: 6px 0; margin-bottom: 22px; font-family: var(--sans); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
 
-  /* Vezércikk */
-  .lead { display: grid; gap: 18px; border-bottom: 1px solid var(--rule); padding-bottom: 20px; margin-bottom: 20px; }
-  @media (min-width: 760px) { .lead.has-img { grid-template-columns: 1.3fr 1fr; align-items: start; } }
-  .lead h2 { font-family: var(--display); font-size: clamp(28px, 6vw, 46px); line-height: 1.08; margin: 6px 0 10px; }
-  .lead p { font-size: 18px; margin: 0 0 10px; }
-  .lead img { width: 100%; aspect-ratio: 4/3; object-fit: cover; filter: grayscale(.25) contrast(1.05); border: 1px solid var(--rule); }
+  .section-head { display: flex; align-items: baseline; gap: 12px; margin: 30px 0 6px; }
+  .section-head h2 { font-family: var(--display); font-size: clamp(26px, 6vw, 36px); margin: 0; line-height: 1.1; }
+  .section-head::after { content: ""; flex: 1; border-bottom: 1px solid var(--rule); transform: translateY(-6px); }
+  .section-intro { margin: 0 0 14px; color: var(--muted); font-style: italic; }
 
   .kicker { font-family: var(--sans); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); }
   .meta { font-family: var(--sans); font-size: 12px; color: var(--muted); }
@@ -74,21 +55,88 @@
   a.title:hover { text-decoration: underline; }
   .more { font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--accent); text-decoration: none; }
 
-  /* Hasábok */
+  /* Igaz vagy kamu */
+  .quiz { display: grid; gap: 14px; }
+  @media (min-width: 860px) { .quiz { grid-template-columns: repeat(3, 1fr); } }
+  .qcard { position: relative; background: var(--card); border: 1px solid color-mix(in srgb, var(--rule) 30%, transparent);
+           padding: 16px 16px 14px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; }
+  .qcard .tags { display: flex; align-items: center; gap: 10px; padding-right: 64px; }
+  .badge { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+           border: 1px solid currentColor; padding: 1px 6px; border-radius: 3px; color: var(--muted); }
+  .qcard h3 { font-size: 21px; line-height: 1.22; margin: 4px 0 6px; }
+  .qcard .pick { margin-top: auto; align-self: flex-start; font-family: var(--sans); font-size: 14px; font-weight: 600;
+                 background: var(--ink); color: var(--paper); border: 0; border-radius: 999px; padding: 9px 16px; }
+  .qcard .reveal { display: none; font-size: 16px; }
+  .quiz.done .pick { display: none; }
+  .quiz.done .reveal { display: block; }
+  .stamp { display: none; position: absolute; top: 14px; right: -34px; transform: rotate(18deg); font-family: var(--sans);
+           font-weight: 800; letter-spacing: .14em; font-size: 13px; padding: 3px 40px; color: #fff; }
+  .quiz.done .stamp { display: block; }
+  .stamp.true { background: var(--ok); }
+  .stamp.fake { background: var(--bad); }
+  .qcard.chosen { outline: 3px solid var(--accent); outline-offset: -3px; }
+  .verdict { display: none; margin: 14px 0 0; padding: 12px 14px; border-left: 4px solid var(--accent); background: var(--card); font-size: 17px; }
+  .verdict.show { display: block; }
+  .stats { font-family: var(--sans); font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+  /* Kirakós */
+  .puzzles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .ptile { background: var(--card); border: 1px solid color-mix(in srgb, var(--rule) 30%, transparent); padding: 0 0 8px;
+           text-align: center; border-radius: 0; }
+  .ptile .thumb { position: relative; aspect-ratio: 1; overflow: hidden; }
+  .ptile .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ptile .thumb .grid { position: absolute; inset: 0; background-image:
+      linear-gradient(to right, rgba(255,255,255,.55) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.55) 1px, transparent 1px); }
+  .ptile .thumb .done { position: absolute; right: 6px; bottom: 6px; background: var(--ok); color: #fff; border-radius: 999px;
+      font: 700 12px var(--sans); padding: 2px 8px; }
+  .ptile .lvl { font: 700 15px var(--sans); margin-top: 6px; }
+  .ptile .sub { font: 12px var(--sans); color: var(--muted); }
+
+  /* Friss hírek */
+  .lead { display: grid; gap: 18px; border-bottom: 1px solid var(--rule); padding-bottom: 20px; margin-bottom: 20px; }
+  @media (min-width: 760px) { .lead.has-img { grid-template-columns: 1.3fr 1fr; align-items: start; } }
+  .lead h3 { font-family: var(--display); font-size: clamp(24px, 5vw, 36px); line-height: 1.1; margin: 6px 0 10px; }
+  .lead p { font-size: 18px; margin: 0 0 10px; }
+  .lead img { width: 100%; aspect-ratio: 4/3; object-fit: cover; filter: grayscale(.25) contrast(1.05); border: 1px solid var(--rule); }
   .columns { column-gap: 28px; column-rule: 1px solid color-mix(in srgb, var(--rule) 35%, transparent); }
   @media (min-width: 640px) { .columns { columns: 2; } }
   @media (min-width: 980px) { .columns { columns: 3; } }
   .story { break-inside: avoid; padding: 0 0 16px; margin: 0 0 16px; border-bottom: 1px solid color-mix(in srgb, var(--rule) 25%, transparent); }
-  .story h3 { font-size: 21px; line-height: 1.2; margin: 4px 0 6px; }
+  .story h3 { font-size: 20px; line-height: 1.2; margin: 4px 0 6px; }
   .story p { margin: 0 0 6px; font-size: 16px; }
   .story img { width: 100%; aspect-ratio: 16/9; object-fit: cover; margin: 6px 0 4px; filter: grayscale(.25); }
-  .columns .story:first-of-type p:first-of-type::first-letter {
-    font-family: var(--display); float: left; font-size: 3.1em; line-height: .85; padding: 4px 6px 0 0;
-  }
-
-  .empty, .status { text-align: center; font-style: italic; color: var(--muted); padding: 40px 0; }
-  footer { margin-top: 28px; border-top: 4px double var(--rule); padding-top: 10px; text-align: center; font-family: var(--sans); font-size: 12px; color: var(--muted); }
+  .empty { text-align: center; font-style: italic; color: var(--muted); padding: 24px 0; }
+  footer { margin-top: 28px; border-top: 4px double var(--rule); padding-top: 10px; text-align: center; font-family: var(--sans);
+           font-size: 12px; color: var(--muted); }
+  footer .credits { margin-top: 6px; }
   .install { display: none; }
+
+  /* Kirakós nézet */
+  #pz { position: fixed; inset: 0; z-index: 50; background: var(--paper); display: none; flex-direction: column; align-items: center;
+        padding: calc(env(safe-area-inset-top) + 8px) 8px calc(env(safe-area-inset-bottom) + 8px); }
+  #pz.open { display: flex; }
+  .pzbar { width: 100%; max-width: 640px; display: flex; justify-content: space-between; align-items: center; gap: 8px;
+           font-family: var(--sans); font-size: 14px; padding: 4px 0 10px; }
+  .pzbar .t { font-family: var(--display); font-size: 22px; font-weight: 700; }
+  .pzbar button { border: 1px solid var(--muted); background: transparent; border-radius: 999px; padding: 6px 12px; font-size: 14px; }
+  .pzinfo { font-family: var(--sans); font-size: 13px; color: var(--muted); display: flex; gap: 14px; }
+  #board { position: relative; display: grid; touch-action: none; user-select: none; -webkit-user-select: none;
+           background: color-mix(in srgb, var(--ink) 12%, transparent); gap: 1px; }
+  #board .pc { background-repeat: no-repeat; position: relative; }
+  #board .pc.ok { box-shadow: none; }
+  #board.seams .pc:not(.ok) { box-shadow: inset 0 0 0 .5px rgba(255,255,255,.6); }
+  #board .pc.sel { outline: 3px solid var(--accent); outline-offset: -3px; z-index: 2; }
+  #board.solved { gap: 0; }
+  #preview { position: absolute; inset: 0; background-size: cover; display: none; z-index: 5; }
+  #board.peek #preview { display: block; }
+  .ghost { position: fixed; pointer-events: none; z-index: 60; box-shadow: 0 6px 18px rgba(0,0,0,.35); background-repeat: no-repeat; opacity: .92; }
+  .pzfoot { width: 100%; max-width: 640px; display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 12px;
+            font-family: var(--sans); font-size: 12px; color: var(--muted); }
+  .pzfoot button { font-family: var(--sans); font-size: 14px; font-weight: 600; border: 0; border-radius: 999px; padding: 9px 16px;
+                   background: var(--ink); color: var(--paper); }
+  #win { display: none; text-align: center; font-family: var(--display); font-size: 26px; padding-top: 12px; }
+  #win.show { display: block; }
 </style>
 </head>
 <body>
@@ -104,32 +152,61 @@
 
   <header class="masthead">
     <h1>Corgi Híradó</h1>
-    <div class="motto">„Rövid lábak, nagy hírek” — a világ corgis hírei, minden reggel magyarul</div>
+    <div class="motto">„Rövid lábak, nagy hírek” — corgis hírek, játék és kirakós minden reggel</div>
   </header>
-  <div class="dateline">
-    <span id="dayname"></span>
-    <span id="issue"></span>
-    <span id="count"></span>
-  </div>
+  <div class="dateline"><span id="dayname"></span><span id="issue"></span><span id="count"></span></div>
 
-  <main id="paper"><div class="status">A lapszám betöltése…</div></main>
+  <section>
+    <div class="section-head"><h2>Igaz vagy kamu?</h2></div>
+    <p class="section-intro">Három corgis hír 1990-től napjainkig – kettő megtörtént, egy kitaláció. Melyik a kamu?</p>
+    <div id="quiz" class="quiz"><div class="empty">Betöltés…</div></div>
+    <div id="verdict" class="verdict"></div>
+    <div id="stats" class="stats"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Napi corgi-kirakó</h2></div>
+    <p class="section-intro">Koppints egy képre, és rakd ki! Húzd a darabokat a helyükre, vagy koppints kettőre a cseréhez.</p>
+    <div id="puzzles" class="puzzles"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Friss hírek</h2></div>
+    <div id="paper"></div>
+  </section>
 
   <footer>
-    A hírek automatikusan, minden reggel 6:00-kor frissülnek. A fordítás gépi; a teljes cikkek az eredeti forrásoknál olvashatók.
+    Minden reggel 6:00-ra új szám készül. A fordítás gépi; a teljes cikkek az eredeti forrásoknál olvashatók.
+    <div class="credits" id="credits"></div>
   </footer>
+</div>
+
+<div id="pz" role="dialog" aria-modal="true">
+  <div class="pzbar">
+    <button id="pzclose">← Vissza</button>
+    <span class="t" id="pztitle"></span>
+    <button id="pzpeek">👁 Kép</button>
+  </div>
+  <div class="pzinfo"><span id="pzmoves">0 lépés</span><span id="pztime">0:00</span><span id="pzleft"></span></div>
+  <div id="board"><div id="preview"></div></div>
+  <div id="win"></div>
+  <div class="pzfoot"><span id="pzcredit"></span><button id="pzshuffle">Újrakeverés</button></div>
 </div>
 
 <script>
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
 const safeUrl = (u) => /^https?:\/\//i.test(u || "") ? u : "";
-const fmtDay = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("hu-HU", { year: "numeric", month: "long", day: "numeric", weekday: "long" });
-const fmtTime = (iso) => {
-  if (!iso) return "";
-  const d = new Date(iso);
-  return d.toLocaleString("hu-HU", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
 };
+const MONTHS = ["január","február","március","április","május","június","július","augusztus","szeptember","október","november","december"];
+const fmtYM = (s) => !s ? "" : s.length >= 7 ? `${s.slice(0,4)}. ${MONTHS[+s.slice(5,7)-1]}` : `${s.slice(0,4)}`;
+const fmtDay = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("hu-HU", { year: "numeric", month: "long", day: "numeric", weekday: "long" });
+const fmtTime = (iso) => iso ? new Date(iso).toLocaleString("hu-HU", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
 const LANG = { en: "angol", de: "német", fr: "francia", es: "spanyol", it: "olasz", ja: "japán", hu: "magyar" };
+let ED = null;
 
 async function getJSON(path, fresh) {
   const r = await fetch(path + (fresh ? "?t=" + Date.now() : ""), { cache: fresh ? "no-store" : "default" });
@@ -137,98 +214,273 @@ async function getJSON(path, fresh) {
   return r.json();
 }
 
-function img(a, cls) {
-  const u = safeUrl(a.image);
-  return u ? `<img class="${cls||""}" src="${esc(u)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : "";
+/* ---------- Igaz vagy kamu ---------- */
+function renderQuiz(ed) {
+  const q = ed.quiz || [];
+  const box = $("#quiz");
+  $("#verdict").className = "verdict"; $("#verdict").innerHTML = "";
+  if (q.length < 3) { box.className = "quiz"; box.innerHTML = `<div class="empty">Ehhez a számhoz még nem készült játék.</div>`; renderStats(); return; }
+  box.className = "quiz";
+  box.innerHTML = q.map(it => `
+    <article class="qcard" data-id="${it.id}">
+      <span class="stamp ${it.fake ? "fake" : "true"}">${it.fake ? "KAMU" : "IGAZ"}</span>
+      <div class="tags"><span class="kicker">${esc(fmtYM(it.date))}</span><span class="badge">${esc(it.region)}</span></div>
+      <h3>${esc(it.title_hu)}</h3>
+      <button class="pick" data-id="${it.id}">Szerintem ez a kamu</button>
+      <div class="reveal">
+        ${it.summary_hu ? `<p style="margin:0 0 6px">${esc(it.summary_hu)}</p>` : ""}
+        ${it.fake
+          ? `<p class="meta" style="color:var(--bad)">${esc(it.explanation || "Ezt a hírt mi találtuk ki.")}</p>`
+          : `${it.title_orig ? `<div class="orig">Eredeti cím: ${esc(it.title_orig)}</div>` : ""}
+             <div class="meta">Forrás: ${esc(it.source)}${safeUrl(it.link) ? ` · <a class="more" href="${esc(it.link)}" target="_blank" rel="noopener">elolvasom →</a>` : ""}</div>`}
+      </div>
+    </article>`).join("");
+  box.querySelectorAll(".pick").forEach(b => b.addEventListener("click", () => answer(ed, +b.dataset.id)));
+  const prev = store.get("quiz:" + ed.date);
+  if (prev != null) showAnswer(ed, prev, false);
+  renderStats();
 }
 
+function answer(ed, id) {
+  if (store.get("quiz:" + ed.date) != null) return;
+  store.set("quiz:" + ed.date, id);
+  const fake = ed.quiz.find(x => x.fake);
+  const s = store.get("quizstats", { played: 0, won: 0, streak: 0, best: 0 });
+  s.played++;
+  if (fake && fake.id === id) { s.won++; s.streak++; s.best = Math.max(s.best, s.streak); } else s.streak = 0;
+  store.set("quizstats", s);
+  showAnswer(ed, id, true);
+  renderStats();
+}
+
+function showAnswer(ed, id, scroll) {
+  const fake = ed.quiz.find(x => x.fake);
+  $("#quiz").classList.add("done");
+  const card = document.querySelector(`.qcard[data-id="${id}"]`);
+  if (card) card.classList.add("chosen");
+  const v = $("#verdict");
+  v.innerHTML = fake && fake.id === id
+    ? `<b>Eltaláltad! 🎉</b> Kiszúrtad a kamut – a másik két hír tényleg megtörtént.`
+    : `<b>Most nem jött be.</b> A kamu: „${esc(fake ? fake.title_hu : "")}” – a többi valódi hír volt.`;
+  v.classList.add("show");
+  if (scroll) v.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function renderStats() {
+  const s = store.get("quizstats", null);
+  $("#stats").textContent = s && s.played ? `Eddig ${s.played} játékból ${s.won} találat · sorozat: ${s.streak} (legjobb: ${s.best})` : "";
+}
+
+/* ---------- Kirakós ---------- */
+const LEVELS = { 4: "Könnyű", 6: "Közepes", 12: "Nehéz" };
+function pzKey(ed, i) { return `pz:${ed.date}:${i}`; }
+
+function renderPuzzles(ed) {
+  const imgs = ed.images || [];
+  if (!imgs.length) { $("#puzzles").innerHTML = `<div class="empty" style="grid-column:1/-1">Ma nem érkeztek képek.</div>`; return; }
+  $("#puzzles").innerHTML = imgs.map((im, i) => {
+    const st = store.get(pzKey(ed, i), null);
+    const n = im.grid;
+    return `<button class="ptile" data-i="${i}" aria-label="${n}×${n} kirakó">
+      <div class="thumb"><img src="${esc(im.file)}" alt="Corgi" loading="lazy">
+        ${st && st.solved ? `<span class="done">✓ Kész</span>` : `<div class="grid" style="background-size:${100/n}% ${100/n}%"></div>`}</div>
+      <div class="lvl">${n}×${n}</div><div class="sub">${LEVELS[n] || ""}${st && !st.solved ? " · folyamatban" : ""}</div>
+    </button>`;
+  }).join("");
+  document.querySelectorAll(".ptile").forEach(b => b.addEventListener("click", () => openPuzzle(ed, +b.dataset.i)));
+  $("#credits").innerHTML = "Képek: " + imgs.map(im =>
+    `${safeUrl(im.page) ? `<a href="${esc(im.page)}" target="_blank" rel="noopener">${esc(im.author)}</a>` : esc(im.author)} (${esc(im.license)})`).join(" · ");
+}
+
+let P = null; // aktuális kirakós állapota
+
+function shuffled(n) {
+  const a = [...Array(n * n).keys()];
+  do {
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  } while (a.filter((v, i) => v === i).length > Math.max(1, n * n / 20));
+  return a;
+}
+
+function openPuzzle(ed, i) {
+  const im = ed.images[i], n = im.grid;
+  const saved = store.get(pzKey(ed, i), null);
+  P = { ed, i, n, src: im.file, perm: saved && saved.perm && saved.perm.length === n * n ? saved.perm : shuffled(n),
+        moves: saved ? saved.moves || 0 : 0, secs: saved ? saved.secs || 0 : 0, solved: !!(saved && saved.solved), sel: null };
+  $("#pztitle").textContent = `${n}×${n} · ${LEVELS[n] || ""}`;
+  $("#pzcredit").innerHTML = `Fotó: ${esc(im.author)} (${esc(im.license)})`;
+  $("#preview").style.backgroundImage = `url("${im.file}")`;
+  $("#pz").classList.add("open");
+  document.body.style.overflow = "hidden";
+  layoutBoard(); drawBoard(); tick();
+  clearInterval(P.timer);
+  P.timer = setInterval(() => { if (!P.solved && document.visibilityState === "visible") { P.secs++; tick(); if (P.secs % 5 === 0) save(); } }, 1000);
+}
+
+function closePuzzle() {
+  if (!P) return;
+  clearInterval(P.timer); save();
+  $("#pz").classList.remove("open"); document.body.style.overflow = "";
+  renderPuzzles(P.ed); P = null;
+}
+
+function save() { if (P) store.set(pzKey(P.ed, P.i), { perm: P.perm, moves: P.moves, secs: P.secs, solved: P.solved }); }
+
+function layoutBoard() {
+  const b = $("#board");
+  const avail = Math.min(window.innerWidth - 16, window.innerHeight - 190, 640);
+  const size = Math.floor(avail / P.n) * P.n;
+  b.style.width = b.style.height = size + "px";
+  b.style.gridTemplateColumns = `repeat(${P.n}, 1fr)`;
+  P.size = size;
+}
+
+function drawBoard() {
+  const b = $("#board"), n = P.n;
+  b.querySelectorAll(".pc").forEach(e => e.remove());
+  b.classList.toggle("seams", n <= 6);
+  b.classList.toggle("solved", P.solved);
+  const frag = document.createDocumentFragment();
+  P.perm.forEach((piece, pos) => {
+    const d = document.createElement("div");
+    d.className = "pc" + (piece === pos ? " ok" : "") + (P.sel === pos ? " sel" : "");
+    d.dataset.pos = pos;
+    styleTile(d, piece);
+    frag.appendChild(d);
+  });
+  b.appendChild(frag);
+  const left = P.perm.filter((v, i) => v !== i).length;
+  $("#pzleft").textContent = P.solved ? "" : `${left} darab van rossz helyen`;
+  $("#win").className = P.solved ? "show" : "";
+  $("#win").textContent = P.solved ? `Kész! 🐾 ${P.moves} lépés, ${fmtSecs(P.secs)}` : "";
+}
+
+function styleTile(el, piece) {
+  const n = P.n, r = Math.floor(piece / n), c = piece % n;
+  el.style.backgroundImage = `url("${P.src}")`;
+  el.style.backgroundSize = `${n * 100}% ${n * 100}%`;
+  el.style.backgroundPosition = `${n > 1 ? c / (n - 1) * 100 : 0}% ${n > 1 ? r / (n - 1) * 100 : 0}%`;
+}
+
+function fmtSecs(s) { return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; }
+function tick() { $("#pzmoves").textContent = `${P.moves} lépés`; $("#pztime").textContent = fmtSecs(P.secs); }
+
+function swap(a, b) {
+  if (a === b || P.solved) return;
+  if (P.perm[a] === a || P.perm[b] === b) return; // a helyén lévő darab rögzített
+  [P.perm[a], P.perm[b]] = [P.perm[b], P.perm[a]];
+  P.moves++;
+  if (P.perm.every((v, i) => v === i)) P.solved = true;
+  P.sel = null; save(); drawBoard(); tick();
+}
+
+// Húzás és koppintás
+(function () {
+  const b = $("#board");
+  let start = null, ghost = null;
+  b.addEventListener("pointerdown", e => {
+    const t = e.target.closest(".pc"); if (!t || !P || P.solved) return;
+    const pos = +t.dataset.pos; if (P.perm[pos] === pos) return;
+    start = { pos, x: e.clientX, y: e.clientY, el: t };
+    b.setPointerCapture(e.pointerId);
+  });
+  b.addEventListener("pointermove", e => {
+    if (!start) return;
+    if (!ghost && Math.hypot(e.clientX - start.x, e.clientY - start.y) > 6) {
+      ghost = document.createElement("div"); ghost.className = "ghost";
+      const w = P.size / P.n * 1.15;
+      ghost.style.width = ghost.style.height = w + "px";
+      styleTile(ghost, P.perm[start.pos]);
+      document.body.appendChild(ghost);
+      start.el.style.opacity = ".25";
+    }
+    if (ghost) { const w = parseFloat(ghost.style.width); ghost.style.left = (e.clientX - w / 2) + "px"; ghost.style.top = (e.clientY - w / 2) + "px"; }
+  });
+  const end = e => {
+    if (!start) return;
+    const s = start; start = null;
+    if (ghost) {
+      ghost.remove(); ghost = null; s.el.style.opacity = "";
+      const under = document.elementFromPoint(e.clientX, e.clientY);
+      const t = under && under.closest && under.closest("#board .pc");
+      if (t) swap(s.pos, +t.dataset.pos);
+    } else {
+      if (P.sel == null) { P.sel = s.pos; drawBoard(); }
+      else if (P.sel === s.pos) { P.sel = null; drawBoard(); }
+      else swap(P.sel, s.pos);
+    }
+  };
+  b.addEventListener("pointerup", end);
+  b.addEventListener("pointercancel", () => { if (ghost) ghost.remove(); ghost = null; if (start) start.el.style.opacity = ""; start = null; });
+})();
+
+$("#pzclose").addEventListener("click", closePuzzle);
+$("#pzshuffle").addEventListener("click", () => { if (!P) return; P.perm = shuffled(P.n); P.moves = 0; P.secs = 0; P.solved = false; P.sel = null; save(); drawBoard(); tick(); });
+const peek = (on) => $("#board").classList.toggle("peek", on);
+$("#pzpeek").addEventListener("pointerdown", () => peek(true));
+["pointerup", "pointerleave", "pointercancel"].forEach(ev => $("#pzpeek").addEventListener(ev, () => peek(false)));
+window.addEventListener("resize", () => { if (P) { layoutBoard(); } });
+
+/* ---------- Friss hírek ---------- */
 function storyMeta(a) {
   return `<div class="meta">${esc(a.source)}${a.published ? " · " + esc(fmtTime(a.published)) : ""}${a.lang && a.lang !== "hu" ? " · fordítva " + esc(LANG[a.lang] || a.lang) + " nyelvből" : ""}</div>`;
 }
-
-function render(ed) {
+function img(a) {
+  const u = safeUrl(a.image);
+  return u ? `<img src="${esc(u)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : "";
+}
+function renderNews(ed) {
   const arts = ed.articles || [];
-  $("#dayname").textContent = fmtDay(ed.date);
-  $("#count").textContent = arts.length + " cikk";
-  const start = new Date("2026-11-16");
-  const n = Math.max(1, Math.round((new Date(ed.date) - start) / 864e5) + 1);
-  $("#issue").textContent = `I. évfolyam, ${n}. szám`;
-  $("#updated").textContent = "Frissítve: " + fmtTime(ed.generated_at);
-
-  if (!arts.length) {
-    $("#paper").innerHTML = `<div class="empty">Ma csend van a corgik háza táján — nem érkezett új hír.</div>`;
-    return;
-  }
-  // Vezércikk: az első, amelyiknek van leírása (lehetőleg képe is)
-  let li = arts.findIndex(a => a.summary_hu && a.image);
-  if (li < 0) li = arts.findIndex(a => a.summary_hu);
-  if (li < 0) li = 0;
-  const lead = arts[li];
-  const rest = arts.filter((_, i) => i !== li);
-  const link = esc(safeUrl(lead.link));
-
-  let h = `<article class="lead ${safeUrl(lead.image) ? "has-img" : ""}">
-    <div>
+  if (!arts.length) { $("#paper").innerHTML = `<div class="empty">Az elmúlt két napban nem jelent meg új corgis hír a nagyvilágban – de fent vár a játék és a kirakó!</div>`; return; }
+  let li = arts.findIndex(a => a.summary_hu && a.image); if (li < 0) li = arts.findIndex(a => a.summary_hu); if (li < 0) li = 0;
+  const lead = arts[li], rest = arts.filter((_, i) => i !== li), link = esc(safeUrl(lead.link));
+  let h = `<article class="lead ${safeUrl(lead.image) ? "has-img" : ""}"><div>
       <div class="kicker">${esc(lead.category)}</div>
-      <h2><a class="title" href="${link}" target="_blank" rel="noopener">${esc(lead.title_hu || lead.title)}</a></h2>
+      <h3><a class="title" href="${link}" target="_blank" rel="noopener">${esc(lead.title_hu || lead.title)}</a></h3>
       ${lead.lang !== "hu" ? `<div class="orig">Eredeti cím: ${esc(lead.title)}</div>` : ""}
       ${lead.summary_hu ? `<p>${esc(lead.summary_hu)}</p>` : ""}
       ${storyMeta(lead)}
-      <p><a class="more" href="${link}" target="_blank" rel="noopener">Tovább az eredeti cikkhez →</a></p>
-    </div>
-    ${img(lead)}
-  </article><section class="columns">`;
-
+      <p><a class="more" href="${link}" target="_blank" rel="noopener">Tovább az eredeti cikkhez →</a></p></div>${img(lead)}</article><section class="columns">`;
   for (const a of rest) {
     const l = esc(safeUrl(a.link));
-    h += `<article class="story">
-      <div class="kicker">${esc(a.category)}</div>
-      <h3><a class="title" href="${l}" target="_blank" rel="noopener">${esc(a.title_hu || a.title)}</a></h3>
-      ${img(a)}
-      ${a.summary_hu ? `<p>${esc(a.summary_hu)}</p>` : ""}
-      ${storyMeta(a)}
-    </article>`;
+    h += `<article class="story"><div class="kicker">${esc(a.category)}</div>
+      <h3><a class="title" href="${l}" target="_blank" rel="noopener">${esc(a.title_hu || a.title)}</a></h3>${img(a)}
+      ${a.summary_hu ? `<p>${esc(a.summary_hu)}</p>` : ""}${storyMeta(a)}</article>`;
   }
   $("#paper").innerHTML = h + "</section>";
 }
 
-async function load(date, fresh) {
-  try {
-    const ed = await getJSON(date ? `data/${date}.json` : "data/latest.json", fresh);
-    render(ed);
-    window.scrollTo(0, 0);
-  } catch (e) {
-    $("#paper").innerHTML = `<div class="status">Még nincs elérhető lapszám. Az első szám a következő reggel 6:00-kor jelenik meg.</div>`;
-    $("#updated").textContent = "Nincs adat";
-  }
+/* ---------- Betöltés ---------- */
+function render(ed) {
+  ED = ed;
+  $("#dayname").textContent = fmtDay(ed.date);
+  const n = Math.max(1, Math.round((new Date(ed.date) - new Date("2026-11-16")) / 864e5) + 1);
+  $("#issue").textContent = `I. évfolyam, ${n}. szám`;
+  $("#count").textContent = `${(ed.quiz || []).length} rejtvényhír · ${(ed.images || []).length} kép · ${(ed.articles || []).length} friss hír`;
+  $("#updated").textContent = "Frissítve: " + fmtTime(ed.generated_at);
+  renderQuiz(ed); renderPuzzles(ed); renderNews(ed);
 }
 
+async function load(date, fresh) {
+  try { render(await getJSON(date ? `data/${date}.json` : "data/latest.json", fresh)); }
+  catch (e) { $("#quiz").innerHTML = `<div class="empty">A lapszám nem tölthető be. Ellenőrizd az internetkapcsolatot.</div>`; $("#updated").textContent = "Nincs adat"; }
+}
 async function loadIndex(fresh) {
   try {
     const idx = await getJSON("data/index.json", fresh);
-    const sel = $("#edition");
-    sel.innerHTML = idx.editions.map((d, i) =>
-      `<option value="${i === 0 ? "" : esc(d)}">${i === 0 ? "Mai szám" : esc(d)}</option>`).join("");
+    $("#edition").innerHTML = idx.editions.map((d, i) => `<option value="${i === 0 ? "" : esc(d)}">${i === 0 ? "Mai szám" : esc(d)}</option>`).join("");
   } catch (e) { $("#edition").style.display = "none"; }
 }
-
 $("#edition").addEventListener("change", e => load(e.target.value, false));
 $("#refresh").addEventListener("click", () => { loadIndex(true); load($("#edition").value, true); });
-
-// Ha az app reggel háttérből előjön, töltse újra a friss számot
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible" && !$("#edition").value) load("", true);
+  if (document.visibilityState === "visible" && !$("#edition").value && !P) { loadIndex(true); load("", true); }
 });
-
-// Telepítés gomb (Android / Chrome)
 let deferred;
 window.addEventListener("beforeinstallprompt", e => { e.preventDefault(); deferred = e; $("#install").style.display = "inline-block"; });
 $("#install").addEventListener("click", async () => { if (deferred) { deferred.prompt(); deferred = null; $("#install").style.display = "none"; } });
-
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
-
-loadIndex(true);
-load("", true);
+loadIndex(true); load("", true);
 </script>
 </body>
 </html>

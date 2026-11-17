@@ -2,11 +2,12 @@ name: Napi lapszám
 
 on:
   schedule:
-    # A GitHub csak UTC-ben ütemez. 04:00 UTC = 6:00 nyári időben,
-    # 05:00 UTC = 6:00 téli időben. A "check" lépés gondoskodik arról,
-    # hogy naponta csak egyszer, 6:00 után készüljön lapszám.
-    - cron: "0 4 * * *"
-    - cron: "0 5 * * *"
+    # A GitHub csak UTC-ben ütemez, és az egész órás időpontokat gyakran
+    # órákkal késve futtatja. Ezért sűrűn, "furcsa" percekben próbálkozunk;
+    # a "check" lépés gondoskodik róla, hogy naponta csak egyszer,
+    # budapesti idő szerint 5:30 után készüljön lapszám (6:00-ra kész legyen).
+    - cron: "7,22,37,52 3-6 * * *"
+    - cron: "13 7-12 * * *"
   push:
     branches: [main]
   workflow_dispatch:
@@ -20,6 +21,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  models: read
 
 concurrency:
   group: napi-lapszam
@@ -38,13 +40,15 @@ jobs:
         id: check
         run: |
           HOUR=$(TZ=Europe/Budapest date +%-H)
+          MIN=$(TZ=Europe/Budapest date +%-M)
+          NOWM=$((HOUR*60+MIN))
           TODAY=$(TZ=Europe/Budapest date +%F)
           LAST=$(python3 -c "import json;print(json.load(open('data/latest.json'))['date'])" 2>/dev/null || echo none)
           echo "Budapest: $TODAY $HOUR óra, utolsó lapszám: $LAST"
           RUN=false
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
             RUN=true
-          elif [ "$LAST" != "$TODAY" ] && { [ "$HOUR" -ge 6 ] || [ "${{ github.event_name }}" != "schedule" ]; }; then
+          elif [ "$LAST" != "$TODAY" ] && { [ "$NOWM" -ge 330 ] || [ "${{ github.event_name }}" != "schedule" ]; }; then
             RUN=true
           fi
           echo "fetch=$RUN" >> "$GITHUB_OUTPUT"
@@ -58,8 +62,10 @@ jobs:
       - name: Hírek gyűjtése és fordítása
         if: steps.check.outputs.fetch == 'true'
         run: |
-          pip install -q requests
+          pip install -q requests pillow
           python scripts/fetch_news.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Lapszám mentése a repóba
         if: steps.check.outputs.fetch == 'true'
