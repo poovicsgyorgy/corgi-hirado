@@ -1,8 +1,80 @@
 {
- "date": "2026-11-27",
- "generated_at": "2026-11-27T05:41+01:00",
- "count": 12,
+ "date": "2026-11-28",
+ "generated_at": "2026-11-28T05:41+01:00",
+ "count": 11,
  "articles": [
+  {
+   "title": "Unbothered Corgi Goes Kayaking Through Flooded Neighborhood",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVkpvVnVOTTgyX3NqbThnM29La19Lal9lSXpSM0tFNW1nRzRkcmtQdW5Ld3pHdWplSlVyQmswcERyZUlQbWczQTUyQk1qSGMzdmtfbXRja3BMV2hieFdGLVA3UkhWbmtZNmJmVWNqMlYxZWZUVUtMTU5RQ0RmMlNTb0RiTkJnWlR5OTRJ?oc=5",
+   "source": "Parade Magazine",
+   "published": "2026-11-28T01:18:00+00:00",
+   "image": "",
+   "lang": "en",
+   "title_hu": "A zavartalan corgi kajakozik az elárasztott környéken",
+   "summary_hu": "",
+   "category": "Corgi hírek"
+  },
+  {
+   "title": "Merced corgi wins best in show at 2026 National Dog Show",
+   "summary": "MERCED, Calif. ( KSEE/KGPE) – A Merced corgi took home best in show at the 2026 National Dog Show. Brandi, a Pembroke W e lsh Corgi, won the title in the Herding Group category. According to ...",
+   "link": "https://www.yourcentralvalley.com/news/local-news/brandi-wins-herding-group-title/",
+   "source": "YourCentralValley.com",
+   "published": "2026-11-27T19:56:00+00:00",
+   "image": "",
+   "lang": "en",
+   "title_hu": "A Merced corgi nyerte a legjobb kiállítást a 2026-os Nemzeti Kutyakiállításon",
+   "summary_hu": "MERCED, Kalifornia (KSEE/KGPE) – A 2026-os Nemzeti Kutyakiállításon egy Merced corgi nyerte a legjobb kiállítást. Brandi, egy Pembroke W e lsh Corgi nyerte a címet a terelőcsoport kategóriában. szerint...",
+   "category": "Események"
+  },
+  {
+   "title": "Playful corgi mix puppy heads to Rhode Island looking for a forever home after Thanksgiving",
+   "summary": "A five-month-old corgi mix named Dozer is about to make a big journey to Rhode Island, where he will settle into ...",
+   "link": "https://www.msn.com/en-us/news/other/playful-corgi-mix-puppy-heads-to-rhode-island-looking-for-a-forever-home-after-thanksgiving/ar-AA2ip3ge",
+   "source": "NewsBreak on MSN",
+   "published": "2026-11-27T19:14:38+00:00",
+   "image": "http://www.bing.com/th?id=ONUT.ZaaQPiBEfW1DBDWDLuVSDQ&pid=News",
+   "lang": "en",
+   "title_hu": "A játékos corgi keverék kölyökkutya Rhode Islandre indul, hogy örök otthont keressen a hálaadás után",
+   "summary_hu": "Egy öthónapos, Dozer nevű corgi keverék nagy utazásra készül Rhode Islandre, ahol letelepedik...",
+   "category": "Corgi hírek"
+  },
+  {
+   "title": "Corgi tries so hard to play with her baby sister in the most adorable way",
+   "summary": "And the baby is loving every minute of it.",
+   "link": "https://www.msn.com/en-us/news/other/corgi-tries-so-hard-to-play-with-her-baby-sister-in-the-most-adorable-way/ar-AA2ioucq",
+   "source": "PawNation on MSN",
+   "published": "2026-11-27T17:27:00+00:00",
+   "image": "http://www.bing.com/th?id=ONUT.lkrCtDVXhpzLh8elkQfvbw&pid=News",
+   "lang": "en",
+   "title_hu": "Corgi nagyon igyekszik a legaranyosabb módon játszani a kishúgával",
+   "summary_hu": "És a baba imádja minden percét.",
+   "category": "Corgi hírek"
+  },
+  {
+   "title": "Former Royal Chef Shares the \"A La Carte Menu\" Enjoyed By Queen Elizabeth's Corgis",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVlltd1hBR2dqOUVKQnJ6RldpWnprdDQ0UVZ2LVRQVjVQanc3cFY2YmdMV29hVnRPUmhRRm5IbEFsdXI3NFZ3TS1OTlN5VjNNQUxRbW5BbWRLYVFqY3FqdGNnZDFwcDUweUdleDZoU0owbVY3ck9GTTdqaGdXRV9oNzEwX0ZjSElHVzBtVWI5WDFuLXI1bVlEUDlPeDNOTHQ0?oc=5",
+   "source": "Marie Claire",
+   "published": "2026-11-27T11:00:00+00:00",
+   "image": "",
+   "lang": "en",
+   "title_hu": "Az egykori királyi séf megosztja az Erzsébet királynő corgisai által élvezett \"A la Carte menüt\"",
+   "summary_hu": "",
+   "category": "Királyi corgik"
+  },
+  {
+   "title": "Corgi’s £230 WW2 aircraft model is helping bring a British aviation legend back",
+   "summary": "",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOX1ZoOFRiTU1wZjdkRmw5TDdXWkdPNE9wak5aUUlYLVBCMDVLNDVQOTNpRzNLMHhzYkR6NF9teEo5dG1jRVZ4Y0Vkem52NE9MLWdLUzFuc2txdnFKZDBOTGRHM3VYaTg5d1dBR1RCNHlTWGVTZGt3eU11amNNOWxMVEI2X09CNllDWmRVVDJFX0ctaDVieUdhTUFUbnBIdEZIMkJR?oc=5",
+   "source": "NationalWorld",
+   "published": "2026-11-27T07:44:57+00:00",
+   "image": "",
+   "lang": "en",
+   "title_hu": "A Corgi 230 GBP értékű 2. világháborús repülőgépmodellje segít visszahozni egy brit repülési legendát",
+   "summary_hu": "",
+   "category": "Corgi hírek"
+  },
   {
    "title": "Vosteed's Christmas TiSlim and Corgi V V are numbered, snowflaked, and capped at 800 pieces",
    "summary": "",
@@ -16,23 +88,11 @@
    "category": "Corgi hírek"
   },
   {
-   "title": "Corgi’s £230 WW2 aircraft model is helping bring a British aviation legend back",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOX1ZoOFRiTU1wZjdkRmw5TDdXWkdPNE9wak5aUUlYLVBCMDVLNDVQOTNpRzNLMHhzYkR6NF9teEo5dG1jRVZ4Y0Vkem52NE9MLWdLUzFuc2txdnFKZDBOTGRHM3VYaTg5d1dBR1RCNHlTWGVTZGt3eU11amNNOWxMVEI2X09CNllDWmRVVDJFX0ctaDVieUdhTUFUbnBIdEZIMkJR?oc=5",
-   "source": "NationalWorld",
-   "published": "2026-11-27T01:44:57+00:00",
-   "image": "",
-   "lang": "en",
-   "title_hu": "A Corgi 230 GBP értékű 2. világháborús repülőgépmodellje segít visszahozni egy brit repülési legendát",
-   "summary_hu": "",
-   "category": "Corgi hírek"
-  },
-  {
    "title": "Corgis lead hikers to a fairy village in the Maine woods",
    "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQl9fNUt1ZG1pcjctckYwby0wQVctWkNPeUtqeG5ubEItV2d3bmNXQjJKcTlkUFFkQTBvTkxsemtuQTZ3WFBwN3JQYVVQZmtrdnhQQ0QwRjJxblRTeXZ4VGh5T1haUlVjLXdKcFVZRTZnYzhhOGM1UDhydi1HY0tjZ0RVU2owdTdBSmtF?oc=5",
-   "source": "WBTV",
-   "published": "2026-11-26T23:57:18+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQeUc3Mzc1S3FLeC1tN2xXb2NKaXZkc3F6Q3luR3lRRVZsZkp6bG5UbzhrMWRDdXdoUkY5QUVwU2ZHaHA1anphTjNtX2dSdG5wSnpqY29aRkZ1TWJLN0o1dkdWak9FN1J4QXZDTVFqTDNkWW44d1AwVktseHpZRTBzWmRoZFBlVjNPV2FN?oc=5",
+   "source": "WBKO",
+   "published": "2026-11-26T18:40:13+00:00",
    "image": "",
    "lang": "en",
    "title_hu": "A corgik a Maine-i erdőben lévő tündérfaluba vezetik a túrázókat",
@@ -66,145 +126,73 @@
   {
    "title": "Corgi’s £230 model of legendary WW2 aircraft is selling fast as fans back restoration project",
    "summary": "Corgi's limited-edition De Havilland Mosquito model is attracting collectors ahead of its release, with proceeds helping fund a project to get the legendary aircraft flying again.",
-   "link": "https://www.msn.com/en-gb/news/other/corgi-s-230-model-of-legendary-ww2-aircraft-is-selling-fast-as-fans-back-restoration-project/ar-AA2ijsuW",
+   "link": "https://www.msn.com/en-gb/science/aeronautics/corgi-s-230-model-of-legendary-ww2-aircraft-is-selling-fast-as-fans-back-restoration-project/ar-AA2ijsuW",
    "source": "nationalworld.com on MSN",
    "published": "2026-11-26T11:45:25+00:00",
-   "image": "http://www.bing.com/th?id=ONUT.nT6epjlLP51xFX-Z_QLYDQ&pid=News",
+   "image": "http://www.bing.com/th?id=ONUT.V8rEd1gIIlw_FbF8cEDfnw&pid=News",
    "lang": "en",
    "title_hu": "A Corgi 230 GBP értékű legendás második világháborús repülőgép-modellje gyorsan fogy, ahogy a rajongók támogatják a helyreállítási projektet",
    "summary_hu": "A Corgi limitált kiadású De Havilland Mosquito modellje már megjelenése előtt vonzza a gyűjtőket, a bevételből pedig egy projektet finanszíroznak, amelynek célja a legendás repülőgép ismét repülni.",
    "category": "Corgi hírek"
-  },
-  {
-   "title": "Corgi Fairy Village Hike in Maine: One-Mile ADA-Accessible Trail",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTXFZUUxVVG80bkJtTG5pWng2d2JaeExLZGFBLTgxTHl2aEVmSmZfTFRFRnBRTWl2a2owS1RkTU5FbEN2VGxvR1laal9rRmg5WEhjb2tSMEoyQzJzcDVzNktDOWo4cUFjMnpULUZoTDRsNkhjMlcwaUtxaHpTcVNvYnFGT2dyWjJTNzJwazZMQm1YQ0ZyQlZPTG1PMWE2dnM?oc=5",
-   "source": "WRDW",
-   "published": "2026-11-25T18:15:24+00:00",
-   "image": "",
-   "lang": "en",
-   "title_hu": "Corgi Fairy Village túra Maine-ben: egy mérföldes ADA-hozzáférhető ösvény",
-   "summary_hu": "",
-   "category": "Corgi hírek"
-  },
-  {
-   "title": "Corgi Puppy and Her Baby Sister Share a Playtime Moment That Will Melt Your Heart",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE50V2dlZGE4ZUxjQ2NJdmZ4dkVhVy1PdkFXSWFaZEJkQndtblpCYWpLNTltWXVlSnU1M2hkUlMtZnFfcVd3NGFDU2lCYW1QZURhZXV0ZUVaUEc3ODlfcll6N3NBYmFINDVJdGlHQU5iOTJtUFk4dmNIc1FHRQ?oc=5",
-   "source": "AOL.com",
-   "published": "2026-11-25T14:22:00+00:00",
-   "image": "",
-   "lang": "en",
-   "title_hu": "Corgi kölyökkutya és kistestvére osztoznak egy játékidőben, ami megolvasztja a szívedet",
-   "summary_hu": "",
-   "category": "Corgi hírek"
-  },
-  {
-   "title": "This senior corgi's morning scavenger hunt is pure joy to watch",
-   "summary": "Nothing like a morning mental workout to prep the day.",
-   "link": "https://www.msn.com/en-us/news/other/this-senior-corgi-s-morning-scavenger-hunt-is-pure-joy-to-watch/ar-AA2idYJm",
-   "source": "PawNation on MSN",
-   "published": "2026-11-25T08:20:00+00:00",
-   "image": "http://www.bing.com/th?id=ONUT.Phxp4TMQ2hQ9MOy2OTGXGw&pid=News",
-   "lang": "en",
-   "title_hu": "Ennek az idősebb corginak a reggeli dögvadászatát tiszta öröm nézni",
-   "summary_hu": "Semmi olyan, mint egy reggeli mentális edzés a nap előkészítéséhez.",
-   "category": "Corgi hírek"
-  },
-  {
-   "title": "Community helps reunite corgi missing for months",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUWY0UGNscGdPT2EzaGFiNjdZQm1FbWwxZl9DR3RReERQUDMzMng4UktwRXd5czhhRlZXdU14ajR3anl5U2tQVkFkelZURldnUU5TcFRNN0lJaWRGUUI2TnBYRDZZSkhhempucGFUY0h1Xy1DdkNtT1FCcUQwdDdWbVVPdENhWGlTX1JyS1Bkclc?oc=5",
-   "source": "Baxter Bulletin",
-   "published": "2026-11-25T06:58:18+00:00",
-   "image": "",
-   "lang": "en",
-   "title_hu": "A közösség segít a hónapok óta eltűnt corgi újraegyesítésében",
-   "summary_hu": "",
-   "category": "Mentés és örökbefogadás"
-  },
-  {
-   "title": "Corgi Demands To Go Outside Only to Instantly Regret His Decision",
-   "summary": "",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNRDhNcGs0Y1dwcEZYRE90MVM1ZUxBRll0dGpSSkNXRjRFR25WeWtZUTlQTGtBeUdFSHRaRnVSaUV3WHg5YTRGQWM2RnczWm1WZWYyLW9BLVI4ZXBoT0NwaUh0Qmc3eWhtelJwa0UzakdONVRwSnF0Z2NidHdwLUd0c25VQ0gtajJZcWtXQ0ZiRzLSAZABQVVfeXFMTUQ4TXBrNGNXcHBGWERPdDFTNWVMQUZZdHRqUkpDV0Y0RUduVnlrWVE5UExrQXlHRUh0WkZ1UmlFd1h4OWE0RkFjNkZ3M1ptVmVmMi1vQS1SOGVwaE9DcGlIdEJnN3lobXpScGtFM2pHTjVUcEpxdGdjYnR3cC1HdHNuVUNILWoyWXFrV0NGYkcy?oc=5",
-   "source": "DogTime",
-   "published": "2026-11-25T06:26:55+00:00",
-   "image": "",
-   "lang": "en",
-   "title_hu": "Corginak csak azért kell kimennie a szabadba, hogy azonnal megbánja döntését",
-   "summary_hu": "",
-   "category": "Corgi hírek"
-  },
-  {
-   "title": "Corgi unlocks a whole new level of comfort after discovering pillows",
-   "summary": "A Corgi has discovered the ultimate comfort hack and isn’t giving it up anytime soon. An Instagram video captures the dog, Nobi (Kenobi), refusing to settle down without a pillow or cushion whenever ...",
-   "link": "https://www.msn.com/en-us/news/other/corgi-unlocks-a-whole-new-level-of-comfort-after-discovering-pillows/ar-AA2icOPj",
-   "source": "DogTime on MSN",
-   "published": "2026-11-25T05:29:23+00:00",
-   "image": "",
-   "lang": "hu",
-   "title_hu": "Corgi unlocks a whole new level of comfort after discovering pillows",
-   "summary_hu": "A Corgi has discovered the ultimate comfort hack and isn’t giving it up anytime soon. An Instagram video captures the dog, Nobi (Kenobi), refusing to settle down without a pillow or cushion whenever ...",
-   "category": "Hírességek és internet"
   }
  ],
  "quiz": [
   {
-   "date": "2026-11",
+   "date": "2025-05",
    "region": "Világ",
-   "title_hu": "A Panthers corgija 41 másodpercig kerülgette a szerelőket a kutyák félidei bemutatóján",
-   "title_orig": "Panthers’ Corgi Eludes Tackle for 41 Seconds in Dog Halftime Show",
+   "title_hu": "Sarah Ferguson szerint II. Erzsébet királynő a corgijain keresztül szól hozzá | ITV News",
+   "title_orig": "Sarah Ferguson says Queen Elizabeth talks to her through her corgis | ITV News",
    "summary_hu": "",
-   "source": "Heavy.com",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWjRSRDRROTFvNUpGM3VZZm02NVhfdGh0Z2FzQUdHTEprMDdTUjdHQU9QY1gteXg4MzZGREtZMEtlU0JIaDVFeXcxVzhid3E1ZFk0WUF2MFBBZ3FGdHNKVlM3SHVwZ1lIWGQtVkNUUGpKMjhjY0p1ekpwRXBMYjJOZmZXXzRfbkRuZTNyZjJpcmY0QnZpeE52M1VVWUYwa1g1NGttakwtTnc?oc=5",
+   "source": "ITVX",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQmp0dHE1ZWNvc0owb2xQVldfd0EteUtPcTRGdFJGYVpYVm11YjhxdXA1UVpYVjRyQ3ZOaW5tNElpcmg3S2lwYUVNbS16TVVwZnEyNkVrYldrTzlKeW9BUHZXbjFYZmFGWFFzSDlENXE0VkRGRXFNM1poUnI1b1lfVGE2ZlFWYUtoa21QWXk1bE9vcTlGaUlQZ3ZvVzlKY0ZUU0VKTEdB?oc=5",
    "fake": false,
    "id": 0
   },
   {
-   "date": "1995-12",
+   "date": "2018-12",
+   "region": "Világ",
+   "title_hu": "A királynő személyzete annyira leitatta a corgiját, hogy a kutya alkoholmérgezésben elpusztult",
+   "title_orig": "Queen’s staff got corgi SO DRUNK the dog DIED of alcohol poisoning",
+   "summary_hu": "",
+   "source": "Daily Express",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZm5PVlItczJIcG8wbUlfckFVeWYxcmI4SXZXUkZuLTdIcjZoYURPOERBN1ZmWV9yRGdSLWVFdzlfaDdrWkNZal9reVpSYU9MaTlYcFN4d3VJTUVpMzYxUUd4dW9IX0Ezbm51Vm8tbzFncnQ1ZDhzcGMwcm41RFNyeG81aEhYYWlIdkxCR0k2ZGdiaUJzWmY3SnloUHl4NkNsYXJ4T0g5Qndydm1nendFbTctTGxOVy1LWHRZc0pZSHY0QdIBxwFBVV95cUxPclphU01ydTVYUkpJLTJSVzA2c1N4QTBYVXVTRnFHdWNyNE5vMmF5WGlsbm1hYVVCN291cU82Vnd1TzZCR2l6ZjRxOHJYVDA5bUtRczN0bldyY3FZWjM5WHpkSW9TLXJiMzN2WUp4NlpxS0ZudktNbThNckI1amhfYXhEREVKS09Iam1aYUxMTEFFa3FtQjJRVFhDQ0d6dUNiV0R4SjRWVlFnUC01TWxfb2ZFa2ROR05YR0RNd200SHVkcC1kWl9B?oc=5",
+   "fake": false,
+   "id": 1
+  },
+  {
+   "date": "2002-01",
    "region": "Magyarország",
-   "title_hu": "Corgi-találkozót tartottak Szekszárdon: a legtávolabbi résztvevő 400 kilométert utazott",
-   "summary_hu": "Az eseményen jelmezversenyt és ügyességi pályát is rendeztek. A szervezők jövőre még nagyobb helyszínt keresnek.",
-   "explanation": "Ez a találkozó kitaláció volt.",
+   "title_hu": "Corgi-szobrot avattak Sopronban egy helyi kutyabarát egyesület kezdeményezésére",
+   "summary_hu": "A bronzszobor egy padon ülő corgit ábrázol. Az alkotás az orra simogatásától fényesedik.",
+   "explanation": "Ez a szobor nem létezik – kamu.",
    "source": "",
    "link": "",
    "title_orig": "",
    "fake": true,
-   "id": 1
-  },
-  {
-   "date": "2022-09",
-   "region": "Világ",
-   "title_hu": "II. Erzsébet királynő imádta a corgikat. Íme 26 bájos fotó az uralkodóról és kutyáiról az évek során.",
-   "title_orig": "Queen Elizabeth loved corgis. Here are 26 adorable photos of the monarch with her dogs over the years.",
-   "summary_hu": "",
-   "source": "Business Insider",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE12ZjBNd01JVHhRNEU0dElJSGpENkFFcllJeDM1M19XWVQ4U3hZdFNRWXg0cmk1MGhXX1NRb2FXNVViX05TeXJRS3F3QkY4WmtzbmR3ajlQX3BGckdNa2Uxckd5b2otSzJRZ0NCbjJtMm5LNEYz?oc=5",
-   "fake": false,
    "id": 2
   }
  ],
  "images": [
   {
-   "file": "data/img/2026-11-27-1.jpg",
+   "file": "data/img/2026-11-28-1.jpg",
    "grid": 4,
-   "author": "E911a",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Welsh_Corgi_(2023-07-21)_E911a_01.jpg"
+   "author": "Lilly M real name: Małgorzata Miłaszewska",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Welsh_Corgi_Pembroke_WPR_Kamien_07_10_07.jpg"
   },
   {
-   "file": "data/img/2026-11-27-2.jpg",
+   "file": "data/img/2026-11-28-2.jpg",
    "grid": 6,
-   "author": "Stelladog22",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Superior_specimen_of_Pembroke_Welsh_Corgi_in_its_natural_habitat.jpg"
+   "author": "college.library",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bucky_the_Welsh_Corgi_(13993711300).jpg"
   },
   {
-   "file": "data/img/2026-11-27-3.jpg",
+   "file": "data/img/2026-11-28-3.jpg",
    "grid": 12,
-   "author": "R. Maxwell Kelley",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Corgi_With_Heterochromatic_Eyeshine.jpg"
+   "author": "ismeretlen",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:PembrokeWelshCorgi_Tryst.fullres.jpg"
   }
  ],
  "horoscope": [
@@ -212,29 +200,29 @@
    "sign": "Kos",
    "symbol": "♈",
    "dates": "márc. 21. – ápr. 19.",
-   "text": "A Kos-corgi energiája ma a csúcson van: a postás már előre fél. A Jupiter szerencsét hoz: valami ma leesik az asztalról.",
-   "treat": "uborkakarika",
-   "activity": "bújócska a takaró alatt",
-   "tip": "Vigyázz a vacsorádra: ma különösen meggyőző a tekintete.",
+   "text": "A Kos-corgi ma fejjel megy a falnak – pontosabban a kanapépárnának. Ma a vizestál mellől is átfogó elemzést végez a lakás helyzetéről.",
+   "treat": "görögdinnye-kocka (mag nélkül)",
+   "activity": "kötélhúzás",
+   "tip": "Ma tanítsd meg egy új trükkre – fogékony napja van.",
    "ratings": {
-    "Falánkság": 5,
-    "Sétakedv": 4,
-    "Csínytevés": 2,
-    "Bújós kedv": 4
+    "Falánkság": 3,
+    "Sétakedv": 3,
+    "Csínytevés": 5,
+    "Bújós kedv": 3
    }
   },
   {
    "sign": "Bika",
    "symbol": "♉",
    "dates": "ápr. 20. – máj. 20.",
-   "text": "A Bika-corgi ma a kényelem nagykövete: kanapé, takaró, ismétlés. Ma minden fotón tökéletesen mutat – kivéve, ha éppen pislog.",
-   "treat": "főtt pulykafalat",
-   "activity": "terelés (lehetőleg nem a szomszéd gyerekeit)",
-   "tip": "A fürdetést halaszd holnapra. Ma a csillagok ellene vannak.",
+   "text": "A Bika-corgi ma nem siet. Soha nem siet. Kivéve, ha zörög a zacskó. Ma minden lehulló falevél személyes kihívás lesz.",
+   "treat": "banánkarika",
+   "activity": "kötélhúzás",
+   "tip": "Fotózd le ma – különösen fotogén napja van.",
    "ratings": {
-    "Falánkság": 4,
-    "Sétakedv": 5,
-    "Csínytevés": 1,
+    "Falánkság": 3,
+    "Sétakedv": 4,
+    "Csínytevés": 2,
     "Bújós kedv": 1
    }
   },
@@ -242,59 +230,59 @@
    "sign": "Ikrek",
    "symbol": "♊",
    "dates": "máj. 21. – jún. 20.",
-   "text": "Az Ikrek-corgi ma beszédes kedvében van – minden mókusról lesz véleménye. A Mars energiát ad: ma kétszer annyit ugrál, mint tegnap.",
-   "treat": "rágócsont",
+   "text": "Az Ikrek-corgi ma kétszer olyan kíváncsi, mint máskor. Ez sok. Ma ismét rájön, hogy a farkát nem éri el. Nem adja fel.",
+   "treat": "egy szem áfonya",
    "activity": "fülvakargatás",
-   "tip": "Ma tanítsd meg egy új trükkre – fogékony napja van.",
+   "tip": "Legyen ma egy kis plusz játékidő. Megérdemli. Mindig megérdemli.",
    "ratings": {
-    "Falánkság": 5,
+    "Falánkság": 4,
     "Sétakedv": 3,
-    "Csínytevés": 1,
-    "Bújós kedv": 5
+    "Csínytevés": 2,
+    "Bújós kedv": 2
    }
   },
   {
    "sign": "Rák",
    "symbol": "♋",
    "dates": "jún. 21. – júl. 22.",
-   "text": "A Rák-corgi ma fészket rak a frissen mosott ruhákból. Ma egész popsiriszálva jön üdvözölni – ez lesz a nap legjobb pillanata.",
-   "treat": "főtt pulykafalat",
-   "activity": "terelés (lehetőleg nem a szomszéd gyerekeit)",
-   "tip": "Ma kérj tőle dupla adag puszit – bőkezű napja van.",
+   "text": "A Rák-corgi ma ragaszkodóbb a szokásosnál – a fürdőszobába is elkísér. A csillagok szerint ma elkapja azt a legyet. Vagy legalábbis nagyon közel kerül hozzá.",
+   "treat": "sárgarépa",
+   "activity": "kincskeresés jutalomfalattal",
+   "tip": "Tartsd kéznél a labdát, ma bármikor szükség lehet rá.",
    "ratings": {
-    "Falánkság": 4,
-    "Sétakedv": 1,
-    "Csínytevés": 1,
-    "Bújós kedv": 3
+    "Falánkság": 3,
+    "Sétakedv": 2,
+    "Csínytevés": 2,
+    "Bújós kedv": 1
    }
   },
   {
    "sign": "Oroszlán",
    "symbol": "♌",
    "dates": "júl. 23. – aug. 22.",
-   "text": "Az Oroszlán-corgi ma tudja, hogy ő a környék legszebbje. Igaza van. A Hold állása kedvez a pocakvakarásnak – legalább tíz percig.",
+   "text": "Az Oroszlán-corgi királyi hangulatban ébred – a párnája ma trón. Valaki ma azt mondja rá: „Olyan, mint egy kenyér!” Ő ezt bóknak veszi. Jogosan.",
    "treat": "sütőtökkocka",
    "activity": "bújócska a takaró alatt",
-   "tip": "Ma kérj tőle dupla adag puszit – bőkezű napja van.",
+   "tip": "Egy extra sétakör ma csodákra képes.",
    "ratings": {
-    "Falánkság": 3,
-    "Sétakedv": 1,
-    "Csínytevés": 1,
-    "Bújós kedv": 3
+    "Falánkság": 5,
+    "Sétakedv": 2,
+    "Csínytevés": 2,
+    "Bújós kedv": 2
    }
   },
   {
    "sign": "Szűz",
    "symbol": "♍",
    "dates": "aug. 23. – szept. 22.",
-   "text": "A Szűz-corgi ma precíz: pontosan 17:59-kor jelzi, hogy 18:00-kor vacsora van. Egy idegen ma megsimogatja, és örök barátság születik. Legalább öt percre.",
-   "treat": "uborkakarika",
-   "activity": "délutáni szundi",
-   "tip": "Dicsérd meg a füleit. Tudja, hogy szépek, de jólesik hallani.",
+   "text": "A Szűz-corgi ma precíz: pontosan 17:59-kor jelzi, hogy 18:00-kor vacsora van. Ma a tükörképével is barátságot köt.",
+   "treat": "zöldbabszál",
+   "activity": "labdakergetés",
+   "tip": "Ma tanítsd meg egy új trükkre – fogékony napja van.",
    "ratings": {
-    "Falánkság": 3,
-    "Sétakedv": 2,
-    "Csínytevés": 4,
+    "Falánkság": 4,
+    "Sétakedv": 4,
+    "Csínytevés": 1,
     "Bújós kedv": 2
    }
   },
@@ -302,45 +290,45 @@
    "sign": "Mérleg",
    "symbol": "♎",
    "dates": "szept. 23. – okt. 22.",
-   "text": "A Mérleg-corgi ma mindenkinek egyformán osztja a puszit. Ma a rövid lábai hosszabbnak tűnnek. Csak a csillagállás miatt.",
-   "treat": "jutalomfalat-morzsa",
-   "activity": "délutáni szundi",
-   "tip": "Dicsérd meg a füleit. Tudja, hogy szépek, de jólesik hallani.",
+   "text": "A Mérleg-corgi ma mindenkinek egyformán osztja a puszit. Ma titkos küldetésen vesz részt: megtalálni a konyha utolsó morzsáját.",
+   "treat": "uborkakarika",
+   "activity": "kincskeresés jutalomfalattal",
+   "tip": "Nézzetek ki együtt az ablakon egy kicsit. Fontos megbeszélnivalótok van.",
    "ratings": {
-    "Falánkság": 5,
-    "Sétakedv": 1,
+    "Falánkság": 4,
+    "Sétakedv": 4,
     "Csínytevés": 1,
-    "Bújós kedv": 5
+    "Bújós kedv": 3
    }
   },
   {
    "sign": "Skorpió",
    "symbol": "♏",
    "dates": "okt. 23. – nov. 21.",
-   "text": "A Skorpió-corgi ma átható tekintettel figyel – főleg, amikor eszel. Ma minden „séta” szóra felugrik – akkor is, ha csak betűzöd.",
-   "treat": "brokkolirózsa (egy kicsi)",
-   "activity": "labdakergetés",
-   "tip": "A zoknikat ma tedd biztonságos magasságba.",
+   "text": "A Skorpió-corgi ma rejtélyes hangulatban van. A fél pár zokni eltűnése nem véletlen. Ma különösen fontos lesz neki, hogy pontosan a lábad előtt feküdjön, ahol a legjobban útban van.",
+   "treat": "almaszelet (mag nélkül)",
+   "activity": "bújócska a takaró alatt",
+   "tip": "Rejts el egy jutalomfalatot – ma kiváló szimatoló napja van.",
    "ratings": {
-    "Falánkság": 4,
-    "Sétakedv": 1,
+    "Falánkság": 5,
+    "Sétakedv": 5,
     "Csínytevés": 2,
-    "Bújós kedv": 3
+    "Bújós kedv": 2
    }
   },
   {
    "sign": "Nyilas",
    "symbol": "♐",
    "dates": "nov. 22. – dec. 21.",
-   "text": "A Nyilas-corgi ma optimista: biztos benne, hogy egy sétából három lesz. Ma ismét rájön, hogy a farkát nem éri el. Nem adja fel.",
-   "treat": "jutalomfalat-morzsa",
-   "activity": "zoomie a kertben",
-   "tip": "Fotózd le ma – különösen fotogén napja van.",
+   "text": "A Nyilas-corgi ma optimista: biztos benne, hogy egy sétából három lesz. A Hold állása kedvez a pocakvakarásnak – legalább tíz percig.",
+   "treat": "uborkakarika",
+   "activity": "napozás",
+   "tip": "Ma kérj tőle dupla adag puszit – bőkezű napja van.",
    "ratings": {
-    "Falánkság": 3,
-    "Sétakedv": 5,
-    "Csínytevés": 5,
-    "Bújós kedv": 2
+    "Falánkság": 4,
+    "Sétakedv": 1,
+    "Csínytevés": 3,
+    "Bújós kedv": 1
    }
   },
   {
@@ -348,101 +336,101 @@
    "symbol": "♑",
    "dates": "dec. 22. – jan. 19.",
    "text": "A Bak-corgi ma céltudatos. A cél: a hűtő. Ma a lépcső lesz a legnagyobb ellenfele, de diadalt arat.",
-   "treat": "sajtkocka",
-   "activity": "kincskeresés jutalomfalattal",
-   "tip": "Rejts el egy jutalomfalatot – ma kiváló szimatoló napja van.",
+   "treat": "banánkarika",
+   "activity": "terelés (lehetőleg nem a szomszéd gyerekeit)",
+   "tip": "Ma kérj tőle dupla adag puszit – bőkezű napja van.",
    "ratings": {
     "Falánkság": 5,
-    "Sétakedv": 2,
-    "Csínytevés": 3,
-    "Bújós kedv": 3
+    "Sétakedv": 5,
+    "Csínytevés": 1,
+    "Bújós kedv": 1
    }
   },
   {
    "sign": "Vízöntő",
    "symbol": "♒",
    "dates": "jan. 20. – febr. 18.",
-   "text": "A Vízöntő-corgi ma kreatív: a vizestál neki medence. Ma a cipőid különösen érdekesek lesznek számára. Tedd őket magasra.",
-   "treat": "főtt tojásdarabka",
-   "activity": "kötélhúzás",
-   "tip": "Ma tanítsd meg egy új trükkre – fogékony napja van.",
+   "text": "A Vízöntő-corgi ma a saját feje után megy. Mint mindig, csak most stílusosabban. Ma minden „séta” szóra felugrik – akkor is, ha csak betűzöd.",
+   "treat": "uborkakarika",
+   "activity": "fülvakargatás",
+   "tip": "Fotózd le ma – különösen fotogén napja van.",
    "ratings": {
     "Falánkság": 3,
-    "Sétakedv": 3,
-    "Csínytevés": 1,
-    "Bújós kedv": 4
+    "Sétakedv": 1,
+    "Csínytevés": 5,
+    "Bújós kedv": 1
    }
   },
   {
    "sign": "Halak",
    "symbol": "♓",
    "dates": "febr. 19. – márc. 20.",
-   "text": "A Halak-corgi ma romantikus hangulatban van – a kedvenc plüssét is mindenhová viszi. Ma kiderül, hogy a rövid láb nem akadály: a kanapéra is feljut. Egy kis segítséggel.",
-   "treat": "sajtkocka",
-   "activity": "kincskeresés jutalomfalattal",
-   "tip": "Nézzetek ki együtt az ablakon egy kicsit. Fontos megbeszélnivalótok van.",
+   "text": "A Halak-corgi ma együttérző: ha szomorú vagy, rád fekszik mind a tizenkét kilójával. Egy rejtélyes hang ma a fülét is felállítja – mindkettőt, egyszerre, teljes magasságban.",
+   "treat": "főtt csirkefalat",
+   "activity": "zoomie a kertben",
+   "tip": "Vigyázz a vacsorádra: ma különösen meggyőző a tekintete.",
    "ratings": {
     "Falánkság": 4,
-    "Sétakedv": 4,
-    "Csínytevés": 1,
-    "Bújós kedv": 4
+    "Sétakedv": 2,
+    "Csínytevés": 2,
+    "Bújós kedv": 3
    }
   }
  ],
  "bread": [
   {
-   "file": "data/img/2026-11-27-kenyer3.jpg",
+   "file": "data/img/2026-11-28-kenyer3.jpg",
    "corgi": false,
-   "author": "Vegan Feast Catering",
-   "license": "CC BY 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Vegan_Challah_(4906270401).jpg",
-   "zx": 49,
-   "zy": 64
+   "author": "ProtoplasmaKid",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Baker_with_challah_at_Mehane_Yehuda_Market.jpg",
+   "zx": 42,
+   "zy": 67
   },
   {
-   "file": "data/img/2026-11-27-kenyer2.jpg",
+   "file": "data/img/2026-11-28-corgi3.jpg",
+   "corgi": true,
+   "author": "Randall R. Saxton",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Arwen,_Corgi.jpg",
+   "zx": 49,
+   "zy": 47
+  },
+  {
+   "file": "data/img/2026-11-28-corgi1.jpg",
+   "corgi": true,
+   "author": "Lili7777",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Archie_the_Pembroke_Welsh_Corgi.jpg",
+   "zx": 53,
+   "zy": 68
+  },
+  {
+   "file": "data/img/2026-11-28-corgi2.jpg",
+   "corgi": true,
+   "author": "ismeretlen",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:PembrokeWelshCorgi_Tryst2.fullres.jpg",
+   "zx": 40,
+   "zy": 52
+  },
+  {
+   "file": "data/img/2026-11-28-kenyer1.jpg",
    "corgi": false,
-   "author": "Rakoon",
-   "license": "CC0",
-   "page": "https://commons.wikimedia.org/wiki/File:20210102_192758_Challah.jpg",
-   "zx": 48,
+   "author": "Kurt Nordstrom from Montgomery County, MD, USA",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Challah_Bread_-_Flickr_-_Afroswede.jpg",
+   "zx": 43,
    "zy": 66
   },
   {
-   "file": "data/img/2026-11-27-corgi3.jpg",
-   "corgi": true,
-   "author": "Richard Humphrey",
-   "license": "CC BY-SA 2.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Corgis_of_Queen_Elizabeth_II_buried_in_Sandringham_House_gardens_-_geograph.org.uk_-_7314888.jpg",
-   "zx": 50,
-   "zy": 45
-  },
-  {
-   "file": "data/img/2026-11-27-corgi1.jpg",
-   "corgi": true,
-   "author": "Mrkoww",
-   "license": "CC BY 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Tan_Pembroke_Welsh_Corgi.jpg",
-   "zx": 45,
-   "zy": 40
-  },
-  {
-   "file": "data/img/2026-11-27-kenyer1.jpg",
+   "file": "data/img/2026-11-28-kenyer2.jpg",
    "corgi": false,
-   "author": "DocteurCosmos",
-   "license": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Pain_au_lait.jpg",
-   "zx": 38,
-   "zy": 46
-  },
-  {
-   "file": "data/img/2026-11-27-corgi2.jpg",
-   "corgi": true,
-   "author": "GrzegorzWicher",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Welsh_Corgi_Cardigan_named_Flow_2020_6.jpg",
-   "zx": 55,
-   "zy": 65
+   "author": "Eden Aviv",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Challah_bread_on_a_pan.jpg",
+   "zx": 45,
+   "zy": 69
   }
  ]
 }
